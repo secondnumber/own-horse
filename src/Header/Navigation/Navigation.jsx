@@ -1,8 +1,7 @@
 import React from 'react';
 import classes from './Navigation.module.scss';
+import MainMenu from './MainMenu/MainMenu';
 
-const Navigation = () => {
-    return <header className={classes.navigation}>Nav</header>;
-};
+const Navigation = () => <MainMenu />;
 
 export default Navigation;
