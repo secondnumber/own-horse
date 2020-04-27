@@ -3,7 +3,15 @@ import classes from './Header.module.scss';
 import Logo from './Logo.png';
 import Search from './Search.png';
 
-const Header = () => {
+const Header = (props) => {
+  let menuItemElements = props.navMenuItems.map((menuItem) => (
+    <li>
+      <a className={classes.navItem} href="#">
+        {menuItem.menuItem}
+      </a>
+    </li>
+  ));
+
   return (
     <div className={classes.header}>
       <div className={classes.logo}>
@@ -13,14 +21,7 @@ const Header = () => {
           <p className={classes.logoText}>gaming solutions</p>
         </div>
       </div>
-      <ul className={classes.navList}>
-        <li><a className={classes.navItem} href='#'>Homepage</a></li>
-        <li><a className={classes.navItem} href='#'>Pages</a></li>
-        <li><a className={classes.navItem} href='#'>Gallery</a></li>
-        <li><a className={classes.navItem} href='#'>Games</a></li>
-        <li><a className={classes.navItem} href='#'>Blog</a></li>
-        <li><a className={classes.navItem} href='#'>Contacts</a></li>
-      </ul>
+      <ul className={classes.navList}>{menuItemElements}</ul>
       <div className={classes.utility}>
         <img className={classes.searchImage} src={Search} />
         <button className={classes.button}>Join us Now</button>
