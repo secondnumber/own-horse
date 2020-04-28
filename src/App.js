@@ -3,7 +3,6 @@ import './App.scss';
 import Header from './components/Header/Header';
 import Slider from './components/Slider/Slider';
 import Games from './components/Games/Games';
-import News from './components/News/News';
 import Posts from './components/Posts/Posts';
 import Testimonials from './components/Testimonials/Testimonials';
 import Gallery from './components/Gallery/Gallery';
@@ -18,7 +17,6 @@ const App = (props) => (
     {/*<Header navMenuItems={props.state.navMenuItems} />*/}
     <Slider />
     <Games games={props.state.games} />
-    <News />
     <Posts />
     <Testimonials />
     <Gallery />

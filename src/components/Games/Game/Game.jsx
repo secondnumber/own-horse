@@ -1,10 +1,12 @@
 import React from 'react';
 import classes from './Game.module.scss';
 
-const Game = () => {
+const Game = (props) => {
   return (
     <div>
-      <h1>Fifal 2018</h1>
+      <img className={classes.image} src={props.imageSmall} />
+      <h1 className={classes.header}>{props.name}</h1>
+      <p className={classes.date}>{props.date}</p>
     </div>
   );
 };
