@@ -1,0 +1,21 @@
+@import '../../Colors.scss';
+
+.gamesWrapper {
+    background-color: $blueDarkDeep;
+}
+
+.header {
+    text-align: center;
+    font-family: "Agency FB";
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.gameWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    margin: 0 auto;
+}
