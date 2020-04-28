@@ -1,0 +1,59 @@
+@import '../../../Colors';
+
+.wrapper {
+    width: 100vw;
+    max-width:100%;
+    background-color: $blueDarkDeep;
+}
+
+.newsBlock {
+    margin: 0 auto;
+    max-width:1170px;
+    background-color: $blueDark;
+    border-radius: 12px;
+}
+
+.tags {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $cyan;
+}
+
+.header {
+    font-family: 'Agency FB', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: $blueLight;
+}
+
+.button {
+    width: 220px;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $blueDark;
+    border: 2px solid $lilac;
+    border-radius: 10px;
+}
+
+.button:hover {
+    border: 2px solid $cyan;
+    background-color: $cyan;
+}
+
+.image {
+    border-radius: 12px;
+}
