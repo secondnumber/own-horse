@@ -7,6 +7,10 @@ import PostImg2 from '../../src/components/Posts/Post/blog-img-2.jpg';
 import PostImg3 from '../../src/components/Posts/Post/blog-img-3.jpg';
 import Testimonial1 from '../../src/components/Testimonials/Testimonial/testimonial-author-1.jpg';
 import Testimonial2 from '../../src/components/Testimonials/Testimonial/testimonial-author-2.jpg';
+import Gallery1 from '../../src/components/Gallery/gallery-1.jpg';
+import Gallery2 from '../../src/components/Gallery/gallery-2.jpg';
+import Gallery3 from '../../src/components/Gallery/gallery-3.jpg';
+import Gallery4 from '../../src/components/Gallery/gallery-4.jpg';
 
 let state = {
   navMenuItems: [
@@ -75,6 +79,42 @@ let state = {
         'Capicola beef ribs pastrami biltong pork chop corned beef alcatra tail landjaeger. Spare ribs t-bone buffalo capicola, pork belly.',
       author: 'Admin',
       src: Testimonial2,
+    },
+  ],
+
+  galleryTags: [
+    {
+      tag: 'ALL',
+    },
+    {
+      tag: 'ORIGIN',
+    },
+    {
+      tag: 'PLAYSTATION 4',
+    },
+    {
+      tag: 'STEAM',
+    },
+    {
+      tag: 'UPLAY',
+    },
+    {
+      tag: 'XBOX ONE',
+    },
+  ],
+
+  galleryImages: [
+    {
+      src: Gallery1,
+    },
+    {
+      src: Gallery2,
+    },
+    {
+      src: Gallery3,
+    },
+    {
+      src: Gallery4,
     },
   ],
 };
