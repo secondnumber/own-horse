@@ -5,6 +5,8 @@ import GameImg4 from '../../src/components/Games/Game/game-img-4.jpg';
 import PostImg1 from '../../src/components/Posts/Post/blog-img-1.jpg';
 import PostImg2 from '../../src/components/Posts/Post/blog-img-2.jpg';
 import PostImg3 from '../../src/components/Posts/Post/blog-img-3.jpg';
+import Testimonial1 from '../../src/components/Testimonials/Testimonial/testimonial-author-1.jpg';
+import Testimonial2 from '../../src/components/Testimonials/Testimonial/testimonial-author-2.jpg';
 
 let state = {
   navMenuItems: [
@@ -53,6 +55,26 @@ let state = {
         'Capicola chicken rump biltong boudin corned beef prosciutto short loin pork chop fatback flank beef porchetta tenderloin.',
       author: 'Admin',
       src: PostImg3,
+    },
+  ],
+
+  testimonials: [
+    {
+      id: 1,
+      name: 'Cow biltong pork belly kielbasa shankle',
+      tag: 'xbox',
+      description:
+        'Turducken cupim hamburger beef ribs picanha, drumstick buffalo tri-tip cow. Turducken prosciutto shank pork chop.',
+      src: Testimonial1,
+    },
+    {
+      id: 2,
+      name: 'Cow short ribs beef strip steak jowl',
+      tag: 'ps 3',
+      description:
+        'Capicola beef ribs pastrami biltong pork chop corned beef alcatra tail landjaeger. Spare ribs t-bone buffalo capicola, pork belly.',
+      author: 'Admin',
+      src: Testimonial2,
     },
   ],
 };

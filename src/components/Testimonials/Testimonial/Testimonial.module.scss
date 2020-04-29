@@ -1,0 +1,40 @@
+@import '../../../Colors.scss';
+
+.wrapper {
+    max-width: 565px;
+    background-color: $blueDarkDeep;
+    border-radius: 12px;
+}
+
+.image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.tag {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blueLight;
+}
+
+.description {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blueLight;
+}
