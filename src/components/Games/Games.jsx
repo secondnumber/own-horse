@@ -9,9 +9,9 @@ const Games = (props) => {
   ));
 
   return (
-    <div className={classes.gamesWrapper}>
+    <div className={classes.wrapper}>
       <h1 className={classes.header}>Upcoming games</h1>
-      <div className={classes.gameWrapper}>{gamesList}</div>
+      <div className={classes.gamesWrapper}>{gamesList}</div>
       <News />
     </div>
   );
