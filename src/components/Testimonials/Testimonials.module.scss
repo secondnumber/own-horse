@@ -2,6 +2,22 @@
 
 .wrapper {
     width: 100vw;
-    max-width:100%;
-    background-color: $blueDarkDeep;
+    max-width: 100%;
+    background-color: $blueDark;
+}
+
+.header {
+    text-align: center;
+    font-family: "Agency FB", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.testimonialsWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    margin: 0 auto;
 }

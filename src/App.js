@@ -18,7 +18,7 @@ const App = (props) => (
     <Slider />
     <Games games={props.state.games} />
     <Posts posts={props.state.posts} />
-    <Testimonials />
+    <Testimonials testimonials={props.state.testimonials} />
     <Gallery />
     <Videos />
     <PriceList />
