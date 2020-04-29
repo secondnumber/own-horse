@@ -1,0 +1,30 @@
+@import '../../../Colors.scss';
+
+.wrapper {
+    max-width: 350px;
+    background-color: $blueDark;
+    border-radius: 12px;
+}
+
+.image {
+    max-width: 350px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.date {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blueLight;
+}

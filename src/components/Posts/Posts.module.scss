@@ -3,5 +3,29 @@
 .wrapper {
     width: 100vw;
     max-width:100%;
-    background-color: $lilac;
+    background-color: $blueDarkDeep;
+}
+
+.header {
+    text-align: center;
+    font-family: "Agency FB", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.caption {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: $blueLight;
+}
+
+.postsWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    margin: 0 auto;
 }

@@ -17,7 +17,7 @@ const App = (props) => (
     {/*<Header navMenuItems={props.state.navMenuItems} />*/}
     <Slider />
     <Games games={props.state.games} />
-    <Posts />
+    <Posts posts={props.state.posts} />
     <Testimonials />
     <Gallery />
     <Videos />

@@ -1,6 +1,8 @@
 @import '../../Colors.scss';
 
-.gamesWrapper {
+.wrapper {
+    width: 100vw;
+    max-width:100%;
     background-color: $blueDarkDeep;
 }
 
@@ -13,7 +15,7 @@
     color: $white;
 }
 
-.gameWrapper {
+.gamesWrapper {
     display: flex;
     justify-content: space-between;
     width: 60vw;
