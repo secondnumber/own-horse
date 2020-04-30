@@ -27,7 +27,7 @@ const App = (props) => (
       togglesItems={props.state.togglesItems}
       videosItems={props.state.videosItems}
     />
-    <PriceList />
+    <PriceList priceList={props.state.priceList} />
     <Questions />
     <Newsletter />
     <Footer />

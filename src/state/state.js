@@ -137,6 +137,34 @@ let state = {
       count: '267 347 watching now',
     },
   ],
+
+  priceList: [
+    {
+      id: 1,
+      name: 'Standard Plan',
+      price: '$ 39.99',
+      period: 'per mouth',
+      descriprion: 'Pork Ground Found Biltong\n' +
+        ' Capicola Sausage Beef Ribs\n' +
+        ' Pork Doner Frankfurter',
+    },
+    {
+      id: 2,
+      name: 'Golden Plan',
+      price: '$ 59.59',
+      period: 'per mouth',
+      descriprion: 'Doner Boudin Rump Picanha Leberkas Kevin Drumstick \n' +
+        'Beef Mignon Bresaola',
+    },
+    {
+      id: 3,
+      name: 'Platinum Plan',
+      price: '$ 89.39',
+      period: 'per mouth',
+      descriprion: 'Bresaola Shoulder Venison Frankfurter Cow Ribeye Kielbasa Cupim Drumstick Tail Pancetta ',
+    },
+  ],
+
 };
 
 export default state;

@@ -3,5 +3,11 @@
 .wrapper {
     width: 100vw;
     max-width:100%;
-    background-color: $lilac;
+    background-color: $blueDarkDeep;
+}
+
+.videoWrapper {
+    display: flex;
+    width: 60vw;
+    margin: 0 auto;
 }
