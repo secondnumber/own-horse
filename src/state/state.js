@@ -11,6 +11,7 @@ import Gallery1 from '../../src/components/Gallery/gallery-1.jpg';
 import Gallery2 from '../../src/components/Gallery/gallery-2.jpg';
 import Gallery3 from '../../src/components/Gallery/gallery-3.jpg';
 import Gallery4 from '../../src/components/Gallery/gallery-4.jpg';
+import Video1 from '../components/Videos/Video/earth.mp4';
 
 let state = {
   navMenuItems: [
@@ -115,6 +116,25 @@ let state = {
     },
     {
       src: Gallery4,
+    },
+  ],
+
+  togglesItems: [
+    { id: 1, toggleItem: 'Most popular streams' },
+    { id: 2, toggleItem: 'Upcoming Competitions' },
+    { id: 3, toggleItem: 'Prosciutto meatball flank' },
+  ],
+
+  videosItems: [
+    {
+      id: 1,
+      file: Video1,
+      header: 'CREATE YOUR OWN CHANNEL AND START TO STREAM GAMES NOW',
+      descriprion:
+        'Drumstick meatloaf capicola short ribs, pork chop cupim kielbasa jerky porchetta pancetta chicken pastrami turkey tenderloin sausage. ' +
+        'Pig buffalo alcatra meatball. T-bone hamburger bresaola kevin shank porchetta ground. Round beef tail tri-tip. Short loin pork strip steak venison.',
+      caption: '9 136 streams from most recent games',
+      count: '267 347 watching now',
     },
   ],
 };

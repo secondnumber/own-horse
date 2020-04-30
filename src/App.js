@@ -19,8 +19,14 @@ const App = (props) => (
     <Games games={props.state.games} />
     <Posts posts={props.state.posts} />
     <Testimonials testimonials={props.state.testimonials} />
-    <Gallery galleryTags={props.state.galleryTags} galleryImages={props.state.galleryImages} />
-    <Videos />
+    <Gallery
+      galleryTags={props.state.galleryTags}
+      galleryImages={props.state.galleryImages}
+    />
+    <Videos
+      togglesItems={props.state.togglesItems}
+      videosItems={props.state.videosItems}
+    />
     <PriceList />
     <Questions />
     <Newsletter />

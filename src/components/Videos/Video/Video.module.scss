@@ -1,23 +1,7 @@
-@import '../../Colors.scss';
+@import '../../../Colors.scss';
 
-.wrapper {
-    width: 100vw;
-    max-width:100%;
-    background-color: $blueDarkDeep;
-}
-
-.header {
-    text-align: center;
-    font-family: "Agency FB", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $white;
-}
-
-.tagsWrapper {
+.videosWrapper {
     display: flex;
-    justify-content: space-around;
     width: 60vw;
     margin: 0 auto;
 }
