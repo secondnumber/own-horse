@@ -30,7 +30,10 @@ const App = (props) => (
     <PriceList priceList={props.state.priceList} />
     <Questions questionsList={props.state.questionsList} />
     <Newsletter />
-    <Footer />
+    <Footer
+      socialList={props.state.socialList}
+      navMenuItems={props.state.navMenuItems}
+    />
   </div>
 );
 export default App;

@@ -1,0 +1,16 @@
+@import '../../../Colors.scss';
+
+.navItem {
+    padding: 30px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+}
+
+.navItem:hover {
+    color: $cyan;
+}
+
