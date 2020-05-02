@@ -144,7 +144,8 @@ let state = {
       name: 'Standard Plan',
       price: '$ 39.99',
       period: 'per mouth',
-      descriprion: 'Pork Ground Found Biltong\n' +
+      descriprion:
+        'Pork Ground Found Biltong\n' +
         ' Capicola Sausage Beef Ribs\n' +
         ' Pork Doner Frankfurter',
     },
@@ -153,7 +154,8 @@ let state = {
       name: 'Golden Plan',
       price: '$ 59.59',
       period: 'per mouth',
-      descriprion: 'Doner Boudin Rump Picanha Leberkas Kevin Drumstick \n' +
+      descriprion:
+        'Doner Boudin Rump Picanha Leberkas Kevin Drumstick \n' +
         'Beef Mignon Bresaola',
     },
     {
@@ -161,10 +163,41 @@ let state = {
       name: 'Platinum Plan',
       price: '$ 89.39',
       period: 'per mouth',
-      descriprion: 'Bresaola Shoulder Venison Frankfurter Cow Ribeye Kielbasa Cupim Drumstick Tail Pancetta ',
+      descriprion:
+        'Bresaola Shoulder Venison Frankfurter Cow Ribeye Kielbasa Cupim Drumstick Tail Pancetta ',
     },
   ],
 
+  questionsList: [
+    {
+      id: 1,
+      question: 'Bresaola hamburger sirloin?',
+      answer:
+        'Flank andouille leberkas, shoulder shankle prosciutto chicken corned beef cupim kevin ham buffalo. ' +
+        'Cow short ribs shoulder pancetta alcatra pork chop.',
+    },
+    {
+      id: 2,
+      question: 'capicola jerky turducken meatloaf?',
+      answer:
+        'Meatloaf shank corned beef rump, alcatra chicken bacon turducken tongue. ' +
+        'Burgdoggen drumstick short loin tongue shankle shank. Pig salami pancetta.',
+    },
+    {
+      id: 3,
+      question: 'filet mignon rump doner landjaeger?',
+      answer:
+        'Beef ribs meatloaf andouille tail pork belly bresaola tenderloin. ' +
+        'Sirloin shank filet mignon rump. Jerky drumstick meatloaf sirloin ball tip landjaeger. ',
+    },
+    {
+      id: 4,
+      question: 'Meatloaf leberkas short loin?',
+      answer:
+        'Beef leberkas drumstick jowl flank burgdoggen strip \n' +
+        'steak shoulder. Shankle tri-tip spare ribs turkey beef ribs fatback buffalo t-bone tail flank.',
+    },
+  ],
 };
 
 export default state;

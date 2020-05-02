@@ -3,5 +3,27 @@
 .wrapper {
     width: 100vw;
     max-width:100%;
-    background-color: $blueLight;
+    background-color: $blueDark;
+}
+
+.questionsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 60vw;
+}
+
+.header {
+    font-family: 'Agency FB', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.caption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: $blueLight;
 }
