@@ -12,6 +12,9 @@ import Gallery2 from '../../src/components/Gallery/gallery-2.jpg';
 import Gallery3 from '../../src/components/Gallery/gallery-3.jpg';
 import Gallery4 from '../../src/components/Gallery/gallery-4.jpg';
 import Video1 from '../components/Videos/Video/earth.mp4';
+import FacebookImg from '../components/Footer/FooterSocial/facebook.svg';
+import YoutubeImg from '../components/Footer/FooterSocial/youtube.svg';
+import WatsappImg from '../components/Footer/FooterSocial/whatsapp.svg';
 
 let state = {
   navMenuItems: [
@@ -197,6 +200,12 @@ let state = {
         'Beef leberkas drumstick jowl flank burgdoggen strip \n' +
         'steak shoulder. Shankle tri-tip spare ribs turkey beef ribs fatback buffalo t-bone tail flank.',
     },
+  ],
+
+  socialList: [
+    { id: 2, src: YoutubeImg },
+    { id: 3, src: FacebookImg },
+    { id: 4, src: WatsappImg },
   ],
 };
 
