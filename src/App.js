@@ -28,7 +28,7 @@ const App = (props) => (
       videosItems={props.state.videosItems}
     />
     <PriceList priceList={props.state.priceList} />
-    <Questions />
+    <Questions questionsList={props.state.questionsList} />
     <Newsletter />
     <Footer />
   </div>
