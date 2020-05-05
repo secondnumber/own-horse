@@ -26,6 +26,9 @@ let state = {
     { id: 6, menuItem: 'Contacts' },
   ],
 
+  introList: [{id: 1, caption: 'Welcome to Gamesplay', header: 'Online gaming site', description: 'Pork chop pastrami meatball, picanha salami capicola drumstick tri-tip flank short loin strip steak prosciutto\n' +
+' leberkas jowl fatback. Alcatra kielbasa sausage, turkey short ribs shank bresaola.'}],
+
   games: [
     { id: 1, name: 'Fifal 2018', date: 'mar 18-20, 2018', src: GameImg1 },
     { id: 2, name: 'Mix Combination', date: 'apr 25-27, 2018', src: GameImg2 },
