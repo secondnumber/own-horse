@@ -26,8 +26,8 @@ const Footer = (props) => {
           porchetta, turkey short ribs leberkas doner bacon pancetta buffalo.
         </p>
         <div>{navMenu}</div>
-          <span>© Copyright 2018 </span>
-          <span>All Rights Reserved</span>
+        <span>© Copyright 2018 </span>
+        <span>All Rights Reserved</span>
       </div>
     </div>
   );
