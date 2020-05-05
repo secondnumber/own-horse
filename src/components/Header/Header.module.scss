@@ -1,13 +1,13 @@
 @import '../../Colors.scss';
 
 .header {
-    position: relative;
+    position: fixed;
     z-index: 2;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     width: 100vw;
     height: 140px;
-    background-color: transparentize($blueDarkDeep,.2);
+    background-color: transparentize($blueDarkDeep,.1);
     box-shadow: 3.5px 6.1px 30px $shadow;
 }
 
@@ -78,7 +78,7 @@
     font-weight: bold;
     text-transform: uppercase;
     color: $white;
-    background-color: $blueDarkDeep;
+    background-color: transparent;
     border: 2px solid $lilac;
     border-radius: 10px;
 }

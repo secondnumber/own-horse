@@ -14,7 +14,7 @@ import Footer from './components/Footer/Footer';
 
 const App = (props) => (
   <div>
-    {/*<Header navMenuItems={props.state.navMenuItems} />*/}
+    <Header navMenuItems={props.state.navMenuItems} />
     <Slider />
     <Games games={props.state.games} />
     <Posts posts={props.state.posts} />
