@@ -13,9 +13,9 @@ const Games = (props) => {
   return (
     <div className={classes.wrapper}>
       <div className={classes.headers}>
+        <h2 className={classes.title}>Upcoming games</h2>
         <h2 className={classes.subtitle}>
           Coming soon
-          <h2 className={classes.title}>Upcoming games</h2>
         </h2>
       </div>
       <div className={classes.block}>
