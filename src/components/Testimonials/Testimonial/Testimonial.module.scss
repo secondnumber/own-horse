@@ -1,18 +1,29 @@
 @import '../../../Colors.scss';
 
 .wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     max-width: 565px;
-    background-color: $blueDarkDeep;
+    background-color: $black;
     border-radius: 12px;
+    background-image: url("quote-left.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
 .image {
+    position: absolute;
+    top: -60px;
     width: 120px;
     height: 120px;
     border-radius: 50%;
 }
 
 .header {
+    padding-top: 80px;
     text-align: center;
     font-family: 'Agency FB', sans-serif;
     font-size: 24px;
@@ -21,20 +32,22 @@
     color: $white;
 }
 
-.tag {
+.status {
+    padding-top: 10px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    color: $blueLight;
+    color: $cyan;
 }
 
 .description {
+    padding: 20px 30px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
     color: $blueLight;
 }

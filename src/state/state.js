@@ -73,17 +73,17 @@ let state = {
     {
       id: 1,
       name: 'Cow biltong pork belly kielbasa shankle',
-      tag: 'xbox',
+      status: 'gamer',
       description:
-        'Turducken cupim hamburger beef ribs picanha, drumstick buffalo tri-tip cow. Turducken prosciutto shank pork chop.',
+        '"Turducken cupim hamburger beef ribs picanha, drumstick buffalo tri-tip cow. Turducken prosciutto shank pork chop."',
       src: Testimonial1,
     },
     {
       id: 2,
       name: 'Cow short ribs beef strip steak jowl',
-      tag: 'ps 3',
+      status: 'gamer',
       description:
-        'Capicola beef ribs pastrami biltong pork chop corned beef alcatra tail landjaeger. Spare ribs t-bone buffalo capicola, pork belly.',
+        '"Capicola beef ribs pastrami biltong pork chop corned beef alcatra tail landjaeger. Spare ribs t-bone buffalo capicola, pork belly. Capicola beef ribs pastrami biltong pork chop corned beef alcatra tail landjaeger. "',
       author: 'Admin',
       src: Testimonial2,
     },
