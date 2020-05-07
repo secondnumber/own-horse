@@ -6,7 +6,7 @@ const Testimonial = (props) => {
     <div className={classes.wrapper}>
       <img className={classes.image} src={props.imageSmall} />
       <h1 className={classes.header}>{props.name}</h1>
-      <span className={classes.tag}>{props.tag}</span>
+      <span className={classes.status}>{props.status}</span>
       <p className={classes.description}>{props.description}</p>
     </div>
   );
