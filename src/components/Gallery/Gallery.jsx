@@ -7,14 +7,17 @@ const Gallery = (props) => {
   let tagsList = props.galleryTags.map((tag) => <Tag galleryTags={tag.tag} />);
 
   let imagesList = props.galleryImages.map((image) => (
-    <Image galleryImages={image.src} />
+    <Image galleryImages={image.src} position={image.position} />
   ));
 
   return (
     <div className={classes.wrapper}>
-      <h1 className={classes.header}>Gallery</h1>
-      <div className={classes.tagsWrapper}>{tagsList}</div>
-      <div>{imagesList}</div>
+      <div className={classes.headers}>
+        <h2 className={classes.title}>Screenshots gallery</h2>
+        <h2 className={classes.subtitle}>all New Images</h2>
+      </div>
+      <div className={classes.tagsBlock}>{tagsList}</div>
+      <div className={classes.imagesBlock}>{imagesList}</div>
       <button className={classes.button}>Discover more</button>
     </div>
   );
