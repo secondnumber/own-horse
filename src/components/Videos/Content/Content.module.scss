@@ -1,0 +1,41 @@
+@import '../../../Colors.scss';
+
+.contentBlock {
+    grid-area: content;
+    padding: 40px;
+}
+
+.header {
+    padding-bottom: 20px;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.description {
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: $blueLight;
+}
+
+.button {
+    width: 220px;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $blueDark;
+    border: 2px solid $lilac;
+    border-radius: 10px;
+}
+
+.button:hover {
+    border: 2px solid $cyan;
+    background-color: $cyan;
+}

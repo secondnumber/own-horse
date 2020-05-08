@@ -3,12 +3,18 @@
 .wrapper {
     width: 100vw;
     max-width:100%;
-    background-color: $blueDark;
+    background-color: $blueDarkDeep;
 }
 
-.togglesWrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 60vw;
+.togglesBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(70px, auto) 1fr minmax(140px, auto);
+    grid-template-areas:
+        "tag1 tag1 tag2 tag2 tag3 tag3"
+        "video video video content content content"
+        "video video video label label label";
+    width: 70vw;
     margin: 0 auto;
 }
+

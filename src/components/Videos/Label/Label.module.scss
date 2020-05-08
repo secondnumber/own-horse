@@ -1,0 +1,21 @@
+@import '../../../Colors.scss';
+
+.label {
+    grid-area: label;
+    padding: 0 40px;
+}
+
+.caption {
+    font-family: 'Agency FB', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.count {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: $blueLight;
+}
