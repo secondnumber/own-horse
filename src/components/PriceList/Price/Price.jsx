@@ -1,13 +1,23 @@
 import React from 'react';
-import classes from './Price.module.scss';
+import './Price.scss';
+import classes from "../../Gallery/Gallery.module.scss";
 
 const Price = (props) => {
   return (
-    <div className={classes.wrapper}>
-      <h1 className={classes.header}>{props.name}</h1>
-      <span>{props.price}</span>
-      <span>{props.period}</span>
-      <p>{props.descriprion}</p>
+    <div className="wrapper">
+      <h1 className="header">{props.name}</h1>
+      <div className={`${props.bgClass} price-wrapper`}>
+        <span className="currency">{props.currency} </span>
+        <span className="integer">{props.integer} </span>
+        <span className="fraction">{props.fraction}</span>
+        <span className="period">{props.period}</span>
+      </div>
+      <div className="features">
+        <p className="feature">{props.featureOne}</p>
+        <p className="feature">{props.featureTwo}</p>
+        <p className="feature">{props.featureThree}</p>
+          <button className="button">Buy Plan Now</button>
+      </div>
     </div>
   );
 };

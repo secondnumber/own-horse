@@ -2,12 +2,49 @@
 
 .wrapper {
     width: 100vw;
-    max-width:100%;
-    background-color: $blueDarkDeep;
+    max-width: 100%;
+    background-color: $black;
+    padding-bottom: 100px;
 }
 
-.videoWrapper {
+.pricesBlock {
     display: flex;
-    width: 60vw;
+    width: 70vw;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-grow: 0;
     margin: 0 auto;
+}
+
+.headers {
+    position: relative;
+    width: 80vw;
+    min-height: 100px;
+    margin: 0px auto;
+    padding: 80px 0 20px 0;
+}
+
+.subtitle {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: "Agency FB", sans-serif;
+    font-size: 88px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $textShadow;
+}
+
+.title {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    font-family: "Agency FB", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
 }
