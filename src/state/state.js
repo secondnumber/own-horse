@@ -160,29 +160,38 @@ let state = {
     {
       id: 1,
       name: 'Standard Plan',
-      price: '$ 39.99',
+      currency: '$',
+      integer: '39',
+      fraction: '99',
       period: 'per mouth',
-      descriprion:
-        'Pork Ground Found Biltong\n' +
-        ' Capicola Sausage Beef Ribs\n' +
-        ' Pork Doner Frankfurter',
+      bgClass: 'bgcyan',
+      featureOne: 'Pork Ground Found Biltong',
+      featureTwo: 'Capicola Sausage Beef Ribs',
+      featureThree: 'Pork Doner Frankfurter',
     },
     {
       id: 2,
       name: 'Golden Plan',
-      price: '$ 59.59',
+      currency: '$',
+      integer: '59',
+      fraction: '59',
       period: 'per mouth',
-      descriprion:
-        'Doner Boudin Rump Picanha Leberkas Kevin Drumstick \n' +
-        'Beef Mignon Bresaola',
+      bgClass: 'bgblue',
+      featureOne: 'Pork Ground Found Biltong',
+      featureTwo: 'Capicola Sausage Beef Ribs',
+      featureThree: 'Pork Doner Frankfurter',
     },
     {
       id: 3,
       name: 'Platinum Plan',
-      price: '$ 89.39',
+      currency: '$',
+      integer: '89',
+      fraction: '39',
       period: 'per mouth',
-      descriprion:
-        'Bresaola Shoulder Venison Frankfurter Cow Ribeye Kielbasa Cupim Drumstick Tail Pancetta ',
+      bgClass: 'bglilac',
+      featureOne: 'Pork Ground Found Biltong',
+      featureTwo: 'Capicola Sausage Beef Ribs',
+      featureThree: 'Pork Doner Frankfurter',
     },
   ],
 
