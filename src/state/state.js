@@ -138,9 +138,9 @@ let state = {
   ],
 
   togglesItems: [
-    { id: 1, toggleItem: 'Most popular streams' },
-    { id: 2, toggleItem: 'Upcoming Competitions' },
-    { id: 3, toggleItem: 'Prosciutto meatball flank' },
+    { id: 1, toggleItem: 'Most popular streams', toggleClass: 'tag1' },
+    { id: 2, toggleItem: 'Upcoming Competitions', toggleClass: 'tag2' },
+    { id: 3, toggleItem: 'Prosciutto meatball flank', toggleClass: 'tag3' },
   ],
 
   videosItems: [
