@@ -3,9 +3,7 @@ import classes from './FooterSocial.module.scss';
 
 const FooterSocial = (props) => {
   return (
-    <div className={classes.wrapper}>
-      <img className={classes.image} src={props.socialItem} />
-    </div>
+      <li className={classes.socialList}><img className={classes.image} src={props.socialItem} /></li>
   );
 };
 
