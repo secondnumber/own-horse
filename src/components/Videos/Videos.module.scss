@@ -8,7 +8,7 @@
 
 .togglesBlock {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: minmax(1fr, 300px) minmax(1fr, 300px) 1fr 1fr 1fr 1fr;
     grid-template-rows: minmax(70px, auto) 1fr minmax(140px, auto);
     grid-template-areas:
         "tag1 tag1 tag2 tag2 tag3 tag3"
