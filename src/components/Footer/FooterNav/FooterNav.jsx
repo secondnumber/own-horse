@@ -3,7 +3,7 @@ import classes from './FooterNav.module.scss';
 
 const FooterNav = (props) => {
   return (
-      <li>{props.menuItem}</li>
+      <li className={classes.navItem}>{props.menuItem}</li>
   );
 };
 
