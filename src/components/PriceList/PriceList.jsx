@@ -6,18 +6,24 @@ const PriceList = (props) => {
   let priceList = props.priceList.map((price) => (
     <Price
       name={price.name}
-      price={price.price}
+      currency={price.currency}
+      integer={price.integer}
+      fraction={price.fraction}
       period={price.period}
-      descriprion={price.descriprion}
+      bgClass={price.bgClass}
+      featureOne={price.featureOne}
+      featureTwo={price.featureTwo}
+      featureThree={price.featureThree}
     />
   ));
 
   return (
     <div className={classes.wrapper}>
-      <h1 className={classes.header}>Name</h1>
-      <div className={classes.videoWrapper}>
-        {priceList}
+      <div className={classes.headers}>
+        <h2 className={classes.title}>Our Pricing Plans</h2>
+        <h2 className={classes.subtitle}>Spesial Plans</h2>
       </div>
+      <div className={classes.pricesBlock}>{priceList}</div>
     </div>
   );
 };
