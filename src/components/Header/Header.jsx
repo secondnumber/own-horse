@@ -4,7 +4,7 @@ import Logo from './Logo.png';
 import Search from './Search.png';
 
 const Header = (props) => {
-  let menuItemElements = props.navMenuItems.map((menuItem) => (
+  let menuItemElements = props.state.navMenuItems.map((menuItem) => (
     <li>
       <a className={classes.navItem} href="#">
         {menuItem.menuItem}

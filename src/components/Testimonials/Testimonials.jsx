@@ -5,7 +5,7 @@ import ArrowLeft from './left-arrow.svg';
 import ArrowRight from './right-arrow.svg';
 
 const Testimonials = (props) => {
-  let testimonialsList = props.testimonials.map((testimonial) => (
+  let testimonialsList = props.state.testimonials.map((testimonial) => (
     <Testimonial
       name={testimonial.name}
       status={testimonial.status}

@@ -6,7 +6,7 @@ import ArrowLeft from './left-arrow.svg';
 import ArrowRight from './right-arrow.svg';
 
 const Games = (props) => {
-  let gamesList = props.games.map((game) => (
+  let gamesList = props.state.games.map((game) => (
     <GameList name={game.name} date={game.date} imageSmall={game.src} />
   ));
 

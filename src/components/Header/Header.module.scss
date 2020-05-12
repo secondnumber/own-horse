@@ -1,6 +1,6 @@
 @import '../../Colors.scss';
 
-.header {
+.headerStart {
     position: fixed;
     z-index: 3;
     display: grid;
@@ -8,6 +8,17 @@
     width: 100vw;
     height: 140px;
     background-color: transparentize($blueDarkDeep,.1);
+    box-shadow: 3.5px 6.1px 30px $shadow;
+}
+
+.header {
+    position: fixed;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100vw;
+    height: 120px;
+    background-color: $blueDarkDeep;
     box-shadow: 3.5px 6.1px 30px $shadow;
 }
 

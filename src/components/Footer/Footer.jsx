@@ -5,10 +5,10 @@ import FooterNav from './FooterNav/FooterNav';
 import Logo from '../Header/Logo.png';
 
 const Footer = (props) => {
-  let socialList = props.socialList.map((socialItem) => (
+  let socialList = props.state.socialList.map((socialItem) => (
     <FooterSocial socialItem={socialItem.src} />
   ));
-  let navMenu = props.navMenuItems.map((menuItem) => (
+  let navMenu = props.state.navMenuItems.map((menuItem) => (
     <FooterNav menuItem={menuItem.menuItem} />
   ));
 

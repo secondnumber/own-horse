@@ -3,7 +3,7 @@ import classes from './Slider.module.scss';
 import Intro from './Intro/Intro';
 
 const Slider = (props) => {
-  let introBlocks = props.introList.map((element) => (
+  let introBlocks = props.state.introList.map((element) => (
     <Intro
       caption={element.caption}
       header={element.header}
