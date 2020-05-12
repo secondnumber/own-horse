@@ -6,19 +6,19 @@ import Toggle from './Toggle/Toggle';
 import Label from './Label/Label';
 
 const Videos = (props) => {
-  let togglesList = props.togglesItems.map((toggle) => (
+  let togglesList = props.state.togglesItems.map((toggle) => (
     <Toggle toggleClass={toggle.toggleClass} toggleItem={toggle.toggleItem} />
   ));
 
-  let videosList = props.videosItems.map((video) => (
+  let videosList = props.state.videosItems.map((video) => (
     <Video file={video.file} />
   ));
 
-  let contentList = props.videosItems.map((content) => (
+  let contentList = props.state.videosItems.map((content) => (
     <Content header={content.header} descriprion={content.descriprion} />
   ));
 
-  let labelList = props.videosItems.map((label) => (
+  let labelList = props.state.videosItems.map((label) => (
     <Label caption={label.caption} count={label.count} />
   ));
 
