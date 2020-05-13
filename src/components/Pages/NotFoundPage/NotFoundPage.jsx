@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './NotFoundPage.module.scss';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
-import NotFound from '../../NotFound/NotFound';
+import NotFound from './NotFound/NotFound';
 
 const NotFoundPage = (props) => {
   return (
