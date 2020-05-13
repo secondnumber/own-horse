@@ -1,0 +1,27 @@
+@import '../../../../../Colors';
+
+.image {
+    width: 180px;
+    height: 180px;
+    background-color: $blueDarkDeep;
+    border-radius: 50%;
+}
+
+.header {
+    padding: 25px 0 5px 0;
+    text-align: center;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.date {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blueLight;
+}

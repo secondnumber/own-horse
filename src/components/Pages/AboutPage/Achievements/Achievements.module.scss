@@ -1,0 +1,17 @@
+@import "../../../../Colors";
+
+.wrapper {
+  min-height: 380px;
+  background-color: $blueDarkDeep;
+  background-image: url("about-bg.jpg");
+  background-size: cover;
+}
+
+.achievementsList {
+  min-height: 380px;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  list-style-type: none;
+  background-color: transparentize($blueDarkDeep, 0.1);
+}
