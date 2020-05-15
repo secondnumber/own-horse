@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../Header/Header';
+import Header from '../../common/Header/Header';
 import Slider from './Slider/Slider';
 import Games from './Games/Games';
 import Posts from './Posts/Posts';
@@ -9,7 +9,7 @@ import Videos from './Videos/Videos';
 import PriceList from './PriceList/PriceList';
 import Questions from './Questions/Questions';
 import Newsletter from '../../Pages/MainPage/Newsletter/Newsletter';
-import Footer from '../../Footer/Footer';
+import Footer from '../../common/Footer/Footer';
 
 const MainPage = (props) => (
   <div>

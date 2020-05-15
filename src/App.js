@@ -6,9 +6,9 @@ import AboutPage from './components/Pages/AboutPage/AboutPage';
 
 const App = (props) => (
   <div>
-    {/* <MainPage state={props.state}/> */}
-    {/* <NotFoundPage state={props.state} /> */}
-    <AboutPage state={props.state} />
+      {/* <MainPage state={props.state}/> */}
+    <NotFoundPage state={props.state} />
+      {/* <AboutPage state={props.state} /> */}
   </div>
 );
 export default App;
