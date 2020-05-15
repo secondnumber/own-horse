@@ -12,9 +12,9 @@ import Gallery2 from '../components/Pages/MainPage/Gallery/gallery-2.jpg';
 import Gallery3 from '../components/Pages/MainPage/Gallery/gallery-3.jpg';
 import Gallery4 from '../components/Pages/MainPage/Gallery/gallery-4.jpg';
 import Video1 from '../components/Pages/MainPage/Videos/Video/earth.mp4';
-import FacebookImg from '../components/Footer/FooterSocial/facebook.svg';
-import YoutubeImg from '../components/Footer/FooterSocial/youtube.svg';
-import WatsappImg from '../components/Footer/FooterSocial/whatsapp.svg';
+import FacebookImg from '../components/common/Footer/FooterSocial/facebook.svg';
+import YoutubeImg from '../components/common/Footer/FooterSocial/youtube.svg';
+import WatsappImg from '../components/common/Footer/FooterSocial/whatsapp.svg';
 
 let state = {
   navMenuItems: [
