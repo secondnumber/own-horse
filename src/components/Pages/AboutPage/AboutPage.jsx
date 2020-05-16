@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../common/Header/Header';
-import Newsletter from '../../Pages/MainPage/Newsletter/Newsletter';
+import Newsletter from '../../pages/MainPage/Newsletter/Newsletter';
 import Footer from '../../common/Footer/Footer';
 import Breadcrumbs from '../../common/Breadcrumbs/Breadcrumbs';
 import About from './About/About';
