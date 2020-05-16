@@ -4,10 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import state from './state/state';
+import store from './redux/store';
+import Provider from 'react-redux/lib/components/Provider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App state={state} />
+    <Provider store={store}>
+      <App state={state} />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
