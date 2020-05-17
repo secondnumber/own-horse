@@ -1,5 +1,5 @@
 let initialState = {
-  priceList: [
+  pricesList: [
     {
       id: 1,
       name: 'Standard Plan',

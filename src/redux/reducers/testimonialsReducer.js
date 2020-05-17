@@ -2,7 +2,7 @@ import Testimonial1 from '../../assets/Testimonials/testimonial-author-1.jpg';
 import Testimonial2 from '../../assets/Testimonials/testimonial-author-2.jpg';
 
 let initialState = {
-  testimonials: [
+  testimonialsList: [
     {
       id: 1,
       name: 'Cow biltong pork belly kielbasa shankle',

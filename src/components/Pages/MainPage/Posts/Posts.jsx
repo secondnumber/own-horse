@@ -3,7 +3,7 @@ import classes from './Posts.module.scss';
 import Post from './Post/Post';
 
 const Posts = (props) => {
-  let postsList = props.state.posts.map((post) => (
+  let postsList = props.posts.postsList.map((post) => (
     <Post
       name={post.name}
       tag={post.tag}

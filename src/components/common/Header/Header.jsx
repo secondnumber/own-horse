@@ -1,15 +1,12 @@
 import React from 'react';
 import classes from './Header.module.scss';
-import Logo from './Logo.png';
-import Search from './Search.png';
+import Logo from '../../../assets/Header/Logo.png';
+import Search from '../../../assets/Header/Search.png';
+import HeaderMenu from './HeaderMenu/HeaderMenu';
 
 const Header = (props) => {
-  let menuItemElements = props.state.navMenuItems.map((menuItem) => (
-    <li>
-      <a className={classes.navItem} href="#">
-        {menuItem.menuItem}
-      </a>
-    </li>
+  let menuItemElements = props.header.navMenuItems.map((element) => (
+    <HeaderMenu menuItem={element.menuItem} />
   ));
 
   return (

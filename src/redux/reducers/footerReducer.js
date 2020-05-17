@@ -16,6 +16,7 @@ let initialState = {
     { id: 3, src: FacebookImg },
     { id: 4, src: WatsappImg },
   ],
+  description: `Andouille landjaeger flank boudin. Jerky cupim alcatra sirloin porchetta, turkey short ribs leberkas doner bacon pancetta buffalo.`,
 };
 
 const footerReducer = (state = initialState, action) => {

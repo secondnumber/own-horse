@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Breadcrumbs from './Breadcrumbs';
+import Games from './Games';
 
 let mapStateToProps = (state) => {
   return {
-    breadcrumbs: state.breadcrumbs,
+    games: state.games,
   };
 };
 
@@ -12,6 +12,6 @@ let mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-const BreadcrumbsContainer = connect(mapStateToProps)(Breadcrumbs);
+const GamesContainer = connect(mapStateToProps)(Games);
 
-export default BreadcrumbsContainer;
+export default GamesContainer;
