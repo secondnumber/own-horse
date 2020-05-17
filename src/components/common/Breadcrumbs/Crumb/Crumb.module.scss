@@ -11,4 +11,13 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $white;
+    padding: 20px 0;
+}
+
+.link:hover {
+    color: $cyan;
+}
+
+.separator {
+    color: $white;
 }

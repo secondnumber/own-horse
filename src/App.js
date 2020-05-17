@@ -6,8 +6,8 @@ import AboutPage from './components/pages/AboutPage/AboutPage';
 
 const App = (props) => (
   <div>
-    <MainPage />
-    <NotFoundPage />
+    {/* <MainPage /> */}
+    {/* <NotFoundPage /> */}
     <AboutPage />
   </div>
 );
