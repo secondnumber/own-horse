@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './About.module.scss';
-import Video from './earth.mp4';
 
 const About = (props) => (
   <div className={classes.wrapper}>
