@@ -6,6 +6,7 @@ const Crumb = (props) => (
     <a className={classes.link} href={props.link}>
       {props.name}
     </a>
+    <span className={classes.separator}>{props.separator}</span>
   </li>
 );
 
