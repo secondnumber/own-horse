@@ -2,13 +2,13 @@ import React from 'react';
 import './App.scss';
 import MainPage from './components/pages/MainPage/MainPage';
 import NotFoundPage from './components/pages/NotFoundPage/NotFoundPage';
-import AboutPage from './components/pages/AboutPage/AboutPage';
+import AboutPageContainer from './components/pages/AboutPage/AboutPageContainer';
 
 const App = (props) => (
   <div>
     {/* <MainPage /> */}
     {/* <NotFoundPage /> */}
-    <AboutPage />
+    <AboutPageContainer />
   </div>
 );
 export default App;

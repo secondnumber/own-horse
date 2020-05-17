@@ -1,17 +1,30 @@
 @import "../../../../Colors";
 
-.wrapper {
-  min-height: 380px;
-  background-color: $blueDarkDeep;
-  background-image: url("about-bg.jpg");
-  background-size: cover;
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.achievementsList {
-  min-height: 380px;
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  list-style-type: none;
-  background-color: transparentize($blueDarkDeep, 0.1);
+.image {
+  height: 55px;
+  padding-bottom: 20px;
+  object-fit: contain;
+}
+
+.counter {
+  font-family: 'Agency FB', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
 }
