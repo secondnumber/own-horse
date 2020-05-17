@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Breadcrumbs from './Breadcrumbs';
+import Slider from './Slider';
 
 let mapStateToProps = (state) => {
   return {
-    breadcrumbs: state.breadcrumbs,
+    slider: state.slider,
   };
 };
 
@@ -12,6 +12,6 @@ let mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-const BreadcrumbsContainer = connect(mapStateToProps)(Breadcrumbs);
+const SliderContainer = connect(mapStateToProps)(Slider);
 
-export default BreadcrumbsContainer;
+export default SliderContainer;

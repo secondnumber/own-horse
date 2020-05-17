@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Breadcrumbs from './Breadcrumbs';
+import Gallery from './Gallery';
 
 let mapStateToProps = (state) => {
   return {
-    breadcrumbs: state.breadcrumbs,
+    gallery: state.gallery,
   };
 };
 
@@ -12,6 +12,6 @@ let mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-const BreadcrumbsContainer = connect(mapStateToProps)(Breadcrumbs);
+const GalleryContainer = connect(mapStateToProps)(Gallery);
 
-export default BreadcrumbsContainer;
+export default GalleryContainer;

@@ -5,14 +5,16 @@ import ArrowLeft from './left-arrow.svg';
 import ArrowRight from './right-arrow.svg';
 
 const Testimonials = (props) => {
-  let testimonialsList = props.state.testimonials.map((testimonial) => (
-    <Testimonial
-      name={testimonial.name}
-      status={testimonial.status}
-      description={testimonial.description}
-      imageSmall={testimonial.src}
-    />
-  ));
+  let testimonialsList = props.testimonials.testimonialsList.map(
+    (testimonial) => (
+      <Testimonial
+        name={testimonial.name}
+        status={testimonial.status}
+        description={testimonial.description}
+        imageSmall={testimonial.src}
+      />
+    )
+  );
 
   return (
     <div className={classes.wrapper}>

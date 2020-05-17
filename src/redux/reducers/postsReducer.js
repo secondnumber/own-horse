@@ -3,7 +3,7 @@ import PostImg2 from '../../assets/Posts/blog-img-1.jpg';
 import PostImg3 from '../../assets/Posts/blog-img-1.jpg';
 
 let initialState = {
-  posts: [
+  postsList: [
     {
       id: 1,
       name: 'Cow biltong pork belly kielbasa shankle',

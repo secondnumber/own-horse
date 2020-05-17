@@ -1,29 +1,29 @@
 import React from 'react';
-import Header from '../../common/Header/Header';
-import Slider from './Slider/Slider';
-import Games from './Games/Games';
-import Posts from './Posts/Posts';
-import Testimonials from './Testimonials/Testimonials';
-import Gallery from './Gallery/Gallery';
-import Videos from './Videos/Videos';
-import PriceList from './PriceList/PriceList';
-import Questions from './Questions/Questions';
+import HeaderContainer from '../../common/Header/HeaderContainer';
+import SliderContainer from './Slider/SliderContainer';
+import GamesContainer from './Games/GamesContainer';
+import PostsContainer from './Posts/PostsContainer';
+import TestimonialsContainer from './Testimonials/TestimonialsContainer';
+import GalleryContainer from './Gallery/GalleryContainer';
+import VideosContainer from './Videos/VideosContainer';
+import PriceListContainer from './PriceList/PriceListContainer';
+import QuestionsContainer from './Questions/QuestionsContainer';
 import Newsletter from '../../pages/MainPage/Newsletter/Newsletter';
-import Footer from '../../common/Footer/Footer';
+import FooterContainer from '../../common/Footer/FooterContainer';
 
 const MainPage = (props) => (
   <div>
-    <Header state={props.state} />
-    <Slider state={props.state} />
-    <Games state={props.state} />
-    <Posts state={props.state} />
-    <Testimonials state={props.state} />
-    <Gallery state={props.state} />
-    <Videos state={props.state} />
-    <PriceList state={props.state} />
-    <Questions state={props.state} />
+    <HeaderContainer />
+    <SliderContainer />
+    <GamesContainer />
+    <PostsContainer />
+    <TestimonialsContainer />
+    <GalleryContainer />
+    <VideosContainer />
+    <PriceListContainer />
+    <QuestionsContainer />
     <Newsletter />
-    <Footer state={props.state} />
+    <FooterContainer />
   </div>
 );
 

@@ -4,9 +4,9 @@ import Tag from './Tag/Tag';
 import Image from './Image/Image';
 
 const Gallery = (props) => {
-  let tagsList = props.state.galleryTags.map((tag) => <Tag galleryTags={tag.tag} />);
+  let tagsList = props.gallery.galleryTags.map((tag) => <Tag galleryTags={tag.tag} />);
 
-  let imagesList = props.state.galleryImages.map((image) => (
+  let imagesList = props.gallery.galleryImages.map((image) => (
     <Image galleryImages={image.src} position={image.position} />
   ));
 

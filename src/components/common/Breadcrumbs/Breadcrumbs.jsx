@@ -1,31 +1,19 @@
 import React from 'react';
 import classes from './Breadcrumbs.module.scss';
+import Crumb from './Crumb/Crumb';
 
-const Breadcrumbs = (props) => (
-  <div className={classes.wrapper}>
-    <div className={classes.crumbsBlock}>
-      <h2 className={classes.title}>About</h2>
-      <ul className={classes.linksList}>
-        <li className={classes.linksItem}>
-          <a className={classes.link} href="#">
-            Home
-          </a>{' '}
-          /
-        </li>
-        <li className={classes.linksItem}>
-          <a className={classes.link} href="#">
-            Pages
-          </a>{' '}
-          /
-        </li>
-        <li className={classes.linksItem}>
-          <a className={classes.link} href="#">
-            About
-          </a>
-        </li>
-      </ul>
+const Breadcrumbs = (props) => {
+  let crumbsList = props.breadcrumbs.crumbsList.map((element) => (
+    <Crumb key={element.id} name={element.name} link={element.link} />
+  ));
+  return (
+    <div className={classes.wrapper}>
+      <div className={classes.crumbsBlock}>
+        <h2 className={classes.title}>About</h2>
+        <ul className={classes.linksList}>{crumbsList}</ul>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Breadcrumbs;

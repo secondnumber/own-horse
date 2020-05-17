@@ -1,6 +1,16 @@
+import React from 'react';
+
 let initialState = {
-  aboutItems: [{ id: 1 }, { id: 2 }],
-  achievemantsItems: [{ id: 1 }, { id: 2 }],
+  aboutItems: [
+    {
+      id: 1,
+      number: 12,
+      title: 'games Experience',
+      subtitle: 'Years in',
+      text: 'Text',
+    },
+  ],
+  achievementsItems: [{ id: 1 }, { id: 2 }],
 };
 
 const aboutPageReducer = (state = initialState, action) => {

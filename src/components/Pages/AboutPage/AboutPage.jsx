@@ -1,21 +1,21 @@
 import React from 'react';
-import Header from '../../common/Header/Header';
-import Newsletter from '../../pages/MainPage/Newsletter/Newsletter';
-import Footer from '../../common/Footer/Footer';
-import About from './About/About';
-import Achievements from './Achievements/Achievements';
-import Testimonials from '../MainPage/Testimonials/Testimonials';
+import HeaderContainer from '../../common/Header/HeaderContainer';
 import BreadcrumbsContainer from '../../common/Breadcrumbs/BreadcrumbsContainer';
+import AboutContainer from './About/AboutContainer';
+import AchievementsContainer from './Achievements/AchievementsContainer';
+import TestimonialsContainer from '../MainPage/Testimonials/TestimonialsContainer';
+import Newsletter from '../../pages/MainPage/Newsletter/Newsletter';
+import FooterContainer from '../../common/Footer/FooterContainer';
 
 const AboutPage = (props) => (
   <div>
-    <Header state={props.state} />
+    <HeaderContainer />
     <BreadcrumbsContainer />
-    <About />
-    <Achievements />
-    <Testimonials state={props.state} />
+    <AboutContainer />
+    <AchievementsContainer />
+    <TestimonialsContainer />
     <Newsletter />
-    <Footer state={props.state} />
+    <FooterContainer />
   </div>
 );
 

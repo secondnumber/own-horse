@@ -3,7 +3,7 @@ import classes from './Questions.module.scss';
 import Question from './Question/Question';
 
 const Questions = (props) => {
-  let questionsList = props.state.questionsList.map((question) => (
+  let questionsList = props.questions.questionsList.map((question) => (
     <Question
       id={question.id}
       question={question.question}

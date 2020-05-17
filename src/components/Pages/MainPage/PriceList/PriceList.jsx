@@ -3,7 +3,7 @@ import classes from './PriceList.module.scss';
 import Price from './Price/Price';
 
 const PriceList = (props) => {
-  let priceList = props.state.priceList.map((price) => (
+  let priceList = props.priceList.pricesList.map((price) => (
     <Price
       name={price.name}
       currency={price.currency}

@@ -1,15 +1,15 @@
 import React from 'react';
 import classes from './NotFoundPage.module.scss';
-import Header from '../../common/Header/Header';
-import Footer from '../../common/Footer/Footer';
+import HeaderContainer from '../../common/Header/HeaderContainer';
+import FooterContainer from '../../common/Footer/FooterContainer';
 import NotFound from './NotFound/NotFound';
 
 const NotFoundPage = (props) => {
   return (
     <div className={classes.wrapper}>
-      <Header state={props.state} />
+      <HeaderContainer />
       <NotFound />
-      <Footer state={props.state} />
+      <FooterContainer />
     </div>
   );
 };

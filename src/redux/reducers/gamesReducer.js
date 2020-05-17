@@ -4,7 +4,7 @@ import GameImg3 from '../../assets/Games/game-img-3.jpg';
 import GameImg4 from '../../assets/Games/game-img-4.jpg';
 
 let initialState = {
-  games: [
+  gamesList: [
     { id: 1, name: 'Fifal 2018', date: 'mar 18-20, 2018', src: GameImg1 },
     { id: 2, name: 'Mix Combination', date: 'apr 25-27, 2018', src: GameImg2 },
     { id: 3, name: 'Forza Jacson', date: 'mar 11, 2019', src: GameImg3 },
