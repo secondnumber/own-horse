@@ -12,6 +12,7 @@ import questionsReducer from './reducers/questionsReducer';
 import sliderReducer from './reducers/sliderReducer';
 import testimonialsReducer from './reducers/testimonialsReducer';
 import videosReducer from './reducers/videosReducer';
+import teamPageReducer from './reducers/teamPageReducer';
 
 let reducers = combineReducers({
   aboutPage: aboutPageReducer,
@@ -27,10 +28,9 @@ let reducers = combineReducers({
   slider: sliderReducer,
   testimonials: testimonialsReducer,
   videos: videosReducer,
+  teamPage: teamPageReducer,
 });
 
 let store = createStore(reducers);
-
-window.store = store;
 
 export default store;
