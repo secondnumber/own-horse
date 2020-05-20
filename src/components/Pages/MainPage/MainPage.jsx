@@ -6,7 +6,7 @@ import PostsContainer from './Posts/PostsContainer';
 import TestimonialsContainer from './Testimonials/TestimonialsContainer';
 import GalleryContainer from './Gallery/GalleryContainer';
 import VideosContainer from './Videos/VideosContainer';
-import PriceListContainer from './PriceList/PriceListContainer';
+import PriceListContainer from '../../common/PriceList/PriceListContainer';
 import QuestionsContainer from './Questions/QuestionsContainer';
 import Newsletter from '../../pages/MainPage/Newsletter/Newsletter';
 import FooterContainer from '../../common/Footer/FooterContainer';
