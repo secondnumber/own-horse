@@ -3,11 +3,11 @@ import classes from './Tag.module.scss';
 
 const Tag = (props) => {
   return (
-    <div className={classes.wrapper}>
-      <a className={classes.tag} href='#'>
-      {props.galleryTags}
+    <li>
+      <a className={classes.tag} href="#">
+        {props.galleryTag}
       </a>
-    </div>
+    </li>
   );
 };
 
