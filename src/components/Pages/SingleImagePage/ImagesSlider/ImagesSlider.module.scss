@@ -1,0 +1,30 @@
+@import '../../../../Colors';
+
+.imageItem {
+
+}
+
+.image {
+  object-fit: cover;
+}
+
+.tag {
+  padding-top: 15px;
+  display: block;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $lilac;
+}
+
+.title {
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Agency FB', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+}
