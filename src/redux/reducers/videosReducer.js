@@ -1,4 +1,4 @@
-import Video1 from '../../components/pages/MainPage/Videos/Video/earth.mp4';
+import Video1 from '../../assets/Video/earth.mp4';
 
 let initialState = {
   togglesItems: [
