@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    max-width: 100%;
     height: 40vh;
     background-color: $blueDarkDeep;
     background-image: url("../../../assets/Breadcrumbs/page-name.jpg");
