@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.scss';
 import TestimonialsPageContainer from './components/Pages/TestimonialsPage/TestimonialsPageContainer';
+import MainPage from './components/Pages/MainPage/MainPage';
 
 const App = (props) => (
   <div>
-    {/* <MainPage /> */}
+    <MainPage />
     {/* <NotFoundPage /> */}
     {/* <AboutPageContainer /> */}
     {/* <TeamPageContainer /> */}
     {/* <PriceListPageContainer /> */}
     {/* <GalleryPageContainer /> */}
     {/* <SingleImagePageContainer /> */}
-    <TestimonialsPageContainer />
+    {/* <TestimonialsPageContainer /> */}
   </div>
 );
 export default App;

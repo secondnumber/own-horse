@@ -50,6 +50,7 @@
 }
 
 .imagesBlock {
+    width: 70vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -58,7 +59,6 @@
         "bottom bottom right";
     grid-column-gap: 15px;
     grid-row-gap: 15px;
-    width: 70vw;
     margin: 0 auto 40px;
 }
 
