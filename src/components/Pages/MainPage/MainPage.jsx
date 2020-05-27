@@ -8,7 +8,7 @@ import GalleryContainer from './Gallery/GalleryContainer';
 import VideosContainer from './Videos/VideosContainer';
 import PriceListContainer from '../../common/PriceList/PriceListContainer';
 import QuestionsContainer from './Questions/QuestionsContainer';
-import Newsletter from '../../pages/MainPage/Newsletter/Newsletter';
+import Newsletter from '../../Pages/MainPage/Newsletter/Newsletter';
 import FooterContainer from '../../common/Footer/FooterContainer';
 
 const MainPage = (props) => (
