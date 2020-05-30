@@ -13,6 +13,7 @@ import testimonialsReducer from './reducers/testimonialsReducer';
 import videosReducer from './reducers/videosReducer';
 import teamPageReducer from './reducers/teamPageReducer';
 import navigationReducer from './reducers/navigationReducer';
+import scrollReducer from "./reducers/scrollReducer";
 
 let reducers = combineReducers({
   aboutPage: aboutPageReducer,
@@ -29,6 +30,7 @@ let reducers = combineReducers({
   testimonials: testimonialsReducer,
   videos: videosReducer,
   teamPage: teamPageReducer,
+  scroll: scrollReducer,
 });
 
 let store = createStore(reducers);
