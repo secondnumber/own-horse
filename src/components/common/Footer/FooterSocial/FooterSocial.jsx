@@ -5,9 +5,9 @@ import { NavLink } from 'react-router-dom';
 const FooterSocial = (props) => {
   return (
     <li className={classes.socialList}>
-      <NavLink to={props.socialLink}>
+      <a href={props.socialLink}>
         <img className={classes.image} src={props.socialItem} />
-      </NavLink>
+      </a>
     </li>
   );
 };
