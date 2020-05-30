@@ -5,7 +5,7 @@ import Search from '../../../assets/Header/Search.png';
 import HeaderMenu from './HeaderMenu/HeaderMenu';
 
 const Header = (props) => {
-  let menuItemElements = props.header.navMenuItems.map((element) => (
+  let menuItemElements = props.navigation.navMenuItems.map((element) => (
     <HeaderMenu menuItem={element.menuItem} menuLink={element.menuLink} />
   ));
 

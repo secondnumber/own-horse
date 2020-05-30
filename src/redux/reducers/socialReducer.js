@@ -3,14 +3,6 @@ import FacebookImg from '../../assets/FooterSocial/facebook.svg';
 import WatsappImg from '../../assets/FooterSocial/whatsapp.svg';
 
 let initialState = {
-  navMenuItems: [
-    { id: 1, menuItem: 'Homepage' },
-    { id: 2, menuItem: 'Pages' },
-    { id: 3, menuItem: 'Gallery' },
-    { id: 4, menuItem: 'Games' },
-    { id: 5, menuItem: 'Blog' },
-    { id: 6, menuItem: 'Contacts' },
-  ],
   socialList: [
     { id: 2, src: YoutubeImg },
     { id: 3, src: FacebookImg },
@@ -19,8 +11,8 @@ let initialState = {
   description: `Andouille landjaeger flank boudin. Jerky cupim alcatra sirloin porchetta, turkey short ribs leberkas doner bacon pancetta buffalo.`,
 };
 
-const footerReducer = (state = initialState, action) => {
+const socialReducer = (state = initialState, action) => {
   return state;
 };
 
-export default footerReducer;
+export default socialReducer;
