@@ -4,7 +4,7 @@ import Header from './Header';
 
 let mapStateToProps = (state) => {
   return {
-    header: state.header,
+    navigation: state.navigation,
   };
 };
 

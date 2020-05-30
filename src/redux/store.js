@@ -1,10 +1,9 @@
 import { combineReducers, createStore } from 'redux';
 import aboutPageReducer from './reducers/aboutPageReducer';
 import breadcrumbsReducer from './reducers/breadcrumbsReducer';
-import footerReducer from './reducers/footerReducer';
+import socialReducer from './reducers/socialReducer';
 import galleryReducer from './reducers/galleryReducer';
 import gamesReducer from './reducers/gamesReducer';
-import headerReducer from './reducers/headerReducer';
 import notFoundPageReducer from './reducers/notFoundPageReducer';
 import postsReducer from './reducers/postsReducer';
 import priceListReducer from './reducers/priceListReducer';
@@ -13,14 +12,16 @@ import sliderReducer from './reducers/sliderReducer';
 import testimonialsReducer from './reducers/testimonialsReducer';
 import videosReducer from './reducers/videosReducer';
 import teamPageReducer from './reducers/teamPageReducer';
+import navigationReducer from './reducers/navigationReducer';
+import scrollReducer from "./reducers/scrollReducer";
 
 let reducers = combineReducers({
   aboutPage: aboutPageReducer,
   breadcrumbs: breadcrumbsReducer,
-  footer: footerReducer,
+  social: socialReducer,
   gallery: galleryReducer,
   games: gamesReducer,
-  header: headerReducer,
+  navigation: navigationReducer,
   notFoundPage: notFoundPageReducer,
   posts: postsReducer,
   priceList: priceListReducer,
@@ -29,6 +30,7 @@ let reducers = combineReducers({
   testimonials: testimonialsReducer,
   videos: videosReducer,
   teamPage: teamPageReducer,
+  scroll: scrollReducer,
 });
 
 let store = createStore(reducers);
