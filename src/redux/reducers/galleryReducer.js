@@ -45,6 +45,9 @@ let initialState = {
     { id: 11, imgSmall: ImgSmall11, imgBig: ImgBig1, tag: 'PS VITA', title: 'COW BILTONG PORK BELLY KIEL' },
     { id: 12, imgSmall: ImgSmall12, imgBig: ImgBig1, tag: 'PS VITA', title: 'COW BILTONG PORK BELLY KIEL' },
   ],
+  pageSize: 6,
+  totalImagesCount: 12,
+  currentPage: 1,
 };
 
 const galleryReducer = (state = initialState, action) => {
