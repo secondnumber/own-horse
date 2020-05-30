@@ -15,12 +15,14 @@
     background: linear-gradient(90deg, $cyan, $lilac);
     border: none;
     border-radius: 10px;
+    outline:none;
 }
 
 .button:hover {
     border: 2px solid $cyan;
     background: $cyan;
     cursor: pointer;
+    outline:none;
 }
 
 .hidden {
