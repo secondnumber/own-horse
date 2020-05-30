@@ -8,7 +8,7 @@ import GalleryContainer from './Gallery/GalleryContainer';
 import VideosContainer from './Videos/VideosContainer';
 import PriceListContainer from '../../common/PriceList/PriceListContainer';
 import QuestionsContainer from './Questions/QuestionsContainer';
-import Newsletter from '../../Pages/MainPage/Newsletter/Newsletter';
+import Newsletter from '../../common/Newsletter/Newsletter';
 import FooterContainer from '../../common/Footer/FooterContainer';
 import ScrollButton from '../../common/ScrollButton/ScrollButton';
 import classes from './MainPage.module.scss';
