@@ -21,7 +21,7 @@
 }
 
 .imagesList {
-  width: 65vw;
+  width: 70vw;
   margin: 0 auto;
   padding-bottom: 50px;
   display: flex;
@@ -30,23 +30,4 @@
   list-style-type: none;
 }
 
-.button {
-  display: block;
-  margin: 0 auto;
-  width: 220px;
-  height: 60px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: $white;
-  background-color: transparent;
-  border: 2px solid $lilac;
-  border-radius: 10px;
-}
 
-.button:hover {
-  border: 2px solid $cyan;
-  background-color: $cyan;
-  cursor: pointer;
-}
