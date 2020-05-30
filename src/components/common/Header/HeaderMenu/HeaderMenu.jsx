@@ -1,11 +1,12 @@
 import React from 'react';
 import classes from './HeaderMenu.module.scss';
+import { NavLink } from 'react-router-dom';
 
 const HeaderMenu = (props) => (
   <li>
-    <a className={classes.navItem} href="#">
+    <NavLink to={props.menuLink} className={classes.navItem} activeClassName={classes.navItemActive}>
       {props.menuItem}
-    </a>
+    </NavLink>
   </li>
 );
 
