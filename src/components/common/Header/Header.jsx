@@ -6,7 +6,7 @@ import HeaderMenu from './HeaderMenu/HeaderMenu';
 
 const Header = (props) => {
   let menuItemElements = props.header.navMenuItems.map((element) => (
-    <HeaderMenu menuItem={element.menuItem} />
+    <HeaderMenu menuItem={element.menuItem} menuLink={element.menuLink} />
   ));
 
   return (
