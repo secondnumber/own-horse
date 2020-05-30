@@ -6,10 +6,10 @@ import Logo from '../Header/Logo.png';
 
 const Footer = (props) => {
   let socialList = props.social.socialList.map((item) => (
-    <FooterSocial socialItem={item.src} socialLink={item.link} />
+    <FooterSocial key={item.id} socialItem={item.src} socialLink={item.link} />
   ));
   let navMenu = props.navigation.navMenuItems.map((item) => (
-    <FooterNav menuItem={item.menuItem} menuLink={item.menuLink} />
+    <FooterNav key={item.id} menuItem={item.menuItem} menuLink={item.menuLink} />
   ));
 
   return (
