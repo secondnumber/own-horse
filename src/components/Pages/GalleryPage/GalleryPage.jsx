@@ -13,12 +13,15 @@ const GalleryPage = (props) => {
     <Tag key={tag.id} galleryTag={tag.tag} />
   ));
 
-  let imagesList = props.gallery.galleryImages.map((image) => (
-    <ImageItem key={image.id} galleryImage={image.imgSmall} />
-  ));
+  let imagesList = props.gallery.galleryImages.map((image, index) => {
+    if (index <= 5) {
+      return <ImageItem key={image.id} galleryImage={image.imgSmall} />;
+    }
+  });
 
   let pageNumbersList = (
     <PageNumbers
+      currentPage={props.gallery.currentPage}
       totalImagesCount={props.gallery.totalImagesCount}
       pageSize={props.gallery.pageSize}
     />

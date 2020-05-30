@@ -9,7 +9,7 @@ const PageNumbers = (props) => {
   }
   let pagesItems = pages.map((page) => (
     <li className={classes.item}>
-      <button className={classes.button}>{page}</button>
+      <button className={props.currentPage === page ? classes.current : classes.button }>{page}</button>
     </li>
   ))
   return <ul className={classes.list}>{pagesItems}</ul>
