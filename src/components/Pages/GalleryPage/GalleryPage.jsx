@@ -15,7 +15,7 @@ const GalleryPage = (props) => {
 
   let imagesList = props.gallery.galleryImages.map((image, index) => {
     if (index <= 5) {
-      return <ImageItem key={image.id} galleryImage={image.imgSmall} />;
+      return <ImageItem key={image.id} id={image.id} galleryImage={image.imgSmall} />;
     }
   });
 
