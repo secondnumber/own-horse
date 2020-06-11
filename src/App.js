@@ -12,7 +12,7 @@ import TestimonialsPageContainer from './components/Pages/TestimonialsPage/Testi
 
 const App = (props) => (
   <div>
-    <Route path="/home">
+    <Route exact path="/">
       <MainPage />
     </Route>
     <Route path="/404">
