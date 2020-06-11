@@ -10,24 +10,26 @@ import PriceListContainer from '../../common/PriceList/PriceListContainer';
 import QuestionsContainer from './Questions/QuestionsContainer';
 import Newsletter from '../../common/Newsletter/Newsletter';
 import FooterContainer from '../../common/Footer/FooterContainer';
-import ScrollButton from '../../common/ScrollButton/ScrollButton';
+import ScrollButtonContainer from '../../common/ScrollButton/ScrollButtonContainer';
 import classes from './MainPage.module.scss';
 
-const MainPage = (props) => (
-  <div className={classes.wrapper}>
-    <ScrollButton />
-    <HeaderContainer />
-    <SliderContainer />
-    <GamesContainer />
-    <PostsContainer />
-    <TestimonialsContainer />
-    <GalleryContainer />
-    <VideosContainer />
-    <PriceListContainer />
-    <QuestionsContainer />
-    <Newsletter />
-    <FooterContainer />
-  </div>
-);
+const MainPage = (props) => {
+  return (
+    <div className={classes.wrapper}>
+      <ScrollButtonContainer />
+      <HeaderContainer />
+      <SliderContainer />
+      <GamesContainer />
+      <PostsContainer />
+      <TestimonialsContainer />
+      <GalleryContainer />
+      <VideosContainer />
+      <PriceListContainer />
+      <QuestionsContainer />
+      <Newsletter />
+      <FooterContainer />
+    </div>
+  );
+};
 
 export default MainPage;
