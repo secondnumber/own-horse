@@ -27,14 +27,17 @@ const App = (props) => (
     <Route path="/price">
       <PriceListPageContainer />
     </Route>
-    <Route path="/gallery">
+    <Route exact path="/gallery">
       <GalleryPageContainer />
     </Route>
-    <Route path="/price">
+    <Route path="/gallery/:imageId?">
       <SingleImagePageContainer />
     </Route>
     <Route path="/price">
       <TestimonialsPageContainer />
+    </Route>
+    <Route path="*">
+      <NotFoundPage />
     </Route>
   </div>
 );
