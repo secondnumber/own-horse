@@ -13,7 +13,8 @@ import testimonialsReducer from './reducers/testimonialsReducer';
 import videosReducer from './reducers/videosReducer';
 import teamPageReducer from './reducers/teamPageReducer';
 import navigationReducer from './reducers/navigationReducer';
-import scrollReducer from "./reducers/scrollReducer";
+import scrollReducer from './reducers/scrollReducer';
+import contactsPageReducer from './reducers/contactsReducer';
 
 let reducers = combineReducers({
   aboutPage: aboutPageReducer,
@@ -31,6 +32,7 @@ let reducers = combineReducers({
   videos: videosReducer,
   teamPage: teamPageReducer,
   scroll: scrollReducer,
+  contacts: contactsPageReducer,
 });
 
 let store = createStore(reducers);
