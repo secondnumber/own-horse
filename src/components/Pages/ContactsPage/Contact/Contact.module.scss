@@ -1,0 +1,23 @@
+@import "../../../../Colors";
+
+.item {
+  padding: 10px 0;
+}
+
+.icon {
+  color: $lilac;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: $blueLight;
+}
+
+.contact {
+  font-family: "Agency FB", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+}
