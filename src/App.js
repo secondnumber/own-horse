@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import MainPage from './components/Pages/MainPage/MainPage';
@@ -17,33 +17,35 @@ library.add(fab);
 
 const App = (props) => (
   <div>
+      <Switch>
     <Route exact path="/">
       <MainPage />
     </Route>
-    <Route path="/about">
+    <Route exact path="/about">
       <AboutPageContainer />
     </Route>
-    <Route path="/team">
+    <Route exact path="/team">
       <TeamPageContainer />
     </Route>
-    <Route path="/price">
+    <Route exact path="/price">
       <PriceListPageContainer />
     </Route>
     <Route exact path="/gallery">
       <GalleryPageContainer />
     </Route>
-    <Route path="/gallery/:imageId?">
+    <Route exact path="/gallery/:imageId?">
       <SingleImagePageContainer />
     </Route>
-    <Route path="/price">
+    <Route exact path="/price">
       <TestimonialsPageContainer />
     </Route>
-    <Route path="/contacts">
+    <Route exact path="/contacts">
       <ContactsPageContainer />
     </Route>
     <Route path="*">
       <NotFoundPage />
     </Route>
+      </Switch>
   </div>
 );
 export default App;
