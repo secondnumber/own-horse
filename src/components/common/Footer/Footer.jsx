@@ -1,12 +1,12 @@
 import React from 'react';
 import classes from './Footer.module.scss';
-import FooterSocial from './FooterSocial/FooterSocial';
+import Social from '../SocialList/Social';
 import FooterNav from './FooterNav/FooterNav';
 import Logo from '../Header/Logo.png';
 
 const Footer = (props) => {
   let socialList = props.social.socialList.map((item) => (
-    <FooterSocial key={item.id} socialItem={item.src} socialLink={item.link} />
+    <Social key={item.id} icon={item.icon} link={item.link} />
   ));
   let navMenu = props.navigation.navMenuItems.map((item) => (
     <FooterNav key={item.id} menuItem={item.menuItem} menuLink={item.menuLink} />
