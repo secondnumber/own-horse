@@ -22,7 +22,6 @@ const Footer = (props) => {
           <div className={classes.navBlock}>
             <ul className={classes.navList}>{navMenu}</ul>
             <p className={classes.description}>
-
             </p>
             <ul className={classes.socialList}>{socialList}</ul>
           </div>

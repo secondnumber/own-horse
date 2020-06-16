@@ -6,13 +6,30 @@ import FooterContainer from '../../common/Footer/FooterContainer';
 import Tag from '../../common/Tag/Tag';
 import ImagesSlider from './ImagesSlider/ImagesSlider';
 import ImageBig from '../../../assets/GalleryPage/image-1.jpg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+  useParams,
+  useRouteMatch,
+} from 'react-router-dom';
 
 const SingleImagePage = (props) => {
+
   let imagesList = props.gallery.galleryImages.map((image) => {
     if (image.id <= 4) {
-      return (<ImagesSlider key={image.id} image={image.imgSmall} tag={image.tag} title={image.title}/>)
+      return (
+        <ImagesSlider
+          key={image.id}
+          image={image.imgSmall}
+          tag={image.tag}
+          title={image.title}
+        />
+      );
     }
-});
+  });
 
   return (
     <div>
@@ -21,7 +38,7 @@ const SingleImagePage = (props) => {
       <div className={classes.wrapper}>
         <button className={classes.button}>&lt;</button>
         <div className={classes.block}>
-          <img className={classes.image} src={ImageBig} alt=""/>
+          <img className={classes.image} src={ImageBig} alt="" />
           <span className={classes.tag}>PS VITA</span>
           <h2 className={classes.title}>COW BILTONG PORK BELLY KIEL</h2>
         </div>
