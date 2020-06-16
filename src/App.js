@@ -17,35 +17,35 @@ library.add(fab);
 
 const App = (props) => (
   <div>
-      <Switch>
-    <Route exact path="/">
-      <MainPage />
-    </Route>
-    <Route exact path="/about">
-      <AboutPageContainer />
-    </Route>
-    <Route exact path="/team">
-      <TeamPageContainer />
-    </Route>
-    <Route exact path="/price">
-      <PriceListPageContainer />
-    </Route>
-    <Route exact path="/gallery">
-      <GalleryPageContainer />
-    </Route>
-    <Route exact path="/gallery/:imageId?">
-      <SingleImagePageContainer />
-    </Route>
-    <Route exact path="/price">
-      <TestimonialsPageContainer />
-    </Route>
-    <Route exact path="/contacts">
-      <ContactsPageContainer />
-    </Route>
-    <Route path="*">
-      <NotFoundPage />
-    </Route>
-      </Switch>
+    <Switch>
+      <Route exact path="/">
+        <MainPage />
+      </Route>
+      <Route exact path="/about">
+        <AboutPageContainer />
+      </Route>
+      <Route exact path="/team">
+        <TeamPageContainer />
+      </Route>
+      <Route exact path="/price">
+        <PriceListPageContainer />
+      </Route>
+      <Route exact path="/gallery">
+        <GalleryPageContainer />
+      </Route>
+      <Route exact path="/gallery/:imageId?">
+        <SingleImagePageContainer />
+      </Route>
+      <Route exact path="/price">
+        <TestimonialsPageContainer />
+      </Route>
+      <Route exact path="/contacts">
+        <ContactsPageContainer />
+      </Route>
+      <Route path="*">
+        <NotFoundPage />
+      </Route>
+    </Switch>
   </div>
 );
 export default App;

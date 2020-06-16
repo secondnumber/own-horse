@@ -7,6 +7,7 @@ import Tag from '../../common/Tag/Tag';
 import ImageItem from './ImageItem/ImageItem';
 import ScrollButton from '../../common/ScrollButton/ScrollButton';
 import PageNumbers from './PageNumbers/PageNumbers';
+import PageNumbersContainer from "./PageNumbers/PageNumbersGontainer";
 
 const GalleryPage = (props) => {
   let tagsList = props.gallery.galleryTags.map((tag) => (
@@ -14,17 +15,20 @@ const GalleryPage = (props) => {
   ));
 
   let imagesList = props.gallery.galleryImages.map((image, index) => {
-    if (index <= 5) {
-      return <ImageItem key={image.id} id={image.id} galleryImage={image.imgSmall} />;
+    let pageSize = props.gallery.pageSize;
+    let currentPage = props.gallery.currentPage;
+    if (
+      index >= pageSize * currentPage - pageSize &&
+      index < pageSize * currentPage
+    ) {
+      return (
+        <ImageItem key={image.id} id={image.id} galleryImage={image.imgSmall} />
+      );
     }
   });
 
   let pageNumbersList = (
-    <PageNumbers
-      currentPage={props.gallery.currentPage}
-      totalImagesCount={props.gallery.totalImagesCount}
-      pageSize={props.gallery.pageSize}
-    />
+    <PageNumbersContainer />
   );
 
   return (
