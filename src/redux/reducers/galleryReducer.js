@@ -15,6 +15,7 @@ import ImgSmall10 from '../../assets/GalleryPage/gallery-regular-10.jpg';
 import ImgSmall11 from '../../assets/GalleryPage/gallery-regular-11.jpg';
 import ImgSmall12 from '../../assets/GalleryPage/gallery-regular-12.jpg';
 import ImgBig1 from '../../assets/GalleryPage/image-1.jpg';
+import ImgBig2 from '../../assets/GalleryPage/image-2.jpg';
 
 const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
 
