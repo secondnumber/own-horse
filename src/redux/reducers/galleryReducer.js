@@ -18,6 +18,8 @@ import ImgBig1 from '../../assets/GalleryPage/image-1.jpg';
 
 const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
 
+const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
+
 let initialState = {
   galleryImgPreview: [
     { id: 1, position: 'img-left', src: Img1 },
