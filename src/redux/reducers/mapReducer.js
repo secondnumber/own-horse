@@ -1,5 +1,7 @@
+import mapIcon from '../../assets/Map/marker.png';
+
 let initialState = {
-  apiKey: 'AIzaSyDyjNJJI9xzHvd7Ud79BYZhF86KMt3BvE8',
+  icon: mapIcon,
   mapCenter: { lat: 25.791949, lng: -80.193596 },
   mapZoom: 13,
   mapStyle: [
