@@ -18,7 +18,7 @@ let initialState = {
     {
       id: 2,
       name: 'Location Address',
-      value: '698 KATRINE CROSSROAD APT. 325, MIAMI, USA',
+      value: '1749 NE Miami Ct, Miami, FL 33132, USA',
       icon: faMapMarkerAlt,
       color: 'blue',
     },

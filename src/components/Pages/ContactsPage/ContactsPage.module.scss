@@ -23,15 +23,21 @@
   flex-basis: 45%;
 }
 
+.map {
+  width: 65vw;
+  margin: 0 auto;
+  padding: 60px 0 100px 0;
+}
+
 .contactsList {
   list-style-type: none;
 }
 
 .socialList {
-  padding: 50px 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 50px;
 }
 
 .title {
