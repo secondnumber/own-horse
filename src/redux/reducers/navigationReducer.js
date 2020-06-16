@@ -1,6 +1,6 @@
 let initialState = {
   navMenuItems: [
-    { id: 1, menuItem: 'Homepage', menuLink: 'home' },
+    { id: 1, menuItem: 'Homepage', menuLink: '' },
     { id: 2, menuItem: 'Pages', menuLink: 'pages' },
     { id: 3, menuItem: 'Gallery', menuLink: 'gallery' },
     { id: 4, menuItem: 'Games', menuLink: 'games' },

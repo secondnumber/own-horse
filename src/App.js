@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.scss';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import MainPage from './components/Pages/MainPage/MainPage';
 import NotFoundPage from './components/Pages/NotFoundPage/NotFoundPage';
 import AboutPageContainer from './components/Pages/AboutPage/AboutPageContainer';
@@ -9,33 +11,41 @@ import PriceListPageContainer from './components/Pages/PriceListPage/PriceListPa
 import GalleryPageContainer from './components/Pages/GalleryPage/GalleryPageGontainer';
 import SingleImagePageContainer from './components/Pages/SingleImagePage/SingleImagePageGontainer';
 import TestimonialsPageContainer from './components/Pages/TestimonialsPage/TestimonialsPageContainer';
+import ContactsPageContainer from './components/Pages/ContactsPage/ContactsPageContainer';
+
+library.add(fab);
 
 const App = (props) => (
   <div>
-    <Route path="/home">
+      <Switch>
+    <Route exact path="/">
       <MainPage />
     </Route>
-    <Route path="/404">
-      <NotFoundPage />
-    </Route>
-    <Route path="/about">
+    <Route exact path="/about">
       <AboutPageContainer />
     </Route>
-    <Route path="/team">
+    <Route exact path="/team">
       <TeamPageContainer />
     </Route>
-    <Route path="/price">
+    <Route exact path="/price">
       <PriceListPageContainer />
     </Route>
-    <Route path="/gallery">
+    <Route exact path="/gallery">
       <GalleryPageContainer />
     </Route>
-    <Route path="/price">
+    <Route exact path="/gallery/:imageId?">
       <SingleImagePageContainer />
     </Route>
-    <Route path="/price">
+    <Route exact path="/price">
       <TestimonialsPageContainer />
     </Route>
+    <Route exact path="/contacts">
+      <ContactsPageContainer />
+    </Route>
+    <Route path="*">
+      <NotFoundPage />
+    </Route>
+      </Switch>
   </div>
 );
 export default App;
