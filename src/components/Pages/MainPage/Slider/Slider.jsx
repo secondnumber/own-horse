@@ -1,10 +1,11 @@
 import React from 'react';
 import classes from './Slider.module.scss';
 import Intro from './Intro/Intro';
+import IntroContainer from "./Intro/IntroContainer";
 
 const Slider = (props) => {
   let introBlocks = props.slider.introList.map((element) => (
-    <Intro
+    <IntroContainer
       caption={element.caption}
       header={element.header}
       description={element.description}
