@@ -1,6 +1,10 @@
 @import '../../../../Colors';
 
-.navItem {
+.item {
+   position: relative;
+}
+
+.link {
     padding: 30px 30px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -10,10 +14,10 @@
     color: $white;
 }
 
-.navItem:hover {
+.link:hover {
     color: $cyan;
 }
 
-.navItemActive {
+.linkActive:active {
     color: $lilac;
 }
