@@ -22,6 +22,10 @@
   border-bottom: 1px solid transparentize($white, 0.8);
 }
 
+.item:nth-child(1) {
+  padding-top: 40px;
+}
+
 .item:nth-last-child(1) {
   border-bottom: none;
 }

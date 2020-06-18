@@ -2,10 +2,11 @@
 
 .item {
    position: relative;
+    z-index: 2;
 }
 
 .link {
-    padding: 30px 30px;
+    padding: 60px 30px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: bold;
