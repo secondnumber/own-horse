@@ -6,17 +6,18 @@ import ArrowLeft from './left-arrow.svg';
 import ArrowRight from './right-arrow.svg';
 
 const Games = (props) => {
-  let gamesList = props.games.gamesList.map((game) => (
-    <GameList name={game.name} date={game.date} imageSmall={game.src} />
-  ));
-
+    debugger
+  let gamesList = props.games.gamesList.map((el, index) => {
+    let gamesAmount = props.games.gamesOnMain;
+    if (index < gamesAmount) {
+      return (<GameList name={el.name} date={el.date} image={el.image} />);
+    }
+  });
   return (
     <div className={classes.wrapper}>
       <div className={classes.headers}>
         <h2 className={classes.title}>Upcoming games</h2>
-        <h2 className={classes.subtitle}>
-          Coming soon
-        </h2>
+        <h2 className={classes.subtitle}>Coming soon</h2>
       </div>
       <div className={classes.block}>
         <button className={classes.button}>
