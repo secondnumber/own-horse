@@ -5,6 +5,7 @@ import { setCurrentPage } from '../../../../redux/reducers/galleryReducer';
 
 class PageNumbersContainer extends React.Component {
   componentDidMount() {
+    this.props.setCurrentPage(1);
   }
   setCurrentPage = (pageNumber) => {
     this.props.setCurrentPage(pageNumber);

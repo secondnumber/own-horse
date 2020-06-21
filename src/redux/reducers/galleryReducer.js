@@ -122,7 +122,7 @@ let initialState = {
   ],
   pageSize: 4,
   totalImagesCount: 24,
-  currentPage: 2,
+  currentPage: 1,
 };
 
 const galleryReducer = (state = initialState, action) => {
