@@ -6,7 +6,7 @@ let initialState = {
       menuItem: 'Pages',
       menuLink: 'pages',
       nestedMenu: [
-        { id: 1, nestedMenuItem: 'About', nestedMenuLink: 'pages' },
+        { id: 1, nestedMenuItem: 'About', nestedMenuLink: 'about' },
         { id: 2, nestedMenuItem: 'Faq', nestedMenuLink: 'faq' },
         { id: 3, nestedMenuItem: 'Team', nestedMenuLink: 'team' },
         { id: 4, nestedMenuItem: 'Pricing plans', nestedMenuLink: 'price' },

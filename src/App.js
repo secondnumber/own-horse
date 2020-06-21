@@ -12,6 +12,7 @@ import GalleryPageContainer from './components/Pages/GalleryPage/GalleryPageGont
 import SingleImagePageContainer from './components/Pages/SingleImagePage/SingleImagePageGontainer';
 import TestimonialsPageContainer from './components/Pages/TestimonialsPage/TestimonialsPageContainer';
 import ContactsPageContainer from './components/Pages/ContactsPage/ContactsPageContainer';
+import GamesPageContainer from './components/Pages/GamesPage/GamesPageContainer';
 
 library.add(fab);
 
@@ -30,8 +31,14 @@ const App = (props) => (
       <Route exact path="/price">
         <PriceListPageContainer />
       </Route>
+      <Route exact path="/testimonials">
+        <TestimonialsPageContainer />
+      </Route>
       <Route exact path="/gallery">
         <GalleryPageContainer />
+      </Route>
+      <Route exact path="/games">
+        <GamesPageContainer />
       </Route>
       <Route exact path="/gallery/:imageId?">
         <SingleImagePageContainer />
