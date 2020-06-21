@@ -6,6 +6,7 @@ import GameImg5 from '../../assets/Games/game-5.jpg';
 import GameImg6 from '../../assets/Games/game-6.jpg';
 
 let initialState = {
+  gamesOnMain: 4,
   gamesList: [
     {
       id: 1,
