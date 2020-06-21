@@ -6,8 +6,7 @@ import FooterContainer from '../../common/Footer/FooterContainer';
 import Tag from '../../common/Tag/Tag';
 import ImageItem from './ImageItem/ImageItem';
 import ScrollButton from '../../common/ScrollButton/ScrollButton';
-import PageNumbers from './PageNumbers/PageNumbers';
-import PageNumbersContainer from "./PageNumbers/PageNumbersGontainer";
+import PageNumbersContainer from './PageNumbers/PageNumbersGontainer';
 
 const GalleryPage = (props) => {
   let tagsList = props.gallery.galleryTags.map((tag) => (
@@ -27,9 +26,7 @@ const GalleryPage = (props) => {
     }
   });
 
-  let pageNumbersList = (
-    <PageNumbersContainer />
-  );
+  let pageNumbersList = <PageNumbersContainer />;
 
   return (
     <div className={classes.wrapper}>

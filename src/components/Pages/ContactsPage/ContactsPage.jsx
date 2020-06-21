@@ -5,6 +5,8 @@ import FooterContainer from '../../common/Footer/FooterContainer';
 import classes from './ContactsPage.module.scss';
 import Social from '../../common/SocialList/Social';
 import Contact from './Contact/Contact';
+import Form from '../../common/Form/Form';
+import MapContainer from '../../common/Map/MapContainer';
 
 const ContactsPage = (props) => {
   let socialList = props.social.socialList.map((item) => (
@@ -17,6 +19,7 @@ const ContactsPage = (props) => {
       icon={item.icon}
       name={item.name}
       value={item.value}
+      color={item.color}
     />
   ));
 
@@ -32,7 +35,12 @@ const ContactsPage = (props) => {
             <ul className={classes.contactsList}>{contactList}</ul>
             <ul className={classes.socialList}>{socialList}</ul>
           </div>
-          <div className={classes.form}></div>
+          <div className={classes.form}>
+            <Form />
+          </div>
+        </div>
+        <div className={classes.map}>
+          <MapContainer />
         </div>
       </div>
       <FooterContainer />

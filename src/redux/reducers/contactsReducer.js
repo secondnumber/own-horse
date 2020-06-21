@@ -13,18 +13,21 @@ let initialState = {
       name: 'Phone Number',
       value: '0-800-123-4567 (OPERATOR)',
       icon: faPhoneAlt,
+      color: 'cyan',
     },
     {
       id: 2,
       name: 'Location Address',
-      value: '698 KATRINE CROSSROAD APT. 325, MIAMI, USA',
+      value: '1749 NE Miami Ct, Miami, FL 33132, USA',
       icon: faMapMarkerAlt,
+      color: 'blue',
     },
     {
       id: 3,
       name: 'E-mail Address',
       value: 'GAMESPLAY@EXAMPLE.COM',
       icon: faEnvelope,
+      color: 'lilac',
     },
   ],
 };

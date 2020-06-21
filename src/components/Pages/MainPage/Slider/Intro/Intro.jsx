@@ -1,10 +1,12 @@
 import React from 'react';
 import classes from './Intro.module.scss';
-import FacebookSvg from './facebook.svg';
-import TwitterSvg from './twitter.svg';
-import YoutubeSvg from './youtube.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SocialInSlider from './SocialInSlider/SocialItem';
 
 const Intro = (props) => {
+  let socialList = props.slider.socialList.map((el) => (
+    <SocialInSlider key={el.id} icon={el.icon} link={el.link} />
+  ));
   return (
     <div className={classes.wrapper}>
       <div className={classes.wrapperToggle}>
@@ -18,11 +20,7 @@ const Intro = (props) => {
         <p className={classes.description}>{props.description}</p>
         <button className={classes.button}>more About us</button>
       </div>
-      <div className={classes.wrapperSocial}>
-        <img className={classes.image} src={FacebookSvg} />
-          <img className={classes.image} src={TwitterSvg} />
-          <img className={classes.image} src={YoutubeSvg} />
-      </div>
+      <ul className={classes.socialList}>{socialList}</ul>
     </div>
   );
 };
