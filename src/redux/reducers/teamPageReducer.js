@@ -16,9 +16,9 @@ let initialState = {
       name: 'Leah Perkins',
       rank: 'Founder',
       social: [
-        { id: 1, name: 'facebook', image: Facebook, link: '#' },
-        { id: 2, name: 'twitter', image: Twitter, link: '#' },
-        { id: 3, name: 'facebook', image: Google, link: '#' },
+        { id: 1, icon: ['fab', 'facebook'], link: 'https://ru-ru.facebook.com/' },
+        { id: 2, icon: ['fab', 'twitter'], link: 'https://twitter.com/' },
+        { id: 3, icon: ['fab', 'google'], link: 'https://www.google.com/' },
       ],
     },
     {
@@ -27,9 +27,9 @@ let initialState = {
       name: 'Rosalie Foster',
       rank: 'Assistant',
       social: [
-        { id: 1, name: 'facebook', image: Facebook, link: '#' },
-        { id: 2, name: 'twitter', image: Twitter, link: '#' },
-        { id: 3, name: 'facebook', image: Google, link: '#' },
+        { id: 1, icon: ['fab', 'facebook'], link: 'https://ru-ru.facebook.com/' },
+        { id: 2, icon: ['fab', 'twitter'], link: 'https://twitter.com/' },
+        { id: 3, icon: ['fab', 'google'], link: 'https://www.google.com/' },
       ],
     },
     {
@@ -38,9 +38,9 @@ let initialState = {
       name: 'Belle Medina',
       rank: 'Administrator',
       social: [
-        { id: 1, name: 'facebook', image: Facebook, link: '#' },
-        { id: 2, name: 'twitter', image: Twitter, link: '#' },
-        { id: 3, name: 'facebook', image: Google, link: '#' },
+        { id: 1, icon: ['fab', 'facebook'], link: 'https://ru-ru.facebook.com/' },
+        { id: 2, icon: ['fab', 'twitter'], link: 'https://twitter.com/' },
+        { id: 3, icon: ['fab', 'google'], link: 'https://www.google.com/' },
       ],
     },
     {
@@ -49,9 +49,9 @@ let initialState = {
       name: 'Ruby Watson',
       rank: 'Designer',
       social: [
-        { id: 1, name: 'facebook', image: Facebook, link: '#' },
-        { id: 2, name: 'twitter', image: Twitter, link: '#' },
-        { id: 3, name: 'facebook', image: Google, link: '#' },
+        { id: 1, icon: ['fab', 'facebook'], link: 'https://ru-ru.facebook.com/' },
+        { id: 2, icon: ['fab', 'twitter'], link: 'https://twitter.com/' },
+        { id: 3, icon: ['fab', 'google'], link: 'https://www.google.com/' },
       ],
     },
     {
@@ -60,9 +60,9 @@ let initialState = {
       name: 'Adelaide Tran',
       rank: 'Developer',
       social: [
-        { id: 1, name: 'facebook', image: Facebook, link: '#' },
-        { id: 2, name: 'twitter', image: Twitter, link: '#' },
-        { id: 3, name: 'facebook', image: Google, link: '#' },
+        { id: 1, icon: ['fab', 'facebook'], link: 'https://ru-ru.facebook.com/' },
+        { id: 2, icon: ['fab', 'twitter'], link: 'https://twitter.com/' },
+        { id: 3, icon: ['fab', 'google'], link: 'https://www.google.com/' },
       ],
     },
     {
@@ -71,9 +71,9 @@ let initialState = {
       name: 'Eliza Norris',
       rank: 'Seo',
       social: [
-        { id: 1, name: 'facebook', image: Facebook, link: '#' },
-        { id: 2, name: 'twitter', image: Twitter, link: '#' },
-        { id: 3, name: 'facebook', image: Google, link: '#' },
+        { id: 1, icon: ['fab', 'facebook'], link: 'https://ru-ru.facebook.com/' },
+        { id: 2, icon: ['fab', 'twitter'], link: 'https://twitter.com/' },
+        { id: 3, icon: ['fab', 'google'], link: 'https://www.google.com/' },
       ],
     },
   ],
