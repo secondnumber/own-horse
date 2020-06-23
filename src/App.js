@@ -22,16 +22,16 @@ const App = (props) => (
       <Route exact path="/">
         <MainPage />
       </Route>
-      <Route exact path="/about">
+      <Route exact path="/pages/about">
         <AboutPageContainer />
       </Route>
-      <Route exact path="/team">
+      <Route exact path="/pages/team">
         <TeamPageContainer />
       </Route>
-      <Route exact path="/price">
+      <Route exact path="/pages/price">
         <PriceListPageContainer />
       </Route>
-      <Route exact path="/testimonials">
+      <Route exact path="/pages/testimonials">
         <TestimonialsPageContainer />
       </Route>
       <Route exact path="/gallery">
@@ -43,13 +43,13 @@ const App = (props) => (
       <Route exact path="/gallery/:imageId?">
         <SingleImagePageContainer />
       </Route>
-      <Route exact path="/price">
-        <TestimonialsPageContainer />
-      </Route>
       <Route exact path="/contacts">
         <ContactsPageContainer />
       </Route>
-      <Route path="*">
+      <Route exact path="/pages/404">
+        <NotFoundPage />
+      </Route>
+      <Route exact path="*">
         <NotFoundPage />
       </Route>
     </Switch>
