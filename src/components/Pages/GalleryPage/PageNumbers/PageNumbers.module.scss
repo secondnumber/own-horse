@@ -1,0 +1,49 @@
+@import "../../../../Colors";
+
+.list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.item {
+    margin: 0 10px;
+}
+
+.button {
+    width: 60px;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+    background: $blueDark;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    outline:none;
+}
+
+.button:hover {
+    background: linear-gradient(90deg, $cyan, $lilac);
+    border: none;
+    outline:none;
+}
+
+.current {
+    width: 60px;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+    background: $blueDark;
+    cursor: pointer;
+    background: linear-gradient(90deg, $cyan, $lilac);
+    border: none;
+    border-radius: 10px;
+    outline:none;
+}
+

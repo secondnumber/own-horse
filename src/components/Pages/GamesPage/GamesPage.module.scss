@@ -1,0 +1,16 @@
+@import "../../../Colors";
+
+.wrapper {
+  width: 100vw;
+  max-width:100%;
+  background-color: $black;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70vw;
+  margin: 0 auto;
+  padding: 100px 0;
+}

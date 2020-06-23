@@ -4,7 +4,8 @@ import Footer from './Footer';
 
 let mapStateToProps = (state) => {
   return {
-    footer: state.footer,
+    navigation: state.navigation,
+    social: state.social,
   };
 };
 

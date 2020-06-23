@@ -1,0 +1,34 @@
+@import "../../../Colors";
+
+.wrapper {
+  position: relative;
+}
+
+.block {
+  width: 100vw;
+  max-width: 100%;
+  padding: 100px 0;
+  background-color: $blueDarkDeep;
+}
+
+.tagsList {
+  width: 40vw;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.imagesList {
+  width: 65vw;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+

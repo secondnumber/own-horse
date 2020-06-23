@@ -4,7 +4,7 @@ import './Image.scss';
 const Image = (props) => {
   return (
     <div className={props.position}>
-      <img src={props.galleryImages} />
+      <img className='image' src={props.galleryImages} />
     </div>
   );
 };

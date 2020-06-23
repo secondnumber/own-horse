@@ -6,14 +6,16 @@ import ArrowRight from './right-arrow.svg';
 
 const Testimonials = (props) => {
   let testimonialsList = props.testimonials.testimonialsList.map(
-    (testimonial) => (
-      <Testimonial
-        name={testimonial.name}
-        status={testimonial.status}
-        description={testimonial.description}
-        imageSmall={testimonial.src}
-      />
-    )
+    (testimonial) => {
+      if ( testimonial.id <=2 ) {
+        return (<Testimonial
+          name={testimonial.name}
+          status={testimonial.status}
+          description={testimonial.description}
+          imageSmall={testimonial.src}
+        />);
+      }
+    }
   );
 
   return (

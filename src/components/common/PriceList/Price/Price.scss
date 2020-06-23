@@ -1,0 +1,105 @@
+@import '../../../../Colors';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    min-width: 350px;
+    min-height: 450px;
+    background-color: $blueDark;
+    border-radius: 12px;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.price-wrapper {
+    text-align: center;
+}
+
+.currency {
+    text-align: center;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: $white;
+}
+
+.integer {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: $white;
+}
+
+.fraction {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: $white;
+}
+
+.period {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.bgcyan {
+background-color: $cyan;
+}
+
+.bgblue {
+background-color: $blue;
+}
+
+.bglilac {
+background-color: $lilac;
+}
+
+.features {
+    max-width: 70%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: $blueLight;
+}
+
+.feature {
+    padding: 20px 0;
+    border-bottom: 1px solid $blueDark;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $blueDark;
+    border: 2px solid $white;
+    border-radius: 10px;
+}
+
+.button:hover {
+    border: 2px solid $cyan;
+    background-color: $cyan;
+}

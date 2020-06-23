@@ -1,12 +1,12 @@
 import React from 'react';
 import classes from './Gallery.module.scss';
-import Tag from './Tag/Tag';
+import Tag from '../../../common/Tag/Tag';
 import Image from './Image/Image';
 
 const Gallery = (props) => {
-  let tagsList = props.gallery.galleryTags.map((tag) => <Tag galleryTags={tag.tag} />);
+  let tagsList = props.gallery.galleryTags.map((tag) => <Tag galleryTag={tag.tag} />);
 
-  let imagesList = props.gallery.galleryImages.map((image) => (
+  let imagesList = props.gallery.galleryImgPreview.map((image) => (
     <Image galleryImages={image.src} position={image.position} />
   ));
 
