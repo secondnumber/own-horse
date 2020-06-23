@@ -3,13 +3,24 @@ import HeaderContainer from '../../common/Header/HeaderContainer';
 import BreadcrumbsContainer from '../../common/Breadcrumbs/BreadcrumbsContainer';
 import FooterContainer from '../../common/Footer/FooterContainer';
 import classes from './FaqPage.module.scss';
+import FormFaq from '../../common/FormFaq/FormFaq';
+import Questions from './Question/Question';
 
 const FaqPage = (props) => {
+  let questionsBlock = props.faq.questionsList.map((el) => <Questions key={el.id} title={el.title} list={el.list}/>);
   return (
     <div>
       <HeaderContainer />
       <BreadcrumbsContainer />
-      <div className={classes.wrapper}>Faq</div>
+      <div className={classes.wrapper}>
+        <div className={classes.block}>
+          <div className={classes.questions}>{questionsBlock}</div>
+          <div className={classes.form}>
+            <h2 className={classes.title}>ASK ANY QUESTION</h2>
+            <FormFaq />
+          </div>
+        </div>
+      </div>
       <FooterContainer />
     </div>
   );
