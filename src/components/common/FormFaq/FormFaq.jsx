@@ -1,8 +1,8 @@
 import React from 'react';
-import classes from './Form.module.scss';
+import classes from './FormFaq.module.scss';
 import Button from '../Button/Button';
 
-const Form = () => (
+const FormContact = () => (
   <div className={classes.block}>
     <form action="">
       <input className={classes.input} type="text" placeholder='full name'/>
@@ -22,4 +22,4 @@ const Form = () => (
   </div>
 );
 
-export default Form;
+export default FormContact;

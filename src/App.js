@@ -13,6 +13,7 @@ import SingleImagePageContainer from './components/Pages/SingleImagePage/SingleI
 import TestimonialsPageContainer from './components/Pages/TestimonialsPage/TestimonialsPageContainer';
 import ContactsPageContainer from './components/Pages/ContactsPage/ContactsPageContainer';
 import GamesPageContainer from './components/Pages/GamesPage/GamesPageContainer';
+import FaqPageContainer from './components/Pages/FaqPage/FaqPageContainer';
 
 library.add(fab);
 
@@ -24,6 +25,9 @@ const App = (props) => (
       </Route>
       <Route exact path="/pages/about">
         <AboutPageContainer />
+      </Route>
+      <Route exact path="/pages/faq">
+        <FaqPageContainer />
       </Route>
       <Route exact path="/pages/team">
         <TeamPageContainer />

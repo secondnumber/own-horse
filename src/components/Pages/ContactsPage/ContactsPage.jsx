@@ -5,7 +5,7 @@ import FooterContainer from '../../common/Footer/FooterContainer';
 import classes from './ContactsPage.module.scss';
 import Social from '../../common/SocialList/Social';
 import Contact from './Contact/Contact';
-import Form from '../../common/Form/Form';
+import FormContact from '../../common/FormContact/FormContact';
 import MapContainer from '../../common/Map/MapContainer';
 
 const ContactsPage = (props) => {
@@ -36,7 +36,7 @@ const ContactsPage = (props) => {
             <ul className={classes.socialList}>{socialList}</ul>
           </div>
           <div className={classes.form}>
-            <Form />
+            <FormContact />
           </div>
         </div>
         <div className={classes.map}>
