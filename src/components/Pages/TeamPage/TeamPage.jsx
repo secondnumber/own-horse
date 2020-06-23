@@ -6,12 +6,14 @@ import FooterContainer from '../../common/Footer/FooterContainer';
 import Team from './Team/Team';
 
 const TeamPage = (props) => {
-  let teamList = props.teamPage.teamList.map((element) => (
+  let teamList = props.teamPage.teamList.map((el) => (
     <Team
-      key={element.id}
-      name={element.name}
-      image={element.image}
-      rank={element.rank}
+      key={el.id}
+      id={el.id}
+      name={el.name}
+      image={el.image}
+      rank={el.rank}
+      social={el.social}
     />
   ));
   return (
