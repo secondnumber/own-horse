@@ -74,7 +74,7 @@ let initialState = {
     },
     {
       id: 3,
-      title: 'otherQuestions',
+      title: 'other Questions',
       list: [
         {
           id: 1,
