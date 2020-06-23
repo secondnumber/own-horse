@@ -1,15 +1,15 @@
 import React from 'react';
 import classes from './Footer.module.scss';
-import FooterSocial from './FooterSocial/FooterSocial';
+import Social from '../SocialList/Social';
 import FooterNav from './FooterNav/FooterNav';
 import Logo from '../Header/Logo.png';
 
 const Footer = (props) => {
-  let socialList = props.footer.socialList.map((socialItem) => (
-    <FooterSocial socialItem={socialItem.src} />
+  let socialList = props.social.socialList.map((item) => (
+    <Social key={item.id} icon={item.icon} link={item.link} />
   ));
-  let navMenu = props.footer.navMenuItems.map((menuItem) => (
-    <FooterNav menuItem={menuItem.menuItem} />
+  let navMenu = props.navigation.navMenuItems.map((item) => (
+    <FooterNav key={item.id} menuItem={item.menuItem} menuLink={item.menuLink} />
   ));
 
   return (
@@ -22,7 +22,6 @@ const Footer = (props) => {
           <div className={classes.navBlock}>
             <ul className={classes.navList}>{navMenu}</ul>
             <p className={classes.description}>
-
             </p>
             <ul className={classes.socialList}>{socialList}</ul>
           </div>

@@ -24,7 +24,7 @@ const Posts = (props) => {
         Pork chop pastrami meatball, picanha salami capicola drumstick tri-tip
         flank short loin strip steak prosciutto leberkas jowl fatback.
       </p>
-      <div className={classes.postsWrapper}>{postsList}</div>
+      <ul className={classes.postsWrapper}>{postsList}</ul>
     </div>
   );
 };
