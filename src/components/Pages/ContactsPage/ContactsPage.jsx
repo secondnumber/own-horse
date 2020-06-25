@@ -9,6 +9,10 @@ import FormContact from '../../common/FormContact/FormContact';
 import MapContainer from '../../common/Map/MapContainer';
 
 const ContactsPage = (props) => {
+  const submit = (values) => {
+    console.log(values);
+  };
+
   let socialList = props.social.socialList.map((item) => (
     <Social key={item.id} icon={item.icon} link={item.link} />
   ));
@@ -36,7 +40,7 @@ const ContactsPage = (props) => {
             <ul className={classes.socialList}>{socialList}</ul>
           </div>
           <div className={classes.form}>
-            <FormContact />
+            <FormContact onSubmit={submit} />
           </div>
         </div>
         <div className={classes.map}>

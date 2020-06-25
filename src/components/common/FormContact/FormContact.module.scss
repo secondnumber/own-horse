@@ -1,17 +1,17 @@
 @import "../../../Colors";
 
-.block {
+.form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .input {
   box-sizing: border-box;
-  width: 45%;
+  width: 200px;
   height: 60px;
-  margin: 15px 15px 0 0;
+  margin: 25px 20px 0 0;
   padding-left: 20px;
   color: $blueLight;
   background: $blueDark;
@@ -37,9 +37,8 @@
 
 .textarea {
   box-sizing: border-box;
-  width: 93%;
-  margin: 20px 0;
-  padding: 20px 0 0 20px;
+  margin-top: 25px;
+  width: 420px;
   color: $blueLight;
   background: $blueDark;
   border: none;
@@ -48,3 +47,22 @@
   outline: none;
 }
 
+.button {
+  width: 200px;
+  height: 60px;
+  margin-top: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, $cyan, $lilac);
+  color: $white;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: $cyan;
+}

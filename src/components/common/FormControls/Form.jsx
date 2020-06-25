@@ -6,8 +6,9 @@ export const Form = ({ input, meta, child, ...props }) => {
   return (
     <div
       className={classes.formControl + ' ' + (hasError ? classes.error : '')}
-    >      {hasError && <span className={classes.error}>{meta.error}</span>}
+    >
       {props.children}
+      {hasError && <span className={classes.error}>{meta.error}</span>}
     </div>
   );
 };

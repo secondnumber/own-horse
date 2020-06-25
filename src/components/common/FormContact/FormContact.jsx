@@ -1,25 +1,67 @@
 import React from 'react';
 import classes from './FormContact.module.scss';
-import Button from '../Button/Button';
+import { Field, reduxForm } from 'redux-form';
+import { Input, Textarea } from '../FormControls/Form';
+import {
+  maxLengthCreator,
+  required,
+  validateEmail,
+} from '../../../utils/validators/validators';
 
-const FormContact = () => (
-  <div className={classes.block}>
-    <form action="">
-      <input className={classes.input} type="text" placeholder='full name'/>
-      <input className={classes.input} type="text" placeholder='email address'/>
-      <input className={classes.input} type="text" placeholder='phone number'/>
-      <input className={classes.input} type="text" placeholder='subject'/>
-      <textarea
+const FormContact = (props) => {
+  const maxLength10 = maxLengthCreator(10);
+  const maxLength40 = maxLengthCreator(40);
+  const maxLength300 = maxLengthCreator(300);
+
+  return (
+    <form action="" className={classes.form} onSubmit={props.handleSubmit}>
+      <Field
+        className={classes.input}
+        component={Input}
+        name="name"
+        type="text"
+        placeholder="full name"
+        validate={[required, maxLength40]}
+      />
+      <Field
+        className={classes.input}
+        component={Input}
+        name="email"
+        type="text"
+        placeholder="email address"
+        validate={[required, validateEmail, maxLength40]}
+      />
+      <Field
+        className={classes.input}
+        component={Input}
+        name="phone"
+        type="text"
+        placeholder="phone number"
+        validate={[required, maxLength10]}
+      />
+      <Field
+        className={classes.input}
+        component={Input}
+        name="subject"
+        type="text"
+        placeholder="subject"
+        validate={[required]}
+      />
+      <Field
         className={classes.textarea}
-        name=""
-        id=""
+        component={Textarea}
+        name="message"
+        type="textarea"
         cols="30"
         rows="10"
-        placeholder='your message...'
-      ></textarea>
-      <Button />
+        placeholder="your message..."
+        validate={[required]}
+      />
+      <button className={classes.button}>Send message</button>
     </form>
-  </div>
-);
+  );
+};
 
-export default FormContact;
+export default reduxForm({
+  form: 'contact',
+})(FormContact);
