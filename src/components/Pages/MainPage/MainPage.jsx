@@ -8,7 +8,7 @@ import GalleryContainer from './Gallery/GalleryContainer';
 import VideosContainer from './Videos/VideosContainer';
 import PriceListContainer from '../../common/PriceList/PriceListContainer';
 import QuestionsContainer from './Questions/QuestionsContainer';
-import Newsletter from '../../common/Newsletter/Newsletter';
+import FormSubscribe from '../../common/Subscribe/Subscribe';
 import FooterContainer from '../../common/Footer/FooterContainer';
 import ScrollButtonContainer from '../../common/ScrollButton/ScrollButtonContainer';
 import classes from './MainPage.module.scss';
@@ -26,7 +26,7 @@ const MainPage = (props) => {
       <VideosContainer />
       <PriceListContainer />
       <QuestionsContainer />
-      <Newsletter />
+      <FormSubscribe />
       <FooterContainer />
     </div>
   );

@@ -18,6 +18,7 @@ import contactsPageReducer from './reducers/contactsReducer';
 import mapReducer from './reducers/mapReducer';
 import commonReducer from './reducers/commonReducer';
 import faqReducer from './reducers/faqReducer';
+import { reducer as formReducer } from 'redux-form';
 
 let reducers = combineReducers({
   aboutPage: aboutPageReducer,
@@ -39,6 +40,7 @@ let reducers = combineReducers({
   map: mapReducer,
   common: commonReducer,
   faq: faqReducer,
+  form: formReducer,
 });
 
 let store = createStore(reducers);
