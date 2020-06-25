@@ -1,24 +1,58 @@
 import React from 'react';
 import classes from './FormFaq.module.scss';
-import Button from '../Button/Button';
+import { Field, reduxForm } from 'redux-form';
+import { Input, Textarea } from '../FormControls/Form';
+import {
+  maxLengthCreator,
+  required,
+  validateEmail,
+} from '../../../utils/validators/validators';
 
-const FormFaq = () => (
-  <div className={classes.block}>
-    <form action="">
-      <input className={classes.input} type="text" placeholder='your name'/>
-      <input className={classes.input} type="text" placeholder='email address'/>
-      <input className={classes.input} type="text" placeholder='subject'/>
-      <textarea
+const maxLength40 = maxLengthCreator(40);
+const maxLength300 = maxLengthCreator(300);
+
+const FormFaq = (props) => {
+  return (
+    <form action="" onSubmit={props.handleSubmit}>
+      <Field
+        className={classes.input}
+        component={Input}
+        name="name"
+        type="text"
+        placeholder="your name"
+        validate={[required, maxLength40]}
+      />
+      <Field
+        className={classes.input}
+        component={Input}
+        name="email"
+        type="text"
+        placeholder="email address"
+        validate={[required, validateEmail, maxLength40]}
+      />
+      <Field
+        className={classes.input}
+        component={Input}
+        name="subject"
+        type="text"
+        placeholder="subject"
+        validate={[required, maxLength40]}
+      />
+      <Field
+        component={Textarea}
         className={classes.textarea}
-        name=""
+        name="message"
         id=""
         cols="30"
         rows="10"
-        placeholder='your question'
-      ></textarea>
-      <Button />
+        placeholder="your question"
+        validate={[required, maxLength300]}
+      />
+      <button className={classes.button}>Ask question</button>
     </form>
-  </div>
-);
+  );
+};
 
-export default FormFaq;
+export default reduxForm({
+  form: 'faq',
+})(FormFaq);
