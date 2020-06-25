@@ -7,6 +7,9 @@ import FormFaq from '../../common/FormFaq/FormFaq';
 import Questions from './Question/Question';
 
 const FaqPage = (props) => {
+  const submit = (values) => {
+      console.log(values);
+  }
   let questionsBlock = props.faq.questionsList.map((el) => <Questions key={el.id} title={el.title} list={el.list}/>);
   return (
     <div>
@@ -17,7 +20,7 @@ const FaqPage = (props) => {
           <div className={classes.questions}>{questionsBlock}</div>
           <div className={classes.form}>
             <h2 className={classes.title}>ASK ANY QUESTION</h2>
-            <FormFaq />
+            <FormFaq onSubmit={submit} />
           </div>
         </div>
       </div>

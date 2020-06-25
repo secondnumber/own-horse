@@ -8,10 +8,11 @@ import {
   validateEmail,
 } from '../../../utils/validators/validators';
 
+const maxLength10 = maxLengthCreator(10);
+const maxLength40 = maxLengthCreator(40);
+const maxLength300 = maxLengthCreator(300);
+
 const FormContact = (props) => {
-  const maxLength10 = maxLengthCreator(10);
-  const maxLength40 = maxLengthCreator(40);
-  const maxLength300 = maxLengthCreator(300);
 
   return (
     <form action="" className={classes.form} onSubmit={props.handleSubmit}>
@@ -45,7 +46,7 @@ const FormContact = (props) => {
         name="subject"
         type="text"
         placeholder="subject"
-        validate={[required]}
+        validate={[required, maxLength40]}
       />
       <Field
         className={classes.textarea}
@@ -55,7 +56,7 @@ const FormContact = (props) => {
         cols="30"
         rows="10"
         placeholder="your message..."
-        validate={[required]}
+        validate={[required, maxLength300]}
       />
       <button className={classes.button}>Send message</button>
     </form>
