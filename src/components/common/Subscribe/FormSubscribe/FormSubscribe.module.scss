@@ -1,0 +1,40 @@
+@import '../../../../Colors';
+
+.form {
+    position: relative;
+}
+
+.input {
+    width: 500px;
+    height: 60px;
+    border: 1px solid $lilac;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    color: $blueDarkDeep;
+    padding-left: 20px;
+    outline: none;
+}
+
+.input:focus::placeholder {
+    color: transparent;
+    transition: color 0.2s ease-out;
+}
+
+.button {
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    background-color: transparent;
+    color: $cyan;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: $lilac;
+    cursor: pointer;
+}
