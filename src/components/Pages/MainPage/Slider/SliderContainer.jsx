@@ -8,10 +8,6 @@ let mapStateToProps = (state) => {
   };
 };
 
-let mapDispatchToProps = (dispatch) => {
-  return {};
-};
-
 const SliderContainer = connect(mapStateToProps)(Slider);
 
 export default SliderContainer;

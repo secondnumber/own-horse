@@ -1,0 +1,68 @@
+@import "../../../Colors";
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  margin: 25px 0 0 0;
+  padding-left: 20px;
+  color: $blueLight;
+  background: $blueDark;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+
+.input::placeholder,
+.textarea::placeholder{
+  color: $blueLight;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.input:focus::placeholder,
+.textarea:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px 0 0 20px;
+  color: $blueLight;
+  background: $blueDark;
+  border: none;
+  border-radius: 12px;
+  resize: none;
+  outline: none;
+}
+
+.button {
+  width: 200px;
+  height: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, $cyan, $lilac);
+  color: $white;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: $cyan;
+}

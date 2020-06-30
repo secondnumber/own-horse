@@ -1,0 +1,16 @@
+@import '../../../../../../Colors';
+
+.socialItem {
+  margin: 10px;
+}
+
+.link {
+  padding: 10px 0;
+  color: $white;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: $cyan;
+  cursor: pointer;
+}
