@@ -5,6 +5,7 @@ import ContactsPage from './ContactsPage';
 let mapStateToProps = (state) => {
   return {
     social: state.social,
+    contacts: state.contacts,
   };
 };
 

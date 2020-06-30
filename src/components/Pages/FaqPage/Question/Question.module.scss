@@ -1,0 +1,86 @@
+@import "../../../../Colors";
+
+.block {
+  width: 100%;
+}
+
+.item {
+  padding: 5px 0;
+}
+
+.title {
+  margin-bottom: 10px;
+  padding: 20px 0 10px 0;
+  font-family: "Agency FB", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.title:nth-child(1) {
+  padding: 0 0 10px 0;
+}
+
+.captionClose {
+  min-height: 60px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  background-color: $blueDark;
+  color: $white;
+}
+
+.captionOpen {
+  min-height: 60px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px 12px 0 0;
+  background: linear-gradient(90deg, $cyan, $lilac);
+  color: $white;
+}
+
+.captionBlock:hover {
+  background: linear-gradient(90deg, $cyan, $lilac);
+}
+
+.contentOpen {
+  padding: 20px 0 40px 0;
+  border-radius: 0 0 12px 12px;
+  background-color: $black;
+}
+
+.contentClose {
+  display: none;
+}
+
+.caption {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.content {
+  padding: 20px 30px;
+  line-height: 200%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: $blueLight;
+}
+
+.toggle {
+  padding: 10px 20px;
+  color: $cyan;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  color: $white;
+}

@@ -14,7 +14,7 @@
 
 .header {
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     width: 100vw;
@@ -60,7 +60,6 @@
 }
 
 .navItem {
-    padding: 30px 30px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: bold;

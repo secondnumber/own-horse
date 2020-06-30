@@ -13,7 +13,12 @@ import testimonialsReducer from './reducers/testimonialsReducer';
 import videosReducer from './reducers/videosReducer';
 import teamPageReducer from './reducers/teamPageReducer';
 import navigationReducer from './reducers/navigationReducer';
-import scrollReducer from "./reducers/scrollReducer";
+import scrollReducer from './reducers/scrollReducer';
+import contactsPageReducer from './reducers/contactsReducer';
+import mapReducer from './reducers/mapReducer';
+import commonReducer from './reducers/commonReducer';
+import faqReducer from './reducers/faqReducer';
+import { reducer as formReducer } from 'redux-form';
 
 let reducers = combineReducers({
   aboutPage: aboutPageReducer,
@@ -31,6 +36,11 @@ let reducers = combineReducers({
   videos: videosReducer,
   teamPage: teamPageReducer,
   scroll: scrollReducer,
+  contacts: contactsPageReducer,
+  map: mapReducer,
+  common: commonReducer,
+  faq: faqReducer,
+  form: formReducer,
 });
 
 let store = createStore(reducers);
