@@ -5,10 +5,14 @@ import FooterContainer from '../../common/Footer/FooterContainer';
 import classes from './ContactsPage.module.scss';
 import Social from '../../common/SocialList/Social';
 import Contact from './Contact/Contact';
-import Form from '../../common/Form/Form';
+import FormContact from '../../common/FormContact/FormContact';
 import MapContainer from '../../common/Map/MapContainer';
 
 const ContactsPage = (props) => {
+  const submit = (values) => {
+    console.log(values);
+  };
+
   let socialList = props.social.socialList.map((item) => (
     <Social key={item.id} icon={item.icon} link={item.link} />
   ));
@@ -36,7 +40,7 @@ const ContactsPage = (props) => {
             <ul className={classes.socialList}>{socialList}</ul>
           </div>
           <div className={classes.form}>
-            <Form />
+            <FormContact onSubmit={submit} />
           </div>
         </div>
         <div className={classes.map}>

@@ -120,8 +120,8 @@ let initialState = {
       title: 'COW BILTONG PORK BELLY KIEL',
     },
   ],
-  pageSize: 4,
-  totalImagesCount: 24,
+  pageSize: 6,
+  totalImagesCount: 12,
   currentPage: 1,
 };
 

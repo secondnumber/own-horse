@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderContainer from '../../common/Header/HeaderContainer';
 import BreadcrumbsContainer from '../../common/Breadcrumbs/BreadcrumbsContainer';
 import TestimonialsContainer from '../MainPage/Testimonials/TestimonialsContainer';
-import Newsletter from '../../common/Newsletter/Newsletter';
+import FormSubscribe from '../../common/Subscribe/Subscribe';
 import FooterContainer from '../../common/Footer/FooterContainer';
 import About from './About/About';
 import Achievements from './Achievements/Achievements';
@@ -39,7 +39,7 @@ const AboutPage = (props) => {
         <ul className={classes.list}>{achievementsItems}</ul>
       </div>
       <TestimonialsContainer />
-      <Newsletter />
+      <FormSubscribe />
       <FooterContainer />
     </div>
   );
