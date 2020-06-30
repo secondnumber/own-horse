@@ -1,10 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import PageNumbers from './PageNumbers';
 import { setCurrentPage } from '../../../../redux/reducers/galleryReducer';
+import PageNumbers from "./PageNumbers";
 
 class PageNumbersContainer extends React.Component {
   componentDidMount() {
+    debugger
+    this.props.setCurrentPage(1);
   }
   setCurrentPage = (pageNumber) => {
     this.props.setCurrentPage(pageNumber);

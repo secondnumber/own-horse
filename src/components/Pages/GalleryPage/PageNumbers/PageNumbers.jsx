@@ -2,7 +2,6 @@ import React from 'react';
 import classes from './PageNumbers.module.scss';
 
 const PageNumbers = (props) => {
-  debugger;
   let pagesCount = Math.ceil(props.totalImagesCount / props.pageSize);
   let pages = [];
   for (let i = 1; i <= pagesCount; i++) {

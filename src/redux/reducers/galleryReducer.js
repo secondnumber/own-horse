@@ -120,20 +120,9 @@ let initialState = {
       title: 'COW BILTONG PORK BELLY KIEL',
     },
   ],
-<<<<<<< HEAD
   pageSize: 6,
-<<<<<<< Updated upstream
   totalImagesCount: 12,
   currentPage: 1,
-=======
-  totalImagesCount: 24,
-  currentPage: 2,
->>>>>>> Stashed changes
-=======
-  pageSize: 4,
-  totalImagesCount: 24,
-  currentPage: 2,
->>>>>>> a82c94c2fbacc00977d4580e42946f172c551d6a
 };
 
 const galleryReducer = (state = initialState, action) => {
