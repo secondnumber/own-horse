@@ -5,6 +5,7 @@ import PageNumbers from "./PageNumbers";
 
 class PageNumbersContainer extends React.Component {
   componentDidMount() {
+    debugger
     this.props.setCurrentPage(1);
   }
   setCurrentPage = (pageNumber) => {
