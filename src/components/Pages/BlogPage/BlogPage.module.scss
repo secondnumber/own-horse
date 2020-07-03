@@ -14,3 +14,15 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+
+.sidebar {
+  flex-basis: 30%;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-basis: 65%;
+  min-width: 400px;
+}
