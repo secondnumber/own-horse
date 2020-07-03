@@ -14,6 +14,7 @@ import TestimonialsPageContainer from './components/Pages/TestimonialsPage/Testi
 import ContactsPageContainer from './components/Pages/ContactsPage/ContactsPageContainer';
 import GamesPageContainer from './components/Pages/GamesPage/GamesPageContainer';
 import FaqPageContainer from './components/Pages/FaqPage/FaqPageContainer';
+import BlogPageContainer from './components/Pages/BlogPage/BlogPageContainer';
 
 library.add(fab);
 
@@ -49,6 +50,9 @@ const App = (props) => (
       </Route>
       <Route exact path="/contacts">
         <ContactsPageContainer />
+      </Route>
+      <Route exact path="/blog">
+        <BlogPageContainer />
       </Route>
       <Route exact path="/pages/404">
         <NotFoundPage />
