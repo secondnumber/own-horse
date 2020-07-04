@@ -6,7 +6,7 @@ import { Field, reduxForm } from 'redux-form';
 import { Input } from '../../FormControls/Form';
 import { validateEmail } from '../../../../utils/validators/validators';
 
-const Subscribe = (props) => {
+const FormSubscribe = (props) => {
   return (
     <form onSubmit={props.handleSubmit} className={classes.form}>
       <Field
@@ -26,4 +26,4 @@ const Subscribe = (props) => {
 
 export default reduxForm({
   form: 'contact',
-})(Subscribe);
+})(FormSubscribe);
