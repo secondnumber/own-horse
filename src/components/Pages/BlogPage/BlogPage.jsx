@@ -19,7 +19,7 @@ const BlogPage = (props) => {
       <div className={classes.wrapper}>
         <div className={classes.block}>
           <div className={classes.sidebar}>
-            <InstaWidget />
+            <InstaWidget images={props.blog.instaImageList}/>
             <BlogNewsletter />
             <Categories />
             <Twitter />
