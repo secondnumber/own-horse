@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './Slider.module.scss';
-import Intro from './Intro/Intro';
 import IntroContainer from "./Intro/IntroContainer";
 
 const Slider = (props) => {
