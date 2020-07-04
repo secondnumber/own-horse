@@ -1,9 +1,39 @@
 @import "../../../../Colors";
 
+.wrapper {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
 .header {
   font-family: "Agency FB", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  flex-basis: 10%;
+  color: $cyan;
+}
+
+.name {
+  flex-basis: 70%;
+}
+
+.counter {
+  flex-basis: 20%;
+  text-align: right;
 }

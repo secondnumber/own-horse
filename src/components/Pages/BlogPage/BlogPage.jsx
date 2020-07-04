@@ -19,9 +19,9 @@ const BlogPage = (props) => {
       <div className={classes.wrapper}>
         <div className={classes.block}>
           <div className={classes.sidebar}>
-            <InstaWidget images={props.blog.instaImageList}/>
+            <InstaWidget images={props.blog.instaImageList} />
             <BlogNewsletter />
-            <Categories />
+            <Categories categories={props.blog.categoriesList} />
             <Twitter />
             <LatestPosts />
             <Calendar />

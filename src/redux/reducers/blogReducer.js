@@ -14,6 +14,12 @@ let initialState = {
     { id: 5, image: instaImg5 },
     { id: 6, image: instaImg6 },
   ],
+  categoriesList: [
+    { id: 1, name: 'All categories', counter: 375 },
+    { id: 2, name: 'Pancetta landjeager', counter: 75 },
+    { id: 3, name: 'Alcatra ground', counter: 142 },
+    { id: 4, name: 'Round pork turkey', counter: 269 },
+  ],
 };
 
 const blogReducer = (state = initialState, action) => {

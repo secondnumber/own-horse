@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './Intro.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SocialInSlider from './SocialInSlider/SocialItem';
 
 const Intro = (props) => {
