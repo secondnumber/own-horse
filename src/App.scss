@@ -1,27 +1,5 @@
 @import './Colors.scss';
 
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('/src/fonts/Roboto-Regular.ttf');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('/src/fonts/Roboto-Bold.ttf');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Agensy FB';
-    src: url('/src/fonts/agency-fb-bold.ttf');
-    font-weight: 700;
-    font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
