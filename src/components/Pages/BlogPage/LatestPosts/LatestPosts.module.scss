@@ -1,9 +1,54 @@
 @import "../../../../Colors";
 
+.wrapper {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
 .header {
   font-family: "Agency FB", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.image {
+  flex-basis: 70px;
+}
+
+.content {
+  flex-basis: 70%;
+}
+
+.title {
+  font-family: "Agency FB", sans-serif;
+  font-size: 16px;
+}
+
+.link {
+  text-decoration: none;
+  color: $white;
+}
+
+.link:hover {
+  color: $cyan;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 700;
+  color: $blueLight;
 }
