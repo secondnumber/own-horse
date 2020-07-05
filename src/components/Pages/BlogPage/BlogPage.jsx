@@ -22,7 +22,7 @@ const BlogPage = (props) => {
             <InstaWidget images={props.blog.instaImageList} />
             <BlogNewsletter />
             <Categories categories={props.blog.categoriesList} />
-            <Twitter />
+            <Twitter twits={props.blog.twitslist}/>
             <LatestPosts />
             <Calendar />
             <BlogSearch />

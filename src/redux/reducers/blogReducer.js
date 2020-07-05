@@ -20,6 +20,20 @@ let initialState = {
     { id: 3, name: 'Alcatra ground', counter: 142 },
     { id: 4, name: 'Round pork turkey', counter: 269 },
   ],
+  twitslist: [
+    {
+      id: 1,
+      text:
+        'Turducken cupim hamburger beef ribs picanha, drumstick buffalo tri-tip cow. Turducken prosciutto shank.',
+      link: 'http://t.co/hVbJKs9eRt',
+    },
+    {
+      id: 2,
+      text:
+        'Tongue picanha cow tri-tip, bacon sausage meatloaf kielbasa prosciutto.',
+      link: 'http://t.co/hVbJKs9eRt',
+    },
+  ],
 };
 
 const blogReducer = (state = initialState, action) => {
