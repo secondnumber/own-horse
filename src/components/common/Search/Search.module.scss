@@ -1,0 +1,39 @@
+@import "../../../Colors";
+
+.form {
+
+}
+
+.input {
+  width: 220px;
+  height: 20px;
+  padding: 20px 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  border: none;
+  border-radius: 12px 0 0 12px;
+  outline: none;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+  transition: color 0.2s ease-out;
+}
+
+.button {
+  width: 70px;
+  height: 60px;
+  padding: 20px;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  background: linear-gradient(90deg, $cyan, $lilac);
+  font-size: 16px;
+  color: $white;
+  outline: none;
+}
+
+.button:hover {
+  background: $cyan;
+  cursor: pointer;
+}
