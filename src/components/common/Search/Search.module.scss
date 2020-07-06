@@ -1,7 +1,11 @@
 @import "../../../Colors";
 
+.form {
+
+}
 
 .input {
+  width: 220px;
   height: 20px;
   padding: 20px 30px;
   font-family: "Roboto", sans-serif;
@@ -18,8 +22,9 @@
 }
 
 .button {
+  width: 70px;
   height: 60px;
-  padding: 20px 30px;
+  padding: 20px;
   border: none;
   border-radius: 0 12px 12px 0;
   background: linear-gradient(90deg, $cyan, $lilac);
