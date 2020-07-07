@@ -10,6 +10,7 @@ import Twitter from './Twitter/Twitter';
 import LatestPosts from './LatestPosts/LatestPosts';
 import Calendar from './Calendar/Calendar';
 import BlogSearch from './BlogSearch/BlogSearch';
+import BlogContentContainer from './BlogContent/BlogContentContainer';
 
 const BlogPage = (props) => {
   return (
@@ -27,7 +28,9 @@ const BlogPage = (props) => {
             <Calendar />
             <BlogSearch />
           </div>
-          <div className={classes.content}>Content</div>
+          <div className={classes.content}>
+            <BlogContentContainer />
+          </div>
         </div>
         <FooterContainer />
       </div>
