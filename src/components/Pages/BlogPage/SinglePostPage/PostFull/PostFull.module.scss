@@ -1,0 +1,46 @@
+@import "../../../../../Colors";
+
+.wrapper {
+  margin: 100px 0;
+  background-color: $blueDark;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 40px;
+}
+.cover {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.label {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag {
+  color: $cyan;
+}
+
+.date {
+  text-align: right;
+}
+
+.text {
+  line-height: 180%;
+}
+
+.images {
+  display: flex;
+  max-width: 100%;
+  padding: 40px 10px;
+  justify-content: space-between;
+}
+
+.image {
+  display: block;
+  width: 30%;
+  height: auto;
+}

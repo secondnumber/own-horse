@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './SingleImagePage.module.scss';
-import HeaderContainer from '../../common/Header/HeaderContainer';
-import BreadcrumbsContainer from '../../common/Breadcrumbs/BreadcrumbsContainer';
-import FooterContainer from '../../common/Footer/FooterContainer';
-import Tag from '../../common/Tag/Tag';
+import HeaderContainer from '../../../common/Header/HeaderContainer';
+import BreadcrumbsContainer from '../../../common/Breadcrumbs/BreadcrumbsContainer';
+import FooterContainer from '../../../common/Footer/FooterContainer';
+import Tag from '../../../common/Tag/Tag';
 import ImagesSlider from './ImagesSlider/ImagesSlider';
-import ImageBig from '../../../assets/GalleryPage/image-1.jpg';
+import ImageBig from '../../../../assets/GalleryPage/image-1.jpg';
 import {
   BrowserRouter as Router,
   Switch,

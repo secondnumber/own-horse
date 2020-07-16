@@ -9,12 +9,13 @@ import AboutPageContainer from './components/Pages/AboutPage/AboutPageContainer'
 import TeamPageContainer from './components/Pages/TeamPage/TeamPageContainer';
 import PriceListPageContainer from './components/Pages/PriceListPage/PriceListPageContainer';
 import GalleryPageContainer from './components/Pages/GalleryPage/GalleryPageGontainer';
-import SingleImagePageContainer from './components/Pages/SingleImagePage/SingleImagePageGontainer';
+import SingleImagePageContainer from './components/Pages/GalleryPage/SingleImagePage/SingleImagePageGontainer';
 import TestimonialsPageContainer from './components/Pages/TestimonialsPage/TestimonialsPageContainer';
 import ContactsPageContainer from './components/Pages/ContactsPage/ContactsPageContainer';
 import GamesPageContainer from './components/Pages/GamesPage/GamesPageContainer';
 import FaqPageContainer from './components/Pages/FaqPage/FaqPageContainer';
 import BlogPageContainer from './components/Pages/BlogPage/BlogPageContainer';
+import SinglePostPageContainer from './components/Pages/BlogPage/SinglePostPage/SinglePostPageGontainer';
 
 library.add(fab);
 
@@ -53,6 +54,9 @@ const App = (props) => (
       </Route>
       <Route exact path="/blog">
         <BlogPageContainer />
+      </Route>
+      <Route exact path="/blog/:postId?">
+        <SinglePostPageContainer />
       </Route>
       <Route exact path="/pages/404">
         <NotFoundPage />
