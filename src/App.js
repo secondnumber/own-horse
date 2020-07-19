@@ -16,6 +16,7 @@ import GamesPageContainer from './components/Pages/GamesPage/GamesPageContainer'
 import FaqPageContainer from './components/Pages/FaqPage/FaqPageContainer';
 import BlogPageContainer from './components/Pages/BlogPage/BlogPageContainer';
 import SinglePostPageContainer from './components/Pages/BlogPage/SinglePostPage/SinglePostPageGontainer';
+import StatisticPageContainer from './components/Pages/StatisticPage/StatisticPageContainer';
 
 library.add(fab);
 
@@ -39,6 +40,9 @@ const App = (props) => (
       </Route>
       <Route exact path="/pages/testimonials">
         <TestimonialsPageContainer />
+      </Route>
+      <Route exact path="/pages/statistic">
+        <StatisticPageContainer />
       </Route>
       <Route exact path="/gallery">
         <GalleryPageContainer />

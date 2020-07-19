@@ -20,6 +20,7 @@ import commonReducer from './reducers/commonReducer';
 import faqReducer from './reducers/faqReducer';
 import blogReducer from './reducers/blogReducer';
 import { reducer as formReducer } from 'redux-form';
+import statisticReducer from './reducers/statisticReducer';
 
 let reducers = combineReducers({
   aboutPage: aboutPageReducer,
@@ -42,6 +43,7 @@ let reducers = combineReducers({
   common: commonReducer,
   faq: faqReducer,
   blog: blogReducer,
+  statistic: statisticReducer,
   form: formReducer,
 });
 
