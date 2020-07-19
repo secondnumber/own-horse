@@ -8,6 +8,7 @@ import Img3 from '../../../../../assets/BlogPage/PostsImg/blog-img-3.jpg';
 const PostFull = (props) => {
   return (
     <div className={classes.wrapper}>
+      <h2 className={classes.title}>BUFFALO DRUMSTICK DONER SHORT</h2>
       <img className={classes.cover} src={ImgBig} />
       <div className={classes.content}>
         <div className={classes.label}>
