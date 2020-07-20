@@ -21,7 +21,7 @@ const PageNumbers = (props) => {
       </button>
     </li>
   ));
-  return <ul className={classes.list}>{pagesItems}</ul>;
+  return <>{ pagesItems }</>;
 };
 
 export default PageNumbers;

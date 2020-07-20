@@ -81,3 +81,10 @@
   color: $white;
   border: 1px solid $blueDark;
 }
+
+.numbersList {
+  margin: 30px 0;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
