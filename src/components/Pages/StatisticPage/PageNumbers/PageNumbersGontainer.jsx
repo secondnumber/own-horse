@@ -1,11 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { setCurrentPage } from '../../../../redux/reducers/galleryReducer';
+import { setCurrentPage, setPageSize } from '../../../../redux/reducers/statisticReducer';
 import PageNumbers from "../../../common/PageNumbers/PageNumbers";
 
 class PageNumbersContainer extends React.Component {
   componentDidMount() {
-    debugger
     this.props.setCurrentPage(1);
   }
   setCurrentPage = (pageNumber) => {
@@ -13,9 +12,9 @@ class PageNumbersContainer extends React.Component {
   }
   render() {
     return <PageNumbers
-        currentPage={this.props.gallery.currentPage}
-        totalImagesCount={this.props.gallery.totalImagesCount}
-        pageSize={this.props.gallery.pageSize}
+        currentPage={this.props.statistic.currentPage}
+        totalImagesCount={this.props.statistic.totalItemsCount}
+        pageSize={this.props.statistic.pageSize}
         setCurrentPage={this.props.setCurrentPage}
     />
   }
@@ -23,10 +22,11 @@ class PageNumbersContainer extends React.Component {
 
 let mapStateToProps = (state) => {
   return {
-    gallery: state.gallery,
+    statistic: state.statistic,
+
   };
 };
-export default connect(mapStateToProps, { setCurrentPage })(
+export default connect(mapStateToProps, { setCurrentPage, setPageSize })(
     PageNumbersContainer
 );
 

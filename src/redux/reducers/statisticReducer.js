@@ -1,5 +1,8 @@
+const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
+const SET_PAGE_SIZE = 'SET_PAGE_SIZE';
+
 let initialState = {
-  itemsAmount: 57,
+  totalItemsCount: 57,
   pageSize: 10,
   currentPage: 1,
   statisticList: [
@@ -93,7 +96,32 @@ let initialState = {
 };
 
 const statisticReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case SET_CURRENT_PAGE: {
+      return {
+        ...state,
+        currentPage: action.pageNumber,
+      }
+    }
+    case SET_PAGE_SIZE: {
+      debugger
+      return {
+        ...state,
+        pageSize: action.pageSize,
+      }
+    }
+  }
   return state;
 };
+
+export const setCurrentPage = (pageNumber) => ({
+  type: SET_CURRENT_PAGE,
+  pageNumber,
+});
+
+export const setPageSize = (pageSize) => ({
+  type: SET_PAGE_SIZE,
+  pageSize,
+})
 
 export default statisticReducer;

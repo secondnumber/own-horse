@@ -36,7 +36,7 @@ const GalleryPage = (props) => {
       <div className={classes.block}>
         <ul className={classes.tagsList}>{tagsList}</ul>
         <ul className={classes.imagesList}>{imagesList}</ul>
-        {pageNumbersList}
+        <ul className={classes.numbersList}>{pageNumbersList}</ul>;
       </div>
       <FooterContainer />
     </div>
