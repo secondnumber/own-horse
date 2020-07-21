@@ -3,9 +3,8 @@ import classes from './TestimonialsPage.module.scss';
 import HeaderContainer from '../../common/Header/HeaderContainer';
 import BreadcrumbsContainer from '../../common/Breadcrumbs/BreadcrumbsContainer';
 import FooterContainer from '../../common/Footer/FooterContainer';
-import PriceListContainer from '../../common/PriceList/PriceListContainer';
-import ImageItem from '../GalleryPage/ImageItem/ImageItem';
 import Testimonial from './Testimonial/Testimonial';
+import Button from '../../common/Button/Button';
 
 const TestimonialsPage = (props) => {
   let testimonialsList = props.testimonials.testimonialsList.map(
@@ -30,7 +29,7 @@ const TestimonialsPage = (props) => {
       <BreadcrumbsContainer />
       <div className={classes.wrapper}>
         <ul className={classes.list}>{testimonialsList}</ul>
-        <button className={classes.button}>Show more</button>
+        <Button />
       </div>
       <FooterContainer />
     </div>

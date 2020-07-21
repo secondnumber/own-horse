@@ -7,13 +7,13 @@ import {
   required,
   validateEmail,
 } from '../../../utils/validators/validators';
+import Button from '../Button/Button';
 
 const maxLength10 = maxLengthCreator(10);
 const maxLength40 = maxLengthCreator(40);
 const maxLength300 = maxLengthCreator(300);
 
 const FormContact = (props) => {
-
   return (
     <form action="" className={classes.form} onSubmit={props.handleSubmit}>
       <Field
@@ -58,7 +58,7 @@ const FormContact = (props) => {
         placeholder="your message..."
         validate={[required, maxLength300]}
       />
-      <button className={classes.button}>Send message</button>
+      <Button />
     </form>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Intro.module.scss';
 import SocialInSlider from './SocialInSlider/SocialItem';
+import Button from '../../../../common/Button/Button';
 
 const Intro = (props) => {
   let socialList = props.slider.socialList.map((el) => (
@@ -17,7 +18,7 @@ const Intro = (props) => {
         <p className={classes.caption}>{props.caption}</p>
         <h1 className={classes.header}>{props.header}</h1>
         <p className={classes.description}>{props.description}</p>
-        <button className={classes.button}>more About us</button>
+        <Button />
       </div>
       <ul className={classes.socialList}>{socialList}</ul>
     </div>

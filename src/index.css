@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 
 @font-face {
     font-family: 'Roboto';
     src: local('Roboto'),
+    url('/fonts/Roboto-Regular.woff') format("woff"),
     url('/fonts/Roboto-Regular.ttf') format("truetype");
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
     src: local('Roboto'),
+    url('/fonts/Roboto-Bold.woff') format("woff"),
     url('/fonts/Roboto-Bold.ttf') format("truetype");
-    font-weight: 700;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -22,6 +24,6 @@
     src: local('Agensy FB'),
     url('/fonts/agency-fb-bold.woff') format("woff"),
     url('/fonts/agency-fb-bold.ttf') format("truetype");
-    font-weight: 700;
+    font-weight: bold;
     font-style: normal;
 }

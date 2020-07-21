@@ -15,21 +15,22 @@ const Footer = (props) => {
   return (
     <div className={classes.wrapper}>
       <div className={classes.filter}>
-        <div className={classes.footerBlock}>
-          <div className={classes.logoBlock}>
-            <img className={classes.logoImage} src={Logo} />
+        <div className={classes.block}>
+          <div className={classes.logo}>
+            <img src={Logo} alt={'Logo'} />
           </div>
-          <div className={classes.navBlock}>
-            <ul className={classes.navList}>{navMenu}</ul>
+          <div>
+            <ul className={classes.list}>{navMenu}</ul>
             <p className={classes.description}>
+              {props.navigation.description}
             </p>
-            <ul className={classes.socialList}>{socialList}</ul>
+            <ul className={classes.list}>{socialList}</ul>
           </div>
         </div>
-        <div className={classes.copyrightBlock}>
-          <span className={classes.copyright}>© Copyright 2018 </span>
-          <span className={classes.copyright}>All Rights Reserved</span>
-        </div>
+        <p className={classes.copyright}>
+          <span>© Copyright 2018 </span>
+          <span>All Rights Reserved</span>
+        </p>
       </div>
     </div>
   );

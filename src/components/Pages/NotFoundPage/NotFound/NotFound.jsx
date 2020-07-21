@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './NotFound.module.scss';
+import Button from '../../../common/Button/Button';
 
 const NotFound = (props) => (
   <div className={classes.wrapper}>
@@ -9,8 +10,8 @@ const NotFound = (props) => (
         <span className={classes.inset}>ooops!</span>
       </span>
       <span className={classes.number}>4</span>
-        <p className={classes.text}>SORRY, PAGE NOT FOUND!</p>
-        <button className={classes.button}>Back to homepage</button>
+      <p className={classes.text}>SORRY, PAGE NOT FOUND!</p>
+      <Button />
     </div>
   </div>
 );

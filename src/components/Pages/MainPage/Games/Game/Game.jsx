@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Game.module.scss';
 import Image from './game-slide-img-1.jpg';
+import Button from '../../../../common/Button/Button';
 
 const Game = (props) => {
   return (
@@ -13,12 +14,15 @@ const Game = (props) => {
           <p className={classes.description}>
             Andouille frankfurter hamburger, swine leberkas tenderloin cupim.
             Ground round ball tip pastrami, turducken chicken porchetta fatback
-            frankfurter. Pig kielbasa jowl strip.<br /><br />Steak sausage pork loin bacon
-            tri-tip meatball shoulder cupim beef pork chop kevin boudin. Short
-            loin pig meatball ham landjaeger pastrami. Drumstick ham hock chuck
-            pork belly chicken prosciutto biltong salami ham pancetta.
+            frankfurter. Pig kielbasa jowl strip.
+            <br />
+            <br />
+            Steak sausage pork loin bacon tri-tip meatball shoulder cupim beef
+            pork chop kevin boudin. Short loin pig meatball ham landjaeger
+            pastrami. Drumstick ham hock chuck pork belly chicken prosciutto
+            biltong salami ham pancetta.
           </p>
-          <button className={classes.button}>Read more</button>
+          <Button />
         </div>
         <div className={classes.imageBlock}>
           <img className={classes.image} src={Image} />

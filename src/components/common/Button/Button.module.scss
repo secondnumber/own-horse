@@ -1,20 +1,14 @@
 @import "../../../Colors";
+@import "../../../Common";
 
-.button {
-  width: 200px;
-  height: 60px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, $cyan, $lilac);
-  color: $white;
-  border: none;
-  border-radius: 12px;
-  outline: none;
-  cursor: pointer;
+.buttonFill {
+  @include button(linear-gradient(90deg, $cyan, $lilac), $cyan, none, none, $white, $white);
 }
 
-.button:hover {
-  background: $cyan;
+.buttonContour {
+  @include button(transparent, $cyan, 2px solid $lilac, 2px solid $cyan, $white, $cyan);
+}
+
+.buttonWhite {
+  @include button($white, $cyan, none, none, $cyan, $white);
 }

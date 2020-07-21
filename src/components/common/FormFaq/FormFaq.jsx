@@ -7,6 +7,7 @@ import {
   required,
   validateEmail,
 } from '../../../utils/validators/validators';
+import Button from '../Button/Button';
 
 const maxLength40 = maxLengthCreator(40);
 const maxLength300 = maxLengthCreator(300);
@@ -48,7 +49,7 @@ const FormFaq = (props) => {
         placeholder="your question"
         validate={[required, maxLength300]}
       />
-      <button className={classes.button}>Ask question</button>
+      <Button />
     </form>
   );
 };

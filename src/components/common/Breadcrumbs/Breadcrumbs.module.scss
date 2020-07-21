@@ -1,35 +1,20 @@
 @import "../../../Colors";
+@import "../../../Common";
 
 .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    max-width: 100%;
+    @extend %wrapper;
     height: 40vh;
-    background-color: $blueDarkDeep;
+    min-height: 300px;
     background-image: url("../../../assets/Breadcrumbs/page-name.jpg");
     background-size: cover;
 }
 
-.crumbsBlock {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20vw;
-    padding-top: 100px;
-}
-
 .title {
-    font-family: 'Agency FB', sans-serif;
-    font-size: 48px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $white;
+    padding-top: 200px;
+    text-align: center;
+    @extend %bigHeader;
 }
 
-.linksList {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+.list {
+    @include list(center, center);
 }

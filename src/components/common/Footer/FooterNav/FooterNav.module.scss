@@ -1,19 +1,11 @@
 @import '../../../../Colors';
+@import '../../../../Common';
 
-.navItem {
+.item {
     padding: 0px 0px 40px 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $white;
+    @extend %linkFont;
 }
 
-.navItem:hover {
-    color: $cyan;
-}
-
-.navItemActive {
+.active {
     color: $lilac;
 }
