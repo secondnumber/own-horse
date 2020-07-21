@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Map.module.scss';
-import { GoogleApiWrapper, InfoWindow, Map, Marker } from 'google-maps-react';
+import { GoogleApiWrapper, Map, Marker } from 'google-maps-react';
 import LoaderContainer from '../Loader/LoaderContainer';
 
 const MyMap = (props) => {

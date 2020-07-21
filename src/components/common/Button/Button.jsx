@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './Button.module.scss';
 
-const Button = () => (
+const Button = (props) => (
   <div>
-    <button className={classes.buttonWhite}>Button</button>
+    <button className={classes.buttonWhite}>{props.name ? props.name : 'Button'}</button>
   </div>
 );
 

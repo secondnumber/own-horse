@@ -49,7 +49,9 @@ const FormFaq = (props) => {
         placeholder="your question"
         validate={[required, maxLength300]}
       />
-      <Button />
+      <div className={classes.btnBlock}>
+        <Button />
+      </div>
     </form>
   );
 };

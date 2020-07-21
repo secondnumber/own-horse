@@ -2,7 +2,6 @@ import React from 'react';
 import classes from './Footer.module.scss';
 import Social from '../SocialList/Social';
 import FooterNav from './FooterNav/FooterNav';
-import Logo from '../Header/Logo.png';
 
 const Footer = (props) => {
   let socialList = props.social.socialList.map((item) => (
@@ -17,7 +16,7 @@ const Footer = (props) => {
       <div className={classes.filter}>
         <div className={classes.block}>
           <div className={classes.logo}>
-            <img src={Logo} alt={'Logo'} />
+            <img src={props.navigation.logo} alt={'Logo'} />
           </div>
           <div>
             <ul className={classes.list}>{navMenu}</ul>
