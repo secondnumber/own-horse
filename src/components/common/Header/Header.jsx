@@ -1,27 +1,34 @@
 import React from 'react';
 import classes from './Header.module.scss';
-import Logo from '../../../assets/Header/Logo.png';
-import Search from '../../../assets/Header/Search.png';
 import HeaderMenu from './HeaderMenu/HeaderMenu';
 import Button from '../Button/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Header = (props) => {
   let menuItemElements = props.navigation.navMenuItems.map((el) => (
-    <HeaderMenu key={el.id} menuItem={el.menuItem} menuLink={el.menuLink} nestedMenu={el.nestedMenu}/>
+    <HeaderMenu
+      key={el.id}
+      menuItem={el.menuItem}
+      menuLink={el.menuLink}
+      nestedMenu={el.nestedMenu}
+    />
   ));
 
   return (
     <div className={classes.header}>
       <div className={classes.logo}>
-        <img className={classes.logoImage} src={Logo} />
+        <img className={classes.image} src={props.navigation.logo} />
         <div>
-          <p className={classes.logoName}>indiega</p>
-          <p className={classes.logoText}>gaming solutions</p>
+          <p className={classes.title}>indiega</p>
+          <p className={classes.label}>gaming solutions</p>
         </div>
       </div>
-      <ul className={classes.navList}>{menuItemElements}</ul>
+      <ul className={classes.list}>{menuItemElements}</ul>
       <div className={classes.utility}>
-        <img className={classes.searchImage} src={Search} />
+        <span className={classes.icon}>
+          <FontAwesomeIcon icon={faSearch} />
+        </span>
         <Button />
       </div>
     </div>

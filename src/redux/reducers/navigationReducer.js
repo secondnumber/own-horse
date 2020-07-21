@@ -1,4 +1,7 @@
+import LogoImage from '../../assets/Common/Logo.png';
+
 let initialState = {
+  logo: LogoImage,
   navMenuItems: [
     { id: 1, menuItem: 'Homepage', menuLink: '/' },
     {

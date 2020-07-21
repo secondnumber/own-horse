@@ -58,7 +58,9 @@ const FormContact = (props) => {
         placeholder="your message..."
         validate={[required, maxLength300]}
       />
-      <Button />
+      <div className={classes.btnBlock}>
+        <Button name={'Send message'} />
+      </div>
     </form>
   );
 };

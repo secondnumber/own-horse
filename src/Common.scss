@@ -85,3 +85,51 @@
     color: $colorHover;
   }
 }
+
+%placeholder {
+  color: $blueLight;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+%placeholderFocus {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+%input {
+  box-sizing: border-box;
+  height: 60px;
+  padding-left: 20px;
+  color: $blueLight;
+  background: $blueDark;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  &::placeholder {
+    @extend %placeholder;
+  }
+  &:focus::placeholder {
+    @extend %placeholderFocus;
+  }
+}
+
+%textarea {
+  box-sizing: border-box;
+  margin: 25px 0 0 0;
+  padding: 20px 0 0 20px;
+  color: $blueLight;
+  background: $blueDark;
+  border: none;
+  border-radius: 12px;
+  resize: none;
+  outline: none;
+  &::placeholder {
+    @extend %placeholder;
+  }
+  &:focus::placeholder {
+    @extend %placeholderFocus;
+  }
+}
