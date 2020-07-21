@@ -3,7 +3,7 @@ import classes from './Button.module.scss';
 
 const Button = () => (
   <div>
-    <button className={classes.button}>Button</button>
+    <button className={classes.buttonWhite}>Button</button>
   </div>
 );
 

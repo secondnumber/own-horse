@@ -1,0 +1,87 @@
+@import "./Colors";
+
+%wrapper {
+  width: 100vw;
+  max-width: 100%;
+  background-color: $blueDarkDeep;
+}
+
+@mixin block($width, $padding, $justify) {
+  margin: 0 auto;
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  width: $width;
+  padding: $padding;
+}
+
+@mixin list($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  list-style-type: none;
+}
+
+%shadowHeader {
+
+}
+
+%hugeHeader {
+
+}
+
+%bigHeader {
+  font-family: 'Agency FB', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+}
+
+%middleHeader {
+
+}
+
+%standartFont {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: $blueLight;
+}
+
+%hover {
+  cursor: pointer;
+}
+
+%linkFont {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+  &:hover {
+    @extend %hover;
+    color: $cyan;
+  }
+}
+
+@mixin button($background, $backgroundHover, $border, $borderHover, $color, $colorHover) {
+  width: 200px;
+  height: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: $background;
+  color: $color;
+  border: $border;
+  border-radius: 10px;
+  outline: none;
+  &:hover {
+    @extend %hover;
+    background: $backgroundHover;
+    border: $borderHover;
+    color: $colorHover;
+  }
+}

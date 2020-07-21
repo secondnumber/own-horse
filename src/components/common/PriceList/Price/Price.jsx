@@ -1,6 +1,7 @@
 import React from 'react';
 import './Price.scss';
 import classes from './Price.scss';
+import Button from '../../Button/Button';
 
 const Price = (props) => {
   return (
@@ -16,7 +17,7 @@ const Price = (props) => {
         <p className="feature">{props.featureOne}</p>
         <p className="feature">{props.featureTwo}</p>
         <p className="feature">{props.featureThree}</p>
-        <button className="button">Buy Plan Now</button>
+        <Button />
       </div>
     </div>
   );

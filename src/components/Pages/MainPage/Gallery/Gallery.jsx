@@ -2,9 +2,12 @@ import React from 'react';
 import classes from './Gallery.module.scss';
 import Tag from '../../../common/Tag/Tag';
 import Image from './Image/Image';
+import Button from '../../../common/Button/Button';
 
 const Gallery = (props) => {
-  let tagsList = props.gallery.galleryTags.map((tag) => <Tag galleryTag={tag.tag} />);
+  let tagsList = props.gallery.galleryTags.map((tag) => (
+    <Tag galleryTag={tag.tag} />
+  ));
 
   let imagesList = props.gallery.galleryImgPreview.map((image) => (
     <Image galleryImages={image.src} position={image.position} />
@@ -18,7 +21,7 @@ const Gallery = (props) => {
       </div>
       <div className={classes.tagsBlock}>{tagsList}</div>
       <div className={classes.imagesBlock}>{imagesList}</div>
-      <button className={classes.button}>Discover more</button>
+      <Button />
     </div>
   );
 };

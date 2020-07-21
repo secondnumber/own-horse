@@ -3,6 +3,7 @@ import classes from './Header.module.scss';
 import Logo from '../../../assets/Header/Logo.png';
 import Search from '../../../assets/Header/Search.png';
 import HeaderMenu from './HeaderMenu/HeaderMenu';
+import Button from '../Button/Button';
 
 const Header = (props) => {
   let menuItemElements = props.navigation.navMenuItems.map((el) => (
@@ -21,7 +22,7 @@ const Header = (props) => {
       <ul className={classes.navList}>{menuItemElements}</ul>
       <div className={classes.utility}>
         <img className={classes.searchImage} src={Search} />
-        <button className={classes.button}>Join us Now</button>
+        <Button />
       </div>
     </div>
   );
