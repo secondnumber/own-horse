@@ -1,4 +1,5 @@
 @import '../../../../../Colors';
+@import '../../../../../Common';
 
 .list {
   position: absolute;
@@ -32,18 +33,9 @@
 
 .link {
   padding: 10px 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $white;
+  @extend %linkFont;
 }
 
-.link:hover {
-  color: $cyan;
-}
-
-.linkActive:active {
+.active:active {
   color: $lilac;
 }
