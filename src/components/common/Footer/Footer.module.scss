@@ -2,7 +2,7 @@
 @import '../../../Common';
 
 .wrapper {
-    @extend %wrapper;
+    @include wrapper($blueDarkDeep);
     height: 500px;
     background-image: url("footer-bg.jpg");
     background-repeat: no-repeat;

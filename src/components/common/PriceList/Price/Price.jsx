@@ -1,23 +1,33 @@
 import React from 'react';
-import './Price.scss';
-import classes from './Price.scss';
+import classes from './Price.module.scss';
 import Button from '../../Button/Button';
 
 const Price = (props) => {
+  debugger;
   return (
-    <div className="wrapper">
-      <h1 className="header">{props.name}</h1>
-      <div className={`${props.bgClass} price-wrapper`}>
-        <span className="currency">{props.currency} </span>
-        <span className="integer">{props.integer} </span>
-        <span className="fraction">{props.fraction}</span>
-        <span className="period">{props.period}</span>
+    <div className={classes.wrapper}>
+      <h1 className={classes.header}>{props.name}</h1>
+      <div
+        className={`${
+          props.color === 'cyan'
+            ? classes.cyan
+            : props.color === 'blue'
+            ? classes.blue
+            : classes.lilac
+        } ${classes.value}`}
+      >
+        <span className={classes.currency}>{props.currency} </span>
+        <span className={classes.integer}>{props.integer} </span>
+        <span className={classes.fraction}>{props.fraction}</span>
+        <span className={classes.period}>{props.period}</span>
       </div>
-      <div className="features">
-        <p className="feature">{props.featureOne}</p>
-        <p className="feature">{props.featureTwo}</p>
-        <p className="feature">{props.featureThree}</p>
-        <Button />
+      <ul className={classes.features}>
+        <li className={classes.feature}>{props.featureOne}</li>
+        <li className={classes.feature}>{props.featureTwo}</li>
+        <li className={classes.feature}>{props.featureThree}</li>
+      </ul>
+      <div className={classes.btnBlock}>
+        <Button name={'Buy plan now'} />
       </div>
     </div>
   );

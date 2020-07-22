@@ -1,43 +1,15 @@
 @import "../../../Colors";
+@import "../../../Common";
 
 .item {
     margin: 0 10px;
 }
 
 .button {
-    width: 60px;
-    height: 60px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $white;
-    background: $blueDark;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    outline:none;
-}
-
-.button:hover {
-    background: linear-gradient(90deg, $cyan, $lilac);
-    border: none;
-    outline:none;
+    @include button(60px, transparent, $cyan, 2px solid $lilac, 2px solid $cyan, $white, $white);
 }
 
 .current {
-    width: 60px;
-    height: 60px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $white;
-    background: $blueDark;
-    cursor: pointer;
-    background: linear-gradient(90deg, $cyan, $lilac);
-    border: none;
-    border-radius: 10px;
-    outline:none;
+    @include button(60px, linear-gradient(90deg, $cyan, $lilac), $cyan, none, none, $white, $white);
 }
 

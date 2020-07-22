@@ -2,13 +2,13 @@
 @import "../../../Common";
 
 .buttonFill {
-  @include button(linear-gradient(90deg, $cyan, $lilac), $cyan, none, none, $white, $white);
+  @include button(200px, linear-gradient(90deg, $cyan, $lilac), $cyan, none, none, $white, $white);
 }
 
 .buttonContour {
-  @include button(transparent, $cyan, 2px solid $lilac, 2px solid $cyan, $white, $cyan);
+  @include button(200px, transparent, $cyan, 2px solid $lilac, 2px solid $cyan, $white, $cyan);
 }
 
 .buttonWhite {
-  @include button($white, $cyan, none, none, $cyan, $white);
+  @include button(200px, $white, $cyan, none, none, $cyan, $white);
 }

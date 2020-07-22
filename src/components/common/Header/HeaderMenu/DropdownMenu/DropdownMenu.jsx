@@ -8,7 +8,7 @@ const DropdownMenu = (props) => {
       <NavLink
         to={el.nestedMenuLink}
         className={classes.link}
-        activeClassName={classes.linkActive}
+        activeClassName={classes.active}
       >
         {el.nestedMenuItem}
       </NavLink>

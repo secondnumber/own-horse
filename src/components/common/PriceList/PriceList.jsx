@@ -10,7 +10,7 @@ const PriceList = (props) => {
       integer={price.integer}
       fraction={price.fraction}
       period={price.period}
-      bgClass={price.bgClass}
+      color={price.color}
       featureOne={price.featureOne}
       featureTwo={price.featureTwo}
       featureThree={price.featureThree}
@@ -23,7 +23,7 @@ const PriceList = (props) => {
         <h2 className={classes.title}>Our Pricing Plans</h2>
         <h2 className={classes.subtitle}>Spesial Plans</h2>
       </div>
-      <div className={classes.pricesBlock}>{priceList}</div>
+      <div className={classes.block}>{priceList}</div>
     </div>
   );
 };

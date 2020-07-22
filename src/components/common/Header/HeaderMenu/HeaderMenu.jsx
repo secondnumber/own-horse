@@ -25,7 +25,7 @@ render() {
             <NavLink
                 to={this.props.menuLink}
                 className={classes.link}
-                activeClassName={classes.linkActive}
+                activeClassName={classes.active}
             >
                 {this.props.menuItem}
             </NavLink>
