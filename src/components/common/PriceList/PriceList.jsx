@@ -19,7 +19,7 @@ const PriceList = (props) => {
 
   return (
     <div className={classes.wrapper}>
-      <div className={classes.headers}>
+      <div className={classes.header}>
         <h2 className={classes.title}>Our Pricing Plans</h2>
         <h2 className={classes.subtitle}>Spesial Plans</h2>
       </div>
