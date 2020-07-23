@@ -1,22 +1,17 @@
 @import '../../../Colors';
+@import '../../../Common';
 
 .wrapper {
-    width: 100vw;
-    max-width:100%;
     min-height: 250px;
-    background: linear-gradient(90deg, $cyan, $lilac);
+    @include wrapper(linear-gradient(90deg, $cyan, $lilac));
 }
 
 .block {
-    margin: 0 auto;
-    width: 70vw;
+    @include block(70vw, 0, center);
     min-height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.headers {
+.header {
     position: relative;
     width: 30vw;
     min-height: 100px;

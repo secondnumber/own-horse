@@ -13,7 +13,7 @@ const Button = (props) => (
           ? classes.buttonGradientSquare
           : classes.buttonGradient
       }
-      onClick={props.do}
+      onClick={props.buttonHandler}
     >
       {props.name ? props.name : 'Button'}
     </button>
