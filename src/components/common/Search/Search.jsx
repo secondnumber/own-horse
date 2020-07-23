@@ -3,6 +3,7 @@ import classes from './Search.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Field, reduxForm } from 'redux-form';
+import Button from '../Button/Button';
 
 const Search = (props) => {
   return (
@@ -14,9 +15,12 @@ const Search = (props) => {
         type="text"
         placeholder="Search here..."
       />
-      <button className={classes.button} type="submit">
-        <FontAwesomeIcon icon={faSearch} />
-      </button>
+      <div className={classes.button}>
+        <Button
+          name={<FontAwesomeIcon icon={faSearch} />}
+          style={'buttonGradientSquare'}
+        />
+      </div>
     </form>
   );
 };

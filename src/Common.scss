@@ -3,7 +3,7 @@
 @mixin wrapper($background) {
   width: 100vw;
   max-width: 100%;
-  background-color: $background;
+  background: $background;
 }
 
 @mixin block($width, $padding, $justify) {

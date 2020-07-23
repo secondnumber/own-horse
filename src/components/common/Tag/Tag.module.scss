@@ -1,15 +1,6 @@
 @import '../../../Colors';
+@import '../../../Common';
 
 .tag {
-  padding: 0 10px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $white;
-}
-
-.tag:hover {
-  color: $cyan;
+  @extend %linkFont;
 }

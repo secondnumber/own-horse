@@ -14,7 +14,7 @@ const ScrollButton = (props) => {
       <Button
         name={<FontAwesomeIcon icon={faArrowUp} />}
         style={'buttonGradientSquare'}
-        do={scrollUp}
+        buttonHandler={scrollUp}
       />
     </div>
   );

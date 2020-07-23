@@ -12,7 +12,7 @@ const Subscribe = (props) => {
   return (
     <div className={classes.wrapper}>
       <div className={classes.block}>
-        <div className={classes.headers}>
+        <div className={classes.header}>
           <h2 className={classes.title}>register for our Newsletter now</h2>
           <h2 className={classes.subtitle}>Newslatter</h2>
           <p className={classes.caption}>We are always ready to welcome you!</p>
