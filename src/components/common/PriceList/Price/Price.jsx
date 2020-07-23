@@ -27,7 +27,7 @@ const Price = (props) => {
         <li className={classes.feature}>{props.featureThree}</li>
       </ul>
       <div className={classes.btnBlock}>
-        <Button name={'Buy plan now'} />
+        <Button name={'Buy plan now'} style={'buttonContour'} />
       </div>
     </div>
   );
