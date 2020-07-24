@@ -1,4 +1,5 @@
 @import "../../../../Colors";
+@import "../../../../Common";
 
 .wrapper {
   width: 100%;
@@ -6,13 +7,9 @@
 }
 
 .header {
-  font-family: "Agency FB", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: $white;
-  text-transform: uppercase;
   padding-bottom: 20px;
   text-align: center;
+  @extend %middleHeader;
 }
 
 .list {
@@ -34,8 +31,7 @@
 }
 
 .title {
-  font-family: "Agency FB", sans-serif;
-  font-size: 16px;
+  @extend %smallHeader;
 }
 
 .link {

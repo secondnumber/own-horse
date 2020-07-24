@@ -11,6 +11,8 @@ const Button = (props) => (
           ? classes.buttonWhite
           : props.style === 'buttonGradientSquare'
           ? classes.buttonGradientSquare
+          : props.style === 'buttonContourSquare'
+          ? classes.buttonContourSquare
           : classes.buttonGradient
       }
       onClick={props.buttonHandler}

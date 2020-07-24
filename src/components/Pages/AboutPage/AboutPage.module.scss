@@ -1,15 +1,13 @@
 @import "../../../Colors";
+@import "../../../Common";
 
 .wrapper {
-  width: 100vw;
-  background-color: $blueDarkDeep;
+  @include  wrapper($blueDarkDeep);
   background-image: url('../../../assets/AboutPage/about-bg.jpg');
 }
 
 .list {
   height: 380px;
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
+  @include list(space-around, stretch);
   background-color: transparentize($blueDarkDeep, 0.1);
 }

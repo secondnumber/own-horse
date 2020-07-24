@@ -1,40 +1,33 @@
 @import "../../../Colors";
+@import "../../../Common";
 
-.wrapper {
+.extraWrapper {
   position: relative;
 }
 
-.block {
-  width: 100vw;
-  max-width: 100%;
+.wrapper {
   padding: 100px 0;
-  background-color: $blueDarkDeep;
+  @include wrapper($blueDarkDeep);
 }
 
 .tagsList {
   width: 40vw;
   margin: 0 auto;
   padding-bottom: 50px;
-  display: flex;
-  justify-content: space-around;
+  @include list(space-around, center);
   flex-wrap: wrap;
-  list-style-type: none;
 }
 
 .imagesList {
   width: 65vw;
   margin: 0 auto;
   padding-bottom: 50px;
-  display: flex;
-  justify-content: center;
+  @include list(center, center);
   flex-wrap: wrap;
-  list-style-type: none;
 }
 
 .numbersList {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
+  @include list(center, center);
 }
 
 

@@ -1,16 +1,12 @@
 @import "../../../../Colors";
+@import "../../../../Common";
 
 .wrapper {
   background-color: $blueDarkDeep;
 }
 
 .aboutBlock {
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  width: 60vw;
-  margin: 0 auto;
-  padding: 100px 0;
+  @include block(60vw, 100px 0, space-around);
 }
 
 .headers {
@@ -25,11 +21,7 @@
   z-index: 2;
   top: 0px;
   left: 0px;
-  font-family: "Agency FB", sans-serif;
-  font-size: 80px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $white;
+  @extend %hugeHeader;
 }
 
 .subtitle {
@@ -59,25 +51,20 @@
 }
 
 .textBlock {
-  padding: 100px 20px 0 0;
+  padding: 100px 30px 0 0;
 }
 
 .text {
+  margin-bottom: 20px;
   line-height: 1.8;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: $blueLight;
+  @extend %standartFont;
 }
 
 .label {
-  padding-left: 30px;
+  padding-left: 50px;
   line-height: 1.8;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  color: $blueLight;
+  @extend %standartFont;
   background-image: url("../../../../assets/AboutPage/tick.png");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 20px;
 }
