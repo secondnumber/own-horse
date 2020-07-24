@@ -1,13 +1,10 @@
 @import "../../../../Colors";
+@import "../../../../Common";
 
 .header {
   padding-bottom: 20px;
-  font-family: "Agency FB", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: $white;
-  text-transform: uppercase;
   text-align: center;
+  @extend  %middleHeader;
 }
 
 .list {
@@ -15,7 +12,6 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .item {

@@ -29,11 +29,11 @@ const GalleryPage = (props) => {
   let pageNumbersList = <PageNumbersContainer />;
 
   return (
-    <div className={classes.wrapper}>
+    <div className={classes.extraWrapper}>
       <ScrollButton />
       <HeaderContainer />
       <BreadcrumbsContainer />
-      <div className={classes.block}>
+      <div className={classes.wrapper}>
         <ul className={classes.tagsList}>{tagsList}</ul>
         <ul className={classes.imagesList}>{imagesList}</ul>
         <ul className={classes.numbersList}>{pageNumbersList}</ul>;

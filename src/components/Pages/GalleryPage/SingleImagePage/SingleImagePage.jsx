@@ -15,9 +15,12 @@ import {
   useParams,
   useRouteMatch,
 } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import Button from '../../../common/Button/Button';
 
 const SingleImagePage = (props) => {
-
   let imagesList = props.gallery.galleryImages.map((image) => {
     if (image.id <= 4) {
       return (
@@ -36,13 +39,19 @@ const SingleImagePage = (props) => {
       <HeaderContainer />
       <BreadcrumbsContainer />
       <div className={classes.wrapper}>
-        <button className={classes.button}>&lt;</button>
+        <Button
+          name={<FontAwesomeIcon icon={faChevronLeft} />}
+          style={'buttonContourSquare'}
+        />
         <div className={classes.block}>
           <img className={classes.image} src={ImageBig} alt="" />
           <span className={classes.tag}>PS VITA</span>
           <h2 className={classes.title}>COW BILTONG PORK BELLY KIEL</h2>
         </div>
-        <button className={classes.button}>&gt;</button>
+        <Button
+          name={<FontAwesomeIcon icon={faChevronRight} />}
+          style={'buttonContourSquare'}
+        />
       </div>
       <ul className={classes.list}>{imagesList}</ul>
       <FooterContainer />

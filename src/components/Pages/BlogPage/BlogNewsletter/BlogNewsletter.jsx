@@ -9,10 +9,13 @@ const BlogNewsletter = (props) => {
   return (
     <div className={classes.wrapper}>
       <h2 className={classes.header}>SIGN UP NEWSLETTER</h2>
-        <div className={classes.block}>
+      <div className={classes.block}>
         <FormSubscribe onSubmit={submit} />
-        </div>
-        <p>Subscribe to our Newsletter right now to be updated. We promice not to spam!</p>
+      </div>
+      <p>
+        Subscribe to our Newsletter right now to be updated. We promice not to
+        spam!
+      </p>
     </div>
   );
 };

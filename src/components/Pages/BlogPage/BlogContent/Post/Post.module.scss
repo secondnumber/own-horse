@@ -1,4 +1,5 @@
 @import "../../../../../Colors";
+@import "../../../../../Common";
 
 .wrapper {
   max-width: 700px;
@@ -32,21 +33,15 @@
 
 .tag {
   grid-area: tag;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $cyan;
+  @extend %tag;
 }
 
 .date {
   grid-area: date;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: right;
-  color: $blueLight;
 }
 
 .header {
@@ -65,10 +60,7 @@
 
 .description {
   grid-area: content;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: $blueLight;
+  @extend %standartFont;
 }
 
 .icon {
@@ -78,16 +70,11 @@
 
 .author {
   grid-area: author;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  font-weight: 300;
-  color: $blueLight;
 }
+
 .comment {
   grid-area: comment;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  font-weight: 300;
   text-align: right;
-  color: $blueLight;
 }

@@ -1,9 +1,9 @@
 @import "../../../../Colors";
+@import "../../../../Common";
 
 .wrapper {
-  width: 100vw;
   padding: 100px 0;
-  background-color: $blueDarkDeep;
+  @include wrapper($blueDarkDeep);
 }
 
 .block {

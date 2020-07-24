@@ -1,18 +1,13 @@
 @import "../../../Colors";
+@import "../../../Common";
 
 .wrapper {
-  width: 100vw;
-  max-width: 100%;
+  @include wrapper($blueDarkDeep);
   padding: 100px 0 0 0;
-  background-color: $blueDarkDeep;
 }
 
 .block {
-  width: 65vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  @include block(65vw, 0, space-between, flex-start);
 }
 
 .sidebar {

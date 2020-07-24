@@ -13,6 +13,7 @@ const Categories = (props) => {
       <span className={classes.counter}>/{el.counter}</span>
     </li>
   ));
+
   return (
     <div className={classes.wrapper}>
       <h2 className={classes.header}>Categories</h2>
