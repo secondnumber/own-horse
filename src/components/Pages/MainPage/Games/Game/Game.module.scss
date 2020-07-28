@@ -1,21 +1,22 @@
 @import '../../../../../Colors';
+@import '../../../../../Common';
 
 .wrapper {
-    width: 100vw;
-    max-width:100%;
+    @include wrapper($blueDarkDeep);
     margin: 40px 0 0 0;
-    background-color: $blueDarkDeep;
+    padding-bottom: 60px;
 }
 
 .block {
+    position: relative;
     display: grid;
-    width: 70vw;
+    width: 60vw;
     height: 600px;
     grid-template-columns: 1fr 10fr 1fr 10fr 1fr;
     grid-template-rows: 65px 1fr 65px;
     grid-template-areas:
             ". . . . ."
-            ". content . image image"
+            ". content . image ."
             ". . . . .";
     margin: 0 auto;
     background-color: $blueDark;
@@ -31,7 +32,7 @@
             "tags date"
             "title title"
             "description description"
-            "button .";
+            "button stars";
 }
 
 .imageBlock {
@@ -40,61 +41,35 @@
 
 .tags {
     grid-area: tags;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $cyan;
+    @extend %tag;
 }
 
 .date {
     grid-area: date;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $blueLight;
-    text-align: right;
+    @extend %date;
 }
 
 .title {
     grid-area: title;
     padding-top: 10px;
-    font-family: 'Agency FB', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $white;
+    @extend %middleHeader;
 }
 
 .description {
     grid-area: description;
     padding-top: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: $blueLight;
+    @extend %standartFont;
 }
 
-.button {
-    grid-area: button;
-    width: 220px;
-    height: 60px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $white;
-    background-color: $blueDark;
-    border: 2px solid $lilac;
-    border-radius: 10px;
-}
-
-.button:hover {
-    border: 2px solid $cyan;
-    background-color: $cyan;
+.stars {
+    grid-area: stars;
+    padding-top: 20px;
+    text-align: right;
+    color: orange;
 }
 
 .image {
+    position: absolute;
+    right: -60px;
     border-radius: 12px;
 }

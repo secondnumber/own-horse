@@ -1,4 +1,5 @@
 @import '../../../../../Colors';
+@import '../../../../../Common';
 
 .wrapper {
     max-width: 350px;
@@ -9,12 +10,12 @@
 .blockPost {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px 1fr 2fr 20px;
+    grid-template-rows: 30px 1fr 2fr 20px;
     grid-template-areas:
             "tag date"
             "header header"
             "content content"
-            "author .";
+            "author comment";
     padding: 30px;
 }
 
@@ -25,45 +26,48 @@
 
 .tag {
     grid-area: tag;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $cyan;
+    @extend %tag;
 }
 
 .date {
     grid-area: date;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $blueLight;
+    @extend %date;
 }
 
 .header {
     grid-area: header;
-    font-family: 'Agency FB', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: left;
-    color: $white;
+    @extend %middleHeader;
 }
 
 .description {
     grid-area: content;
     padding-top: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: $blueLight;
+    @extend %standartFont;
 }
 
 .author {
     grid-area: author;
-    font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 300;
-    color: $blueLight;
+}
+
+.comments {
+    grid-area: comment;
+    text-align: right;
+    font-size: 14px;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+.cyan {
+    color: $cyan;
+}
+
+.blue {
+    color: $blue;
+}
+
+.lilac {
+    color: $lilac;
 }

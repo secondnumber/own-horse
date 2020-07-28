@@ -21,7 +21,7 @@ const Questions = (props) => {
         Corned beef ham frankfurter cow, strip steak shoulder doner flank. Pork
         chop spare ribs pork ball tip. Prosciutto jowl meatball shank
       </p>
-      <div className={classes.questionsWrapper}>{questionsList}</div>
+      <div className={classes.block}>{questionsList}</div>
     </div>
   );
 };

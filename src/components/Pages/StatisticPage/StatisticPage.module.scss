@@ -1,57 +1,29 @@
 @import "../../../Colors";
+@import "../../../Common";
 
 .wrapper {
-  width: 100vw;
-  max-width: 100%;
-  background-color: $blueDarkDeep;
+  @include wrapper($blueDarkDeep);
 }
 
 .content {
-  width: 65vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  @include block(65vw, 0, space-between, flex-start);
 }
 
 .headers {
-  position: relative;
-  min-height: 100px;
-  margin: 0px auto;
-  padding: 80px 0 20px 0;
+  @extend %shadowHeader;
 }
 
 .subtitle {
-  position: absolute;
-  z-index: 1;
-  top: 50px;
-  width: 100%;
-  text-align: center;
-  font-family: "Agency FB", sans-serif;
-  font-size: 88px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $textShadow;
+  @extend %shadowSubtitle;
 }
 
 .title {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  text-align: center;
-  font-family: "Agency FB", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $white;
+  @extend %shadowTitle;
 }
 
 .label {
-  margin-bottom: 30px;
-  font-family: "Agency FB", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $white;
+  @extend %smallHeader;
+  padding-bottom: 20px;
 }
 
 .list {
@@ -84,7 +56,5 @@
 
 .numbersList {
   margin: 30px 0;
-  display: flex;
-  justify-content: flex-end;
-  list-style-type: none;
+  @include list(flex-end, center);
 }

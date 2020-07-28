@@ -1,59 +1,37 @@
 @import '../../../../Colors';
+@import '../../../../Common';
 
 .wrapper {
-    width: 100vw;
-    max-width: 100%;
-    background-color: $blueDarkDeep;
-    padding-bottom: 100px;
+    padding: 50px 0 100px 0;
+    @include wrapper($blueDarkDeep);
 }
 
 .headers {
-    position: relative;
-    width: 80vw;
-    min-height: 100px;
-    margin: 0px auto;
-    padding: 80px 0 60px 0;
+    @extend %shadowHeader;
 }
 
 .subtitle {
-    position: absolute;
-    z-index: 1;
-    top: 50px;
-    width: 100%;
-    text-align: center;
-    font-family: "Agency FB", sans-serif;
-    font-size: 88px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $textShadow;
+    @extend %shadowSubtitle;
 }
 
 .title {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    text-align: center;
-    font-family: "Agency FB", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $white;
+    @extend %shadowTitle;
 }
 
 
-.testimonialsWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 80vw;
-    margin: 0 auto;
+.block {
+    @include block(80vw, 0, space-between, center);
 }
 
-.button {
-    align-self: center;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
+.icon {
+    color: $cyan;
+    &:hover {
+        color: $lilac;
+    }
+}
+
+.toggle {
+    height: 30px;
+    width: 20px;
+    @extend %toggle;
 }

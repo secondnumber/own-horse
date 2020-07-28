@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Button.module.scss';
 
 const Button = (props) => (
-  <div>
+  <>
     <button
       className={
         props.style === 'buttonContour'
@@ -19,7 +19,7 @@ const Button = (props) => (
     >
       {props.name ? props.name : 'Button'}
     </button>
-  </div>
+  </>
 );
 
 export default Button;

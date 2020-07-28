@@ -1,17 +1,8 @@
 @import '../../../../../Colors';
+@import '../../../../../Common';
 
 .wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 565px;
-    background-color: $black;
-    border-radius: 12px;
-    background-image: url("quote-left.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
+    @extend %quoteBlock;
 }
 
 .image {
@@ -25,29 +16,18 @@
 .header {
     padding-top: 80px;
     text-align: center;
-    font-family: 'Agency FB', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $white;
+    @extend %middleHeader;
 }
 
 .status {
     padding-top: 10px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $cyan;
+    @extend %tag;
 }
 
 .description {
-    padding: 20px 30px;
+    padding: 20px 30px 40px 30px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    font-style: italic;
-    color: $blueLight;
+    @extend %standartFont;
+    line-height: 180%;
 }

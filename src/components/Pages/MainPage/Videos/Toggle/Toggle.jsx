@@ -1,13 +1,14 @@
 import React from 'react';
-import classes from './Toggle.scss';
+import classes from './Toggle.module.scss';
+import { NavLink } from 'react-router-dom';
 
 const Toggle = (props) => {
   return (
-    <div className={props.toggleClass}>
-      <a className="link" href="#">
+    <li className={classes.tag}>
+      <NavLink className={classes.link} to="#">
         {props.toggleItem}
-      </a>
-    </div>
+      </NavLink>
+    </li>
   );
 };
 

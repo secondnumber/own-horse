@@ -12,11 +12,26 @@
 }
 
 .title {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: $blueLight;
+  @extend %standartFont;
 }
 
 .contact {
   @extend %smallHeader;
 }
+
+.cyan {
+  color: $cyan;
+}
+
+.blue {
+  color: $blue;
+}
+
+.lilac {
+  color: $lilac;
+}
+
+.gray {
+  color: $gray;
+}
+

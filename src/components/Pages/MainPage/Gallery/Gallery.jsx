@@ -19,9 +19,11 @@ const Gallery = (props) => {
         <h2 className={classes.title}>Screenshots gallery</h2>
         <h2 className={classes.subtitle}>all New Images</h2>
       </div>
-      <div className={classes.tagsBlock}>{tagsList}</div>
-      <div className={classes.imagesBlock}>{imagesList}</div>
-      <Button />
+      <ul className={classes.tagsList}>{tagsList}</ul>
+      <div className={classes.imagesList}>{imagesList}</div>
+      <div className={classes.btnBlock}>
+        <Button name={'Discover more'} style={'buttonContour'} />
+      </div>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 @import '../../../../../Colors';
+@import '../../../../../Common';
 
 .label {
     grid-area: label;
@@ -6,16 +7,10 @@
 }
 
 .caption {
-    font-family: 'Agency FB', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $white;
+    @extend %middleHeader;
+    padding-bottom: 15px;
 }
 
 .count {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: $blueLight;
+    @extend %standartFont;
 }

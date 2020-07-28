@@ -1,6 +1,6 @@
 import PostImg1 from '../../assets/Posts/blog-img-1.jpg';
-import PostImg2 from '../../assets/Posts/blog-img-1.jpg';
-import PostImg3 from '../../assets/Posts/blog-img-1.jpg';
+import PostImg2 from '../../assets/Posts/blog-img-2.jpg';
+import PostImg3 from '../../assets/Posts/blog-img-3.jpg';
 
 let initialState = {
   postsList: [
@@ -12,7 +12,9 @@ let initialState = {
       description:
         'Turducken cupim hamburger beef ribs picanha, drumstick buffalo tri-tip cow. Turducken prosciutto shank pork chop.',
       author: 'Admin',
+      comments: 126,
       src: PostImg1,
+      color: 'cyan',
     },
     {
       id: 2,
@@ -22,7 +24,9 @@ let initialState = {
       description:
         'Capicola beef ribs pastrami biltong pork chop corned beef alcatra tail landjaeger. Spare ribs t-bone buffalo capicola, pork belly.',
       author: 'Admin',
+      comments: 452,
       src: PostImg2,
+      color: 'blue',
     },
     {
       id: 3,
@@ -32,7 +36,9 @@ let initialState = {
       description:
         'Capicola chicken rump biltong boudin corned beef prosciutto short loin pork chop fatback flank beef porchetta tenderloin.',
       author: 'Admin',
+      comments: 364,
       src: PostImg3,
+      color: 'lilac',
     },
   ],
 };

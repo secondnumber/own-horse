@@ -11,7 +11,9 @@ const NotFound = (props) => (
       </span>
       <span className={classes.number}>4</span>
       <p className={classes.text}>SORRY, PAGE NOT FOUND!</p>
-      <Button />
+      <div className={classes.btnBlock}>
+        <Button name={'Go to main page'} style={'buttonContour'} />
+      </div>
     </div>
   </div>
 );

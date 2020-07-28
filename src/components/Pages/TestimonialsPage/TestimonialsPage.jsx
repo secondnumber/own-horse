@@ -29,7 +29,9 @@ const TestimonialsPage = (props) => {
       <BreadcrumbsContainer />
       <div className={classes.wrapper}>
         <ul className={classes.list}>{testimonialsList}</ul>
-        <Button />
+        <div className={classes.btnBlock}>
+          <Button name={'Show more'} style={'buttonContour'} />
+        </div>
       </div>
       <FooterContainer />
     </div>

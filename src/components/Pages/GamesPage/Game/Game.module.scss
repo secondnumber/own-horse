@@ -1,4 +1,5 @@
 @import '../../../../Colors';
+@import '../../../../Common';
 
 .wrapper {
     max-width: 350px;
@@ -25,46 +26,22 @@
 }
 
 .tag {
+    @extend %tag;
     grid-area: tag;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $cyan;
 }
 
 .date {
-    grid-area: date;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $blueLight;
+    @extend %date;
 }
 
 .header {
     grid-area: header;
-    font-family: 'Agency FB', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
+    @extend %middleHeader;
     text-align: left;
-    color: $white;
 }
 
 .description {
     grid-area: content;
     padding-top: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: $blueLight;
-}
-
-.author {
-    grid-area: author;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: $blueLight;
+    @extend %standartFont;
 }

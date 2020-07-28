@@ -37,11 +37,7 @@
 }
 
 .date {
-  grid-area: date;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: right;
+  @extend %date;
 }
 
 .header {
@@ -51,11 +47,7 @@
 
 .link {
   font-family: 'Agency FB', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $white;
+  @extend %middleHeader;
 }
 
 .description {

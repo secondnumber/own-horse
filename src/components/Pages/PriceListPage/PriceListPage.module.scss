@@ -1,14 +1,11 @@
 @import "../../../Colors";
+@import "../../../Common";
 
 .wrapper {
-  width: 100vw;
-  padding: 100px 0;
-  background-color: $blueDarkDeep;
+  @include wrapper($blueDarkDeep);
 }
 
 .block {
-  width: 70vw;
-  margin: 0 auto;
-  display: flex;
+  @include block(70vw, 0, center);
   flex-wrap: wrap;
 }

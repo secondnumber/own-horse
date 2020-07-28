@@ -18,7 +18,7 @@ const Intro = (props) => {
         <p className={classes.caption}>{props.caption}</p>
         <h1 className={classes.header}>{props.header}</h1>
         <p className={classes.description}>{props.description}</p>
-        <Button />
+        <Button name={'More about us'} style={'buttonWhite'} />
       </div>
       <ul className={classes.socialList}>{socialList}</ul>
     </div>

@@ -1,13 +1,23 @@
 @import '../../../../../Colors';
+@import '../../../../../Common';
 
 .wrapper {
-    width: 50%;
+    width: 45%;
     display: flex;
+}
+
+.wrapper:nth-child(-n+2) {
+    border-bottom: 1px solid $blueDark;
+}
+
+.wrapper:nth-child(odd) {
+    border-right: 1px solid $blueDark;
 }
 
 .round {
     min-width: 100px;
     height: 100px;
+    margin: 30px 0 0 30px;
     text-align: center;
     background: linear-gradient(90deg, $cyan, $lilac);
     border-radius: 50%;
@@ -17,27 +27,16 @@
     display: inline-block;
     margin-top: 25px;
     text-align: center;
-    font-family: "Agency FB", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $white;
+    @extend %bigHeader;
 }
 
 .title {
-    padding-bottom: 20px;
-    font-family: "Agency FB", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $white;
+    padding: 25px 0;
+    @extend %middleHeader;
 }
 
 .description {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 30;
-    color: $blueLight;
+    @extend %standartFont;
 }
 
 .content {

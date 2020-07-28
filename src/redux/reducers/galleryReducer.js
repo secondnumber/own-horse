@@ -21,10 +21,10 @@ const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
 
 let initialState = {
   galleryImgPreview: [
-    { id: 1, position: 'img-left', src: Img1 },
-    { id: 2, position: 'img-center', src: Img2 },
-    { id: 3, position: 'img-right', src: Img3 },
-    { id: 4, position: 'img-bottom', src: Img4 },
+    { id: 1, position: 'left', src: Img1 },
+    { id: 2, position: 'center', src: Img2 },
+    { id: 3, position: 'right', src: Img3 },
+    { id: 4, position: 'bottom', src: Img4 },
   ],
   galleryTags: [
     { id: 1, tag: 'ALL' },

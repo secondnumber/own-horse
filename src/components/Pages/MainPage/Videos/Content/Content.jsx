@@ -4,10 +4,10 @@ import Button from '../../../../common/Button/Button';
 
 const Content = (props) => {
   return (
-    <div className={classes.contentBlock}>
+    <div className={classes.block}>
       <h1 className={classes.header}>{props.header}</h1>
       <p className={classes.description}>{props.descriprion}</p>
-      <Button />
+      <Button name={'Get started now'} style={'buttonGradient'} />
     </div>
   );
 };
