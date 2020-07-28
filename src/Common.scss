@@ -102,6 +102,15 @@
   color: $cyan;
 }
 
+%date {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $blueLight;
+  text-align: right;
+}
+
 %hover {
   cursor: pointer;
 }
@@ -117,6 +126,20 @@
     @extend %hover;
     color: $cyan;
   }
+}
+
+%quoteBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 565px;
+  background-color: $black;
+  border-radius: 12px;
+  background-image: url("./assets/Common/quote-left.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 @mixin button($width, $background, $backgroundHover, $border, $borderHover, $color, $colorHover) {
@@ -184,5 +207,14 @@
   }
   &:focus::placeholder {
     @extend %placeholderFocus;
+  }
+}
+
+%toggle {
+  background: none;
+  border: none;
+  outline: none;
+  &:hover {
+    cursor: pointer;
   }
 }

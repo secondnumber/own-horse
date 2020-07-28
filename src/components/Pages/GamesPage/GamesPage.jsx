@@ -9,6 +9,7 @@ const GamesPage = (props) => {
   let gamesList = props.games.gamesList.map((el) => (
     <Game
       key={el.id}
+      tag={el.tag}
       name={el.name}
       date={el.date}
       description={el.description}
@@ -20,7 +21,7 @@ const GamesPage = (props) => {
     <div className={classes.wrapper}>
       <HeaderContainer />
       <BreadcrumbsContainer />
-        <ul className={classes.block}>{gamesList}</ul>
+      <ul className={classes.block}>{gamesList}</ul>
       <FooterContainer />
     </div>
   );

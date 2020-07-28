@@ -1,16 +1,15 @@
 @import '../../../../../../Colors';
 
-.socialItem {
+.item {
   margin: 10px;
 }
 
-.link {
+.icon {
   padding: 10px 0;
   color: $white;
-  cursor: pointer;
 }
 
-.link:hover {
+.icon:hover {
   color: $cyan;
   cursor: pointer;
 }

@@ -29,7 +29,7 @@ const Header = (props) => {
         <span className={classes.icon}>
           <FontAwesomeIcon icon={faSearch} />
         </span>
-        <Button />
+        <Button name={'Join us now'} style={'buttonContour'} />
       </div>
     </div>
   );

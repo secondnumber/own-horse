@@ -2,6 +2,8 @@ import React from 'react';
 import classes from './Game.module.scss';
 import Image from './game-slide-img-1.jpg';
 import Button from '../../../../common/Button/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faStar} from '@fortawesome/free-solid-svg-icons';
 
 const Game = (props) => {
   return (
@@ -22,7 +24,14 @@ const Game = (props) => {
             pastrami. Drumstick ham hock chuck pork belly chicken prosciutto
             biltong salami ham pancetta.
           </p>
-          <Button />
+          <Button name={'Read more'} style={'buttonGradient'} />
+          <span className={classes.stars}>
+            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faStar} />
+          </span>
         </div>
         <div className={classes.imageBlock}>
           <img className={classes.image} src={Image} />

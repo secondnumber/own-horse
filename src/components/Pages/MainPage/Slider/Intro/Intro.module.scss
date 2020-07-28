@@ -1,4 +1,5 @@
 @import '../../../../../Colors';
+@import '../../../../../Common';
 
 @keyframes slidetop {
   0% { transform: translateY(-100vh); }
@@ -46,59 +47,27 @@
 }
 
 .socialList {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 10vw;
-  list-style-type: none;
+  @include list(center, center);
+  flex-direction: column;
 }
 
 .caption {
-  font-family: "Agency FB", sans-serif;
-  font-size: 42px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $white;
+  @extend %bigHeader;
   animation: slidetop 1s ease-in-out;
 }
 
 .header {
-  font-family: "Agency FB", sans-serif;
-  font-size: 90px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $white;
+  @extend %hugeHeader;
   animation: slideleft 0.8s ease-in-out;
 }
 
 .description {
   text-align: center;
   padding: 30px 0px;
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: $white;
   animation: appear 1.5s ease-in-out;
-}
-
-.button {
-  width: 220px;
-  height: 60px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $cyan;
-  background-color: $white;
-  border: none;
-  border-radius: 10px;
-  animation: slidebottom 0.8s ease-in-out;
-}
-
-.button:hover {
-  background-color: $cyan;
-  border: none;
-  color: $white;
-  cursor: pointer;
 }
 
 .image {
@@ -108,10 +77,7 @@
 
 .toggleNumber {
   padding: 15px 0px;
-  font-family: "Agency FB", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
+  @extend %middleHeader;
   writing-mode: vertical-rl;
   color: $white;
 }

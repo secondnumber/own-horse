@@ -24,8 +24,10 @@ const Videos = (props) => {
 
   return (
     <div className={classes.wrapper}>
-      <div className={classes.togglesBlock}>
-        {togglesList}
+      <div className={classes.block}>
+        <ul className={classes.list}>
+          {togglesList}
+        </ul>
         {videosList}
         {contentList}
         {labelList}

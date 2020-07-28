@@ -10,7 +10,9 @@ const Posts = (props) => {
       date={post.date}
       description={post.description}
       author={post.author}
+      comments={post.comments}
       imageSmall={post.src}
+      color={post.color}
     />
   ));
 
@@ -24,7 +26,7 @@ const Posts = (props) => {
         Pork chop pastrami meatball, picanha salami capicola drumstick tri-tip
         flank short loin strip steak prosciutto leberkas jowl fatback.
       </p>
-      <ul className={classes.postsWrapper}>{postsList}</ul>
+      <ul className={classes.block}>{postsList}</ul>
     </div>
   );
 };

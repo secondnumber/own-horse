@@ -11,6 +11,7 @@ let initialState = {
     {
       id: 1,
       name: 'Fifal 2018',
+      tag: 'XBOX',
       date: 'mar 18-20, 2018',
       image: GameImg1,
       description:
@@ -19,37 +20,47 @@ let initialState = {
     {
       id: 2,
       name: 'Mix Combination',
+      tag: 'XBOX',
       date: 'apr 25-27, 2018',
       image: GameImg2,
-      description: 'Boudin ground round brisket, andouille ball tip meatloaf beef kevin. Fatback prosciutto.',
+      description:
+        'Boudin ground round brisket, andouille ball tip meatloaf beef kevin. Fatback prosciutto.',
     },
     {
       id: 3,
       name: 'Forza Jacson',
+      tag: 'PS 3',
       date: 'mar 11, 2019',
       image: GameImg3,
-      description: 'Cupim biltong pork belly filet mignon sausage turkey. Boudin flank beef ribs spare ribs...',
+      description:
+        'Cupim biltong pork belly filet mignon sausage turkey. Boudin flank beef ribs spare ribs...',
     },
     {
       id: 4,
       name: 'NO MAN’S SKY',
+      tag: 'PS 3',
       date: 'sept 15, 2019',
       image: GameImg4,
-      description: 'Chicken shank short loin, pastrami shankle short ribs shoulder frankfurter swine ball t...',
+      description:
+        'Chicken shank short loin, pastrami shankle short ribs shoulder frankfurter swine ball t...',
     },
     {
       id: 5,
       name: 'BARTISFINK OLE',
+      tag: 'XBOX',
       date: 'mar 12, 2019',
       image: GameImg5,
-      description: 'Doner tenderloin cupim swine bresaola burgdoggen. Turducken salami rump spare ribs pork...',
+      description:
+        'Doner tenderloin cupim swine bresaola burgdoggen. Turducken salami rump spare ribs pork...',
     },
     {
       id: 6,
       name: 'DOTDENXX',
+      tag: 'PS 3',
       date: 'jun 10-13, 2019',
       image: GameImg6,
-      description: 'Pork belly landjaeger kielbasa, spare ribs short ribs short loin turkey capicola veniso...',
+      description:
+        'Pork belly landjaeger kielbasa, spare ribs short ribs short loin turkey capicola veniso...',
     },
   ],
 };

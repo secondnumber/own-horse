@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Slider.module.scss';
-import IntroContainer from "./Intro/IntroContainer";
+import IntroContainer from './Intro/IntroContainer';
 
 const Slider = (props) => {
   let introBlocks = props.slider.introList.map((element) => (
@@ -10,7 +10,7 @@ const Slider = (props) => {
       description={element.description}
     />
   ));
-  return <div className={classes.slider}>{introBlocks}</div>;
+  return <div className={classes.wrapper}>{introBlocks}</div>;
 };
 
 export default Slider;

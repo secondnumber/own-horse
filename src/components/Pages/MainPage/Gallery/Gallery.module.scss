@@ -1,55 +1,31 @@
 @import '../../../../Colors';
+@import '../../../../Common';
 
 .wrapper {
-    width: 100vw;
-    max-width:100%;
+    @include wrapper($black);
     padding-bottom: 70px;
-    background-color: $black;
-    text-align: center;
 }
 
 .headers {
-    position: relative;
-    width: 80vw;
-    min-height: 100px;
-    margin: 0px auto;
-    padding: 80px 0 20px 0;
+    @extend %shadowHeader;
 }
 
 .subtitle {
-    position: absolute;
-    z-index: 1;
-    top: 50px;
-    width: 100%;
-    text-align: center;
-    font-family: "Agency FB", sans-serif;
-    font-size: 88px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $textShadow;
+    @extend %shadowSubtitle;
 }
 
 .title {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    text-align: center;
-    font-family: "Agency FB", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $white;
+    @extend %shadowTitle;
 }
 
 
-.tagsBlock {
-    display: flex;
-    justify-content: space-around;
+.tagsList {
+    @include list(space-around, center);
     width: 60vw;
     margin: 0 auto 30px;
 }
 
-.imagesBlock {
+.imagesList {
     width: 70vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -62,20 +38,6 @@
     margin: 0 auto 40px;
 }
 
-.button {
-    width: 220px;
-    height: 60px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $white;
-    background-color: $blueDarkDeep;
-    border: 2px solid $lilac;
-    border-radius: 10px;
-}
-
-.button:hover {
-    border: 2px solid $cyan;
-    background-color: $cyan;
+.btnBlock {
+    text-align: center;
 }
